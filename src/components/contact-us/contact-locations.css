@@ -1,0 +1,107 @@
+/* Section */
+.loc {
+  color: #fff;
+  padding: 0 0px 50px 0px;
+  position: relative;
+}
+
+/* Heading */
+.loc-head {
+  text-align: center;
+  max-width: 880px;
+  margin: 0 auto 22px;
+}
+.loc-head h2 {
+  margin: 0 0 8px;
+  font: 800 clamp(24px, 4.2vw, 36px)/1.1 "Space Grotesk", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+.loc-head p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: clamp(14px, 2.2vw, 16px);
+}
+
+/* Grid of cards */
+.loc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 520px));
+  gap: 26px;
+  justify-content: center;
+}
+
+/* Card */
+.loc-card {
+  position: relative;
+  border-radius: 18px;
+  padding: 16px 16px 14px;
+  background: radial-gradient(800px 400px at 20% 0%, rgba(235, 180, 14, 0.08), rgba(0,0,0,0))
+              , rgba(0,0,0,0.45);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.35),
+    inset 0 0 0 1px rgba(255,255,255,0.06);
+}
+
+/* City title */
+.loc-title {
+  margin: 0 0 10px;
+  text-align: center;
+  font-family: "Space Grotesk";
+  font-size: 30px;
+}
+
+/* Map wrapper to keep aspect ratio, rounded corners */
+.map-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;           /* ~like your screenshot */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.08);
+  height: 300px;
+}
+.map-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+.loc-card.loc-gold{
+  background:rgba(88, 86, 214, 0.1);
+}
+
+/* Card 2 — plum (pick any palette you like) */
+.loc-card.loc-plum{
+  background:rgba(175, 82, 222, 0.1);
+}
+
+/* Address */
+.loc-address {
+  margin-top: 12px;
+  display: grid;
+  gap: 2px;
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: .95;
+}
+
+/* CTA */
+.loc-address a {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .loc-grid {
+    grid-template-columns: repeat(1, minmax(250px, 100%));
+    padding: 20px;
+  }
+}

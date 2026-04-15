@@ -1,0 +1,142 @@
+/* ===== background section ===== */
+.cta-wrap-about {
+  position: relative;
+  padding: 30px;
+  overflow: hidden;
+  isolation: isolate;
+  color: #fff;
+}
+
+.cta-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  /* background:
+    radial-gradient(120% 100% at 50% 0%,
+      rgba(249,210,74,0.18) 0%,
+      rgba(249,210,74,0.10) 25%,
+      rgba(10,8,1,0.92) 60%,
+      #0a0801 100%),
+    radial-gradient(rgba(252,193,15,0.08) 1px, transparent 1px) 0 0/4px 4px,
+    #0a0801; */
+}
+
+/* ===== layout ===== */
+.cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.book-now-star {
+    position: absolute;
+    z-index: 999;
+    left: 8%;
+    top: 25px;
+}
+
+/* optional decorative stars on the left */
+/* .cta-stars {
+  position: absolute;
+  left: 0;
+  top: -20px;
+  width: min(140px, 18vw);
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.9;
+  filter: drop-shadow(0 8px 24px rgba(249,210,74,.35));
+} */
+
+.book-now-star img{
+  height: 150px;
+}
+
+/* main rounded outline box */
+.cta-box {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 24px;
+  border-radius: 16px;
+  padding: clamp(18px, 3vw, 28px) clamp(18px, 4vw, 32px);
+border-bottom: 1px solid rgba(249, 210, 74, 0.28);
+    background: #b994250f;
+    /* box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02), 0 10px 32px rgba(249, 210, 74, 0.10); */
+    border-left: 1px solid rgba(249, 210, 74, 0.28);
+    border-right: 1px solid rgba(249, 210, 74, 0.28);
+}
+
+/* headline */
+.cta-title {
+  margin: 0;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-weight: 800;
+  line-height: 1.1;
+  font-size: clamp(24px, 4.6vw, 56px);
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+/* pill button on the right */
+.cta-btn-about {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 50px;
+  border-radius: 999px;
+  background: #f4bd11; /* base yellow */
+  color: #1a1200;
+  font-weight: 700;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-size: clamp(14px, 1.2vw, 18px);
+  text-decoration: none;
+  box-shadow:
+    0 6px 20px rgba(249,210,74,0.35),
+    inset 0 -2px 0 rgba(0,0,0,0.12);
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+  white-space: nowrap;
+}
+
+.cta-btn-about:hover {
+  background: #ffd34d;
+  box-shadow:
+    0 10px 26px rgba(249,210,74,0.5),
+    inset 0 -2px 0 rgba(0,0,0,0.18);
+  transform: translateY(-2px);
+}
+
+.cta-btn-about:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 1600px) {
+.book-now-star{
+left: 0;
+}}
+
+@media (max-width: 1440px) {
+.book-now-star{
+display: none;
+}}
+
+/* responsive stack */
+@media (max-width: 720px) {
+  .cta-box {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .cta-btn-about {
+    margin-top: 6px;
+  }
+  .cta-stars {
+    top: -6px;
+    left: -6px;
+    width: min(110px, 22vw);
+  }
+
+}
+@media (max-width: 480px) {
+.book-now-star{
+display: none;
+}}

@@ -1,0 +1,107 @@
+.logo-wrap {
+      padding: clamp(20px, 5vw, 36px) 0;
+      position: relative;
+}
+
+.logo-title {
+      text-align: center;
+      opacity: .9;
+      font-weight: 600;
+      margin: 0 0 14px;
+      letter-spacing: .02em;
+}
+
+/* viewport */
+.logo-marquee {
+      --gap: clamp(28px, 6vw, 80px);
+      --cell-h: 44px;
+
+      overflow: hidden;
+      width: 100%;
+      mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+      -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+      position: relative;
+}
+
+/* moving row */
+.logo-track {
+      display: flex;
+      align-items: center;
+      gap: var(--gap);
+      width: max-content;
+      animation: logo-scroll var(--duration, 28s) linear infinite;
+      will-change: transform;
+}
+
+/* each logo */
+.logo-cell {
+      flex: 0 0 auto;
+      /* height: var(--cell-h); */
+      display: grid;
+      place-items: center;
+      /* opacity: .92; */
+      transition: transform .25s ease, opacity .25s ease, filter .25s ease;
+}
+
+.logo-cell img {
+      height: 100px;
+      width: 200px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0));
+}
+
+.logo-cell:hover {
+      transform: scale(1.05);
+      opacity: 1;
+}
+
+/* pause on hover */
+.logo-marquee:hover .logo-track {
+      animation-play-state: paused;
+}
+
+.logo-bg {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  padding: 8px;
+  border-radius: 30px;
+}
+
+/* keyframes: translate exactly one copy width (50%) because we duplicated the row once */
+@keyframes logo-scroll {
+      from {
+            transform: translateX(0);
+      }
+
+      to {
+            transform: translateX(-50%);
+      }
+}
+
+/* dark theme helper (optional) */
+:where(.logo-wrap) img {
+      filter: brightness(1);
+}
+
+/* responsiveness */
+@media (max-width: 768px) {
+      .logo-marquee {
+            --cell-h: 34px;
+      }
+      .logo-cell img{
+            width: 150px;
+      }
+}
+
+/* accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+      .logo-track {
+            animation: none;
+      }
+}
+
+.rfm-initial-child-container{
+      gap: 40px !important;
+}

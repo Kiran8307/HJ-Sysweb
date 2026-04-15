@@ -1,0 +1,644 @@
+/* Base section */
+.svc-wrap {
+  position: relative;
+  padding: clamp(40px, 6vw, 80px) 20px;
+  color: #fff;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.svc-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+/* 2-column layout with reliable divider anchor */
+.svc-container {
+  /* max-width: 1220px; */
+  /* margin: 0 auto; */
+  /* display: grid
+; */
+  grid-template-columns: minmax(280px, 1fr) minmax(620px, 720px);
+  gap: clamp(24px, 4vw, 48px);
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+/* left */
+.svc-title {
+  margin: 0 0 10px;
+  font: 800 clamp(22px, 2.4vw, 30px)/1 "Space Grotesk", system-ui, sans-serif;
+}
+
+.svc-lead {
+  margin: 0 0 clamp(24px, 4vw, 40px);
+  max-width: 520px;
+  font-family: "Belgrano", serif;
+  color: #e6e6e6;
+  line-height: 1.8;
+}
+
+/* 1) Allow sticky to work */
+.svc-wrap {
+  overflow: visible;
+  /* was hidden, which breaks sticky */
+}
+
+/* 2) Make the WHOLE left column sticky */
+aside.svc-left {
+  width: 40%;
+  position: sticky;
+  top: 120px;
+  /* pin offset */
+  align-self: start;
+  /* don't stretch in flex/grid parents */
+  height: max-content;
+  /* shrink-wrap the content height */
+  z-index: 1;
+  /* above bg/decor, below content on right */
+}
+
+/* 3) The inner wrapper no longer needs special layout */
+.svc-left-inner {
+  display: block;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+  /* simpler; let aside handle sticky */
+}
+
+.svc-left-inner-top {
+    text-align: center;
+}
+
+/* 4) The old sticky CTA becomes normal flow */
+.svc-sticky {
+  position: static;
+  /* remove sticky from inner */
+  top: auto;
+}
+
+/* If you still want the GIF decoration above the block, keep the ::before */
+.svc-sticky::before {
+  content: "";
+  position: absolute;
+  top: 140px;
+  left: -4%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  /* background: url("/Service-page/campaign.gif") center/contain no-repeat; */
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* 5) Responsive: turn off sticky on tablets/phones */
+@media (max-width: 1024px) {
+  aside.svc-left {
+    position: static;
+    top: auto;
+    width: 100%;
+  }
+}
+
+
+
+
+aside.svc-left {
+  width: 40%;
+}
+
+.svc-cta-box {
+  /* border: 1px solid rgba(249, 210, 74, 0.28);
+  background: rgba(255, 255, 255, 0.02); */
+  border-radius: 16px;
+  padding: clamp(18px, 3vw, 28px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.svc-cta-title {
+  margin: 0;
+  font: 800 clamp(22px, 3.2vw, 36px)/1 "Space Grotesk", system-ui, sans-serif;
+}
+
+.svc-btn {
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: #f4bd11;
+  color: #1a1200;
+  font: 700 22px/1 "Space Grotesk", system-ui, sans-serif;
+  text-decoration: none;
+  /* box-shadow: 0 8px 24px rgba(249, 210, 74, .35); */
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.svc-btn:hover {
+  background: #ffd34d;
+  transform: translateY(-1px);
+}
+
+/* right: list + divider */
+
+.svc-list {
+  position: relative;
+  display: grid;
+  gap: 16px;
+}
+
+.svc-divider {
+  position: absolute;
+  left: -50px;
+  /* sits in the gap between left and cards */
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(252, 193, 15, .15);
+}
+
+/* Each card gets its own centered circle */
+.svc-card::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  /* centers dot on divider line */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: rgba(20, 20, 20, 1);
+  border: 2px solid #fcc10f;
+  box-shadow: 0 0 0 4px rgba(252, 193, 15, .15);
+  z-index: 2;
+}
+
+/* card */
+.svc-card {
+  --tint: #00000022;
+  /* fallback */
+  height: 307px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px 18px 16px;
+  border-radius: 14px;
+  /* border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 2px 0 rgba(255, 255, 255, 0.05) inset; */
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  position: relative;
+  width: 700px;
+  background:
+    linear-gradient(0deg, var(--tint), var(--tint)),
+    radial-gradient(ellipse at 30% -20%, rgba(255, 255, 255, .06), rgba(255, 255, 255, 0) 60%),
+    rgba(20, 20, 24, .55);
+}
+
+.svc-card:hover {
+  transform: translateY(-4px);
+  /* border-color: rgba(249, 210, 74, 0.35);
+  box-shadow:
+    0 10px 26px rgba(249, 210, 74, 0.18),
+    inset 0 0 0 1px rgba(249, 210, 74, 0.08); */
+}
+
+.svc-card-head-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+/* head */
+.svc-card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.svc-card-title {
+  margin: 0;
+  font: 800 clamp(18px, 2.2vw, 30px)/1.1 "Space Grotesk", system-ui, sans-serif;
+}
+
+img.svc-icon {
+    width: 80px;
+}
+
+/* arrow (top-right) – appears on hover with small delay */
+
+
+.svc-card:hover .svc-arrow {
+  opacity: 1;
+  transform: translate(0, 0) rotate(0deg);
+}
+
+/* description + footer link */
+.svc-card-desc {
+  margin: 0;
+  font-family: "Belgrano", serif;
+  color: #e6e6e6;
+  line-height: 1.75;
+  font-size: 15px;
+  overflow: hidden;
+}
+
+.svc-card-foot {}
+
+
+
+.svc-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffd34d;
+  text-decoration: none;
+  font-weight: 700;
+  position: relative;
+  overflow: hidden;
+  font-size:  13px;
+}
+
+/* Hide Learn more by default */
+.svc-card-link-text {
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: opacity .3s ease, transform .3s ease;
+}
+
+/* Arrow visible but subtle */
+.svc-card-link-arrow {
+  width: 24px;
+  height: 24px;
+  /* background: url("/Service-page/arrow-up-right.png") center/contain no-repeat; */
+  opacity: 0.8;
+  transform: translateX(-6px);
+  transition: opacity .3s ease, transform .3s ease;
+}
+
+/* On card hover → show text */
+.svc-card:hover .svc-card-link-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* On card hover → arrow animates in */
+.svc-card:hover .svc-card-link-arrow {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: .1s;
+  /* arrow slides slightly after text */
+}
+
+
+
+/* ======= Animated 3-circle badge ======= */
+.svc-badge3 {
+  width: 80px;
+  height: 80px;
+}
+
+.svc-badge3 .b3-outline,
+.svc-badge3 .b3-dashed {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.6);
+  stroke-width: 3;
+}
+
+.svc-badge3 .b3-dashed {
+  stroke-dasharray: 6 6;
+}
+
+.svc-badge3 .b3-solid {
+  fill: #FCC10F;
+}
+
+/* continuous merge/separate */
+.svc-badge3 .b3-merge {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: b3-merge 6s ease-in-out infinite;
+}
+
+.svc-badge3 .b3-spin {
+  animation: b3-merge 12s ease-in-out infinite, b3-spin 12s linear infinite;
+}
+
+/* hover -> all yellow */
+.svc-card:hover .svc-badge3 .b3-outline,
+.svc-card:hover .svc-badge3 .b3-dashed {
+  stroke: #fcc10f;
+}
+
+.svc-card:hover .svc-badge3 .b3-solid {
+  fill: #fcc10f;
+}
+
+/* keyframes for SVG */
+@keyframes b3-merge {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(5px, 6px);
+  }
+
+  /* drift toward solid circle */
+  50% {
+    transform: translate(10px, 10px);
+  }
+
+  /* closest (merge-ish) */
+  75% {
+    transform: translate(5px, 6px);
+  }
+}
+
+@keyframes b3-spin {
+  to {
+    stroke-dashoffset: -60;
+  }
+}
+
+
+
+/* ===== 1440px → 1300px ===== */
+@media (max-width: 1440px) and (min-width: 1301px) {
+  .svc-container {
+    gap: 32px;
+  }
+
+  aside.svc-left {
+    width: 42%;
+  }
+
+  .svc-list {
+    gap: 14px;
+  }
+
+  .svc-card {
+    width: 660px;
+  }
+
+  .svc-divider {
+    left: -44px;
+  }
+
+  .svc-card::before {
+    left: -54px;
+  }
+
+  .svc-card-title {
+    font-size: clamp(18px, 2vw, 28px);
+  }
+}
+
+/* ===== 1280px → 1024px ===== */
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .svc-container {
+    gap: 28px;
+  }
+
+  aside.svc-left {
+    width: 45%;
+  }
+
+  .svc-title {
+    font-size: clamp(20px, 2.2vw, 28px);
+  }
+
+  .svc-lead {
+    max-width: 460px;
+  }
+
+  .svc-card {
+    width: 600px;
+    padding: 16px;
+  }
+
+  .svc-card-title {
+    font-size: clamp(18px, 1.9vw, 26px);
+  }
+
+  .svc-divider {
+    left: -40px;
+  }
+
+  .svc-card::before {
+    left: -50px;
+  }
+
+  .svc-badge3 {
+    width: 72px;
+    height: 72px;
+  }
+
+  .svc-card-link-arrow {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* ===== 1024px → 768px ===== */
+@media (max-width: 1024px) and (min-width: 769px) {
+
+  /* still two columns but tighter */
+  .svc-container {
+    gap: 24px;
+  }
+
+  aside.svc-left {
+    width: 48%;
+  }
+
+  .svc-sticky {
+    top: 80px;
+  }
+
+  /* smaller sticky offset */
+  .svc-cta-title {
+    font-size: clamp(20px, 2.6vw, 30px);
+  }
+
+  .svc-btn {
+    padding: 9px 16px;
+    font-size: 15px;
+  }
+
+  .svc-list {
+    gap: 14px;
+  }
+
+  .svc-card {
+    width: 540px;
+    height: 300px;
+    padding: 16px;
+  }
+
+  .svc-card-title {
+    font-size: clamp(18px, 2vw, 24px);
+  }
+
+  .svc-card-desc {
+    font-size: 14px;
+  }
+
+  .svc-divider {
+    left: -32px;
+  }
+
+  .svc-card::before {
+    left: -42px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .svc-badge3 {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+/* ===== ≤ 768px (tablets & below) ===== */
+@media (max-width: 768px) {
+
+  /* stack columns */
+  .svc-container {
+    display: block;
+  }
+
+  aside.svc-left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .svc-sticky {
+    position: static;
+    top: auto;
+  }
+
+  /* hide vertical divider + dots */
+  .svc-divider {
+    display: none;
+  }
+
+  /* cards full width */
+  .svc-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .svc-card {
+    width: 100%;
+    height: auto;
+    /* let it grow on small screens */
+    padding: 16px;
+  }
+
+  .svc-card::before {
+    display: none;
+  }
+
+  /* remove center dot on small screens */
+  .svc-card-title {
+    font-size: 22px;
+  }
+
+  .svc-card-desc {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .svc-badge3 {
+    width: 64px;
+    height: 64px;
+  }
+
+  .svc-card-link-arrow {
+    width: 22px;
+    height: 22px;
+  }
+  img.svc-icon {
+    width: 60px;
+}
+}
+
+/* ===== ≤ 480px (phones) ===== */
+@media (max-width: 480px) {
+  .svc-wrap {
+    padding: 32px 16px;
+  }
+
+  .svc-title {
+    font-size: 20px;
+  }
+
+  .svc-lead {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .svc-cta-box {
+    padding: 14px;
+  }
+
+  .svc-cta-title {
+    font-size: 20px;
+  }
+
+  .svc-btn {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .svc-card {
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .svc-card-head {
+    gap: 10px;
+  }
+
+  .svc-badge3 {
+    width: 56px;
+    height: 56px;
+  }
+
+  .svc-card-title {
+    font-size: 20px;
+  }
+
+  .svc-card-desc {
+    font-size: 13px;
+  }
+
+  .svc-card-link {
+    gap: 6px;
+    font-size: 14px;
+  }
+
+  .svc-card-link-arrow {
+    width: 18px;
+    height: 18px;
+  }
+
+  .svc-sticky::before{
+    display: none;
+    content: none;
+  }
+}

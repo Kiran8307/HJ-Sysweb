@@ -1,0 +1,115 @@
+/* SECTION */
+.thankyou-section {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  color: #fff;
+
+  padding: clamp(16px, 3vw, 40px);
+}
+
+/* CONTAINER: 2-col layout like screenshot */
+.thankyou-container {
+  width: min(1200px, 100%);
+  display: grid;
+  grid-template-columns: minmax(260px, 520px) minmax(320px, 560px);
+  align-items: center;
+  gap: clamp(16px, 4vw, 56px);
+}
+
+/* LEFT: MASCOT */
+.thankyou-owl { 
+  display: grid; 
+  place-items: center; 
+}
+.owl-image {
+
+  height: auto;
+  filter: drop-shadow(0 10px 30px rgba(0,0,0,0.45));
+  animation: owlFloat 5s ease-in-out infinite;
+}
+@keyframes owlFloat {
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(-8px); }
+}
+
+
+.thankyou-box {
+  /* background: url("/Union.png") no-repeat center / 100% 100%; */
+  width: 100%;
+ padding: 30px;
+  position: relative;
+  isolation: isolate; 
+  border-radius: 16px; 
+}
+
+.thankyou-box-inner {
+  position: relative;
+  z-index: 1;
+  padding: clamp(18px, 3vw, 32px) clamp(20px, 3.2vw, 36px);
+  text-align: center;
+}
+
+.thankyou-heading {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  margin-bottom: 1rem;
+}
+
+.thankyou-heading-img {
+  width: 100%;
+ 
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+
+.thankyou-text {
+  color: #d9d9d9;
+  font-size: clamp(14px, 1.7vw, 16px);
+  line-height: 1.7;
+  margin: 10px 0 22px;
+  max-width: 46ch;
+}
+
+
+.thankyou-btn {
+    font-family: "Belgrano", sans-serif;
+}
+
+
+/* MOBILE: stack, center box, shrink owl */
+@media (max-width: 860px) {
+  .thankyou-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: left; /* keep copy left-aligned like your design */
+  }
+  .owl-image {
+    width: min(60vw, 340px);
+  }
+  .thankyou-box {
+    max-width: 640px;
+    width: min(92vw, 640px);
+  }
+}
+
+/* EXTRA SMALL: center text if you prefer (toggle if needed) */
+@media (max-width: 520px) {
+  .thankyou-box-inner { text-align: left; }
+  .thankyou-text { margin-bottom: 18px; }
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .thankyou-heading {
+    justify-content: center; /* center image on mobile */
+  }
+
+  .thankyou-heading-img {
+    max-width: 200px;
+  }
+}

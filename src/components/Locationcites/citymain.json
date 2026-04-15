@@ -1,0 +1,459 @@
+[
+  {
+    "id": "ahmedabad",
+    "cityName": "Ahmedabad",
+    "services": [
+      {
+        "id": "branding",
+        "title": "Branding Service in Ahmedabad",
+        "desc": "Build a brand that wins mindshare and sales in Ahmedabad. We shape positioning, identity, and packaging that look premium and attract ideal customers.",
+        "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Brand strategy, logo design, visual identity system, and comprehensive brand guidelines.",
+          "Outcome: Instant credibility, stronger brand recall, and a professional first impression in the Gujarat market."
+        ]
+      },
+      {
+        "id": "digital-marketing",
+        "title": "Digital Marketing Agency in Ahmedabad",
+        "desc": "Accelerate your business growth in Ahmedabad with our full-stack digital solutions. We turn your website traffic into qualified leads and revenue.",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: End-to-end campaign management, content marketing, lead generation, and monthly ROI reporting.",
+          "Outcome: Consistent pipeline of high-quality leads and measurable digital growth."
+        ]
+      },
+      {
+        "id": "performance-marketing",
+        "title": "Performance Marketing Agency in Ahmedabad",
+        "desc": "Data-driven ad campaigns designed for maximum ROI. We optimize every rupee spent on Google and Meta ads to bring highly targeted traffic in Ahmedabad.",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Ad copywriting, A/B testing, audience targeting, pixel setup, and conversion rate optimization.",
+          "Outcome: Lower Cost Per Acquisition (CPA), higher ROAS, and scalable revenue generation."
+        ]
+      },
+      {
+        "id": "seo",
+        "title": "SEO Service in Ahmedabad",
+        "desc": "Rank at the top of Google search results for keywords that matter to your business. Our local SEO strategies dominate the Ahmedabad market.",
+        "image": "https://images.unsplash.com/photo-1572177812156-58036aae439c?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Comprehensive website audit, local keyword research, on-page optimization, and high-quality link building.",
+          "Outcome: Dominant search visibility, increased organic inquiries, and long-term free traffic."
+        ]
+      },
+      {
+        "id": "shopify",
+        "title": "Shopify Web Development Service in Ahmedabad",
+        "desc": "Launch your premium D2C brand with a high-converting Shopify store. We build fast, secure, and visually stunning e-commerce experiences for Ahmedabad businesses.",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Custom theme development, payment gateway integration, app setup, and mobile optimization.",
+          "Outcome: A frictionless shopping experience that boosts cart size and reduces drop-offs."
+        ]
+      },
+      {
+        "id": "ssm",
+        "title": "SSM Service in Ahmedabad",
+        "desc": "Engage your audience and build a loyal community on social media. We create viral content and manage your brand's reputation online.",
+        "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Social media strategy, content calendar, creative graphics/reels, and community management.",
+          "Outcome: Higher brand engagement, viral reach, and a strong social proof for your business."
+        ]
+      },
+      {
+        "id": "web-development",
+        "title": "Web Development Service in Ahmedabad",
+        "desc": "Get a fast, modern, and highly secure website tailored for your business needs in Ahmedabad. We build digital assets that perform.",
+        "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Custom UI/UX design, full-stack development, speed optimization, and CMS setup.",
+          "Outcome: A scalable website that represents your brand perfectly and converts visitors into clients."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "anand",
+    "cityName": "Anand",
+    "services": [
+      {
+        "id": "branding",
+        "title": "Branding Service in Anand",
+        "desc": "Build a brand that wins mindshare and sales in Anand. We shape positioning, identity, and packaging that look premium and attract ideal customers.",
+        "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Brand strategy, logo design, visual identity system, and comprehensive brand guidelines.",
+          "Outcome: Instant credibility, stronger brand recall, and a professional first impression in the local market."
+        ]
+      },
+      {
+        "id": "digital-marketing",
+        "title": "Digital Marketing Agency in Anand",
+        "desc": "Accelerate your business growth in Anand with our full-stack digital solutions. We turn your website traffic into qualified leads and revenue.",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: End-to-end campaign management, content marketing, lead generation, and monthly ROI reporting.",
+          "Outcome: Consistent pipeline of high-quality leads and measurable digital growth."
+        ]
+      },
+      {
+        "id": "performance-marketing",
+        "title": "Performance Marketing Agency in Anand",
+        "desc": "Data-driven ad campaigns designed for maximum ROI in the Anand region. We optimize every rupee spent on Google and Meta ads.",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Ad copywriting, A/B testing, audience targeting, pixel setup, and conversion rate optimization.",
+          "Outcome: Lower Cost Per Acquisition (CPA), higher ROAS, and scalable revenue generation."
+        ]
+      },
+      {
+        "id": "seo",
+        "title": "SEO Service in Anand",
+        "desc": "Rank at the top of Google search results for keywords that matter to your business. Our local SEO strategies dominate the Anand market.",
+        "image": "https://images.unsplash.com/photo-1572177812156-58036aae439c?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Comprehensive website audit, local keyword research, on-page optimization, and high-quality link building.",
+          "Outcome: Dominant search visibility, increased organic inquiries, and long-term free traffic."
+        ]
+      },
+      {
+        "id": "shopify",
+        "title": "Shopify Web Development Service in Anand",
+        "desc": "Launch your premium D2C brand with a high-converting Shopify store tailored for Anand's growing businesses.",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Custom theme development, payment gateway integration, app setup, and mobile optimization.",
+          "Outcome: A frictionless shopping experience that boosts cart size and reduces drop-offs."
+        ]
+      },
+      {
+        "id": "ssm",
+        "title": "SSM Service in Anand",
+        "desc": "Engage your audience and build a loyal community on social media. We create viral content and manage your brand's reputation online.",
+        "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Social media strategy, content calendar, creative graphics/reels, and community management.",
+          "Outcome: Higher brand engagement, viral reach, and a strong social proof for your business."
+        ]
+      },
+      {
+        "id": "web-development",
+        "title": "Web Development Service in Anand",
+        "desc": "Get a fast, modern, and highly secure website tailored for your business needs in Anand. We build digital assets that perform.",
+        "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Custom UI/UX design, full-stack development, speed optimization, and CMS setup.",
+          "Outcome: A scalable website that represents your brand perfectly and converts visitors into clients."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "vadodara",
+    "cityName": "Vadodara",
+    "services": [
+      {
+        "id": "branding",
+        "title": "Branding Service in Vadodara",
+        "desc": "Build a brand that wins mindshare and sales in Vadodara. We shape positioning, identity, and packaging that look premium and attract ideal customers.",
+        "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Brand strategy, logo design, visual identity system, and comprehensive brand guidelines.",
+          "Outcome: Instant credibility, stronger brand recall, and a professional first impression in the local market."
+        ]
+      },
+      {
+        "id": "digital-marketing",
+        "title": "Digital Marketing Agency in Vadodara",
+        "desc": "Accelerate your business growth in Vadodara with our full-stack digital solutions. We turn your website traffic into qualified leads and revenue.",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: End-to-end campaign management, content marketing, lead generation, and monthly ROI reporting.",
+          "Outcome: Consistent pipeline of high-quality leads and measurable digital growth."
+        ]
+      },
+      {
+        "id": "performance-marketing",
+        "title": "Performance Marketing Agency in Vadodara",
+        "desc": "Data-driven ad campaigns designed for maximum ROI in Vadodara. We optimize every rupee spent on Google and Meta ads.",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Ad copywriting, A/B testing, audience targeting, pixel setup, and conversion rate optimization.",
+          "Outcome: Lower Cost Per Acquisition (CPA), higher ROAS, and scalable revenue generation."
+        ]
+      },
+      {
+        "id": "seo",
+        "title": "SEO Service in Vadodara",
+        "desc": "Rank at the top of Google search results for keywords that matter to your business. Our local SEO strategies dominate the Vadodara market.",
+        "image": "https://images.unsplash.com/photo-1572177812156-58036aae439c?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Comprehensive website audit, local keyword research, on-page optimization, and high-quality link building.",
+          "Outcome: Dominant search visibility, increased organic inquiries, and long-term free traffic."
+        ]
+      },
+      {
+        "id": "shopify",
+        "title": "Shopify Web Development Service in Vadodara",
+        "desc": "Launch your premium D2C brand with a high-converting Shopify store tailored for Vadodara's growing businesses.",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Custom theme development, payment gateway integration, app setup, and mobile optimization.",
+          "Outcome: A frictionless shopping experience that boosts cart size and reduces drop-offs."
+        ]
+      },
+      {
+        "id": "ssm",
+        "title": "SSM Service in Vadodara",
+        "desc": "Engage your audience and build a loyal community on social media. We create viral content and manage your brand's reputation online.",
+        "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Social media strategy, content calendar, creative graphics/reels, and community management.",
+          "Outcome: Higher brand engagement, viral reach, and a strong social proof for your business."
+        ]
+      },
+      {
+        "id": "web-development",
+        "title": "Web Development Service in Vadodara",
+        "desc": "Get a fast, modern, and highly secure website tailored for your business needs in Vadodara. We build digital assets that perform.",
+        "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Custom UI/UX design, full-stack development, speed optimization, and CMS setup.",
+          "Outcome: A scalable website that represents your brand perfectly and converts visitors into clients."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "surat",
+    "cityName": "Surat",
+    "services": [
+      {
+        "id": "branding",
+        "title": "Branding Service in Surat",
+        "desc": "Build a brand that wins mindshare and sales in Surat. We shape positioning, identity, and packaging that look premium and attract ideal customers.",
+        "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Brand strategy, logo design, visual identity system, and comprehensive brand guidelines.",
+          "Outcome: Instant credibility, stronger brand recall, and a professional first impression in the local market."
+        ]
+      },
+      {
+        "id": "digital-marketing",
+        "title": "Digital Marketing Agency in Surat",
+        "desc": "Accelerate your business growth in Surat with our full-stack digital solutions. We turn your website traffic into qualified leads and revenue.",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: End-to-end campaign management, content marketing, lead generation, and monthly ROI reporting.",
+          "Outcome: Consistent pipeline of high-quality leads and measurable digital growth."
+        ]
+      },
+      {
+        "id": "performance-marketing",
+        "title": "Performance Marketing Agency in Surat",
+        "desc": "Data-driven ad campaigns designed for maximum ROI in Surat. We optimize every rupee spent on Google and Meta ads.",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Ad copywriting, A/B testing, audience targeting, pixel setup, and conversion rate optimization.",
+          "Outcome: Lower Cost Per Acquisition (CPA), higher ROAS, and scalable revenue generation."
+        ]
+      },
+      {
+        "id": "seo",
+        "title": "SEO Service in Surat",
+        "desc": "Rank at the top of Google search results for keywords that matter to your business. Our local SEO strategies dominate the Surat market.",
+        "image": "https://images.unsplash.com/photo-1572177812156-58036aae439c?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Comprehensive website audit, local keyword research, on-page optimization, and high-quality link building.",
+          "Outcome: Dominant search visibility, increased organic inquiries, and long-term free traffic."
+        ]
+      },
+      {
+        "id": "shopify",
+        "title": "Shopify Web Development Service in Surat",
+        "desc": "Launch your premium D2C brand with a high-converting Shopify store tailored for Surat's growing businesses.",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Custom theme development, payment gateway integration, app setup, and mobile optimization.",
+          "Outcome: A frictionless shopping experience that boosts cart size and reduces drop-offs."
+        ]
+      },
+      {
+        "id": "ssm",
+        "title": "SSM Service in Surat",
+        "desc": "Engage your audience and build a loyal community on social media. We create viral content and manage your brand's reputation online.",
+        "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Social media strategy, content calendar, creative graphics/reels, and community management.",
+          "Outcome: Higher brand engagement, viral reach, and a strong social proof for your business."
+        ]
+      },
+      {
+        "id": "web-development",
+        "title": "Web Development Service in Surat",
+        "desc": "Get a fast, modern, and highly secure website tailored for your business needs in Surat. We build digital assets that perform.",
+        "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Custom UI/UX design, full-stack development, speed optimization, and CMS setup.",
+          "Outcome: A scalable website that represents your brand perfectly and converts visitors into clients."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rajkot",
+    "cityName": "Rajkot",
+    "services": [
+      {
+        "id": "branding",
+        "title": "Branding Service in Rajkot",
+        "desc": "Build a brand that wins mindshare and sales in Rajkot. We shape positioning, identity, and packaging that look premium and attract ideal customers.",
+        "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Brand strategy, logo design, visual identity system, and comprehensive brand guidelines.",
+          "Outcome: Instant credibility, stronger brand recall, and a professional first impression in the local market."
+        ]
+      },
+      {
+        "id": "digital-marketing",
+        "title": "Digital Marketing Agency in Rajkot",
+        "desc": "Accelerate your business growth in Rajkot with our full-stack digital solutions. We turn your website traffic into qualified leads and revenue.",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: End-to-end campaign management, content marketing, lead generation, and monthly ROI reporting.",
+          "Outcome: Consistent pipeline of high-quality leads and measurable digital growth."
+        ]
+      },
+      {
+        "id": "performance-marketing",
+        "title": "Performance Marketing Agency in Rajkot",
+        "desc": "Data-driven ad campaigns designed for maximum ROI in Rajkot. We optimize every rupee spent on Google and Meta ads.",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Ad copywriting, A/B testing, audience targeting, pixel setup, and conversion rate optimization.",
+          "Outcome: Lower Cost Per Acquisition (CPA), higher ROAS, and scalable revenue generation."
+        ]
+      },
+      {
+        "id": "seo",
+        "title": "SEO Service in Rajkot",
+        "desc": "Rank at the top of Google search results for keywords that matter to your business. Our local SEO strategies dominate the Rajkot market.",
+        "image": "https://images.unsplash.com/photo-1572177812156-58036aae439c?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Comprehensive website audit, local keyword research, on-page optimization, and high-quality link building.",
+          "Outcome: Dominant search visibility, increased organic inquiries, and long-term free traffic."
+        ]
+      },
+      {
+        "id": "shopify",
+        "title": "Shopify Web Development Service in Rajkot",
+        "desc": "Launch your premium D2C brand with a high-converting Shopify store tailored for Rajkot's growing businesses.",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Custom theme development, payment gateway integration, app setup, and mobile optimization.",
+          "Outcome: A frictionless shopping experience that boosts cart size and reduces drop-offs."
+        ]
+      },
+      {
+        "id": "ssm",
+        "title": "SSM Service in Rajkot",
+        "desc": "Engage your audience and build a loyal community on social media. We create viral content and manage your brand's reputation online.",
+        "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Social media strategy, content calendar, creative graphics/reels, and community management.",
+          "Outcome: Higher brand engagement, viral reach, and a strong social proof for your business."
+        ]
+      },
+      {
+        "id": "web-development",
+        "title": "Web Development Service in Rajkot",
+        "desc": "Get a fast, modern, and highly secure website tailored for your business needs in Rajkot. We build digital assets that perform.",
+        "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Custom UI/UX design, full-stack development, speed optimization, and CMS setup.",
+          "Outcome: A scalable website that represents your brand perfectly and converts visitors into clients."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jamnagar",
+    "cityName": "Jamnagar",
+    "services": [
+      {
+        "id": "branding",
+        "title": "Branding Service in Jamnagar",
+        "desc": "Build a brand that wins mindshare and sales in Jamnagar. We shape positioning, identity, and packaging that look premium and attract ideal customers.",
+        "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Brand strategy, logo design, visual identity system, and comprehensive brand guidelines.",
+          "Outcome: Instant credibility, stronger brand recall, and a professional first impression in the local market."
+        ]
+      },
+      {
+        "id": "digital-marketing",
+        "title": "Digital Marketing Agency in Jamnagar",
+        "desc": "Accelerate your business growth in Jamnagar with our full-stack digital solutions. We turn your website traffic into qualified leads and revenue.",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: End-to-end campaign management, content marketing, lead generation, and monthly ROI reporting.",
+          "Outcome: Consistent pipeline of high-quality leads and measurable digital growth."
+        ]
+      },
+      {
+        "id": "performance-marketing",
+        "title": "Performance Marketing Agency in Jamnagar",
+        "desc": "Data-driven ad campaigns designed for maximum ROI in Jamnagar. We optimize every rupee spent on Google and Meta ads.",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Ad copywriting, A/B testing, audience targeting, pixel setup, and conversion rate optimization.",
+          "Outcome: Lower Cost Per Acquisition (CPA), higher ROAS, and scalable revenue generation."
+        ]
+      },
+      {
+        "id": "seo",
+        "title": "SEO Service in Jamnagar",
+        "desc": "Rank at the top of Google search results for keywords that matter to your business. Our local SEO strategies dominate the Jamnagar market.",
+        "image": "https://images.unsplash.com/photo-1572177812156-58036aae439c?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Comprehensive website audit, local keyword research, on-page optimization, and high-quality link building.",
+          "Outcome: Dominant search visibility, increased organic inquiries, and long-term free traffic."
+        ]
+      },
+      {
+        "id": "shopify",
+        "title": "Shopify Web Development Service in Jamnagar",
+        "desc": "Launch your premium D2C brand with a high-converting Shopify store tailored for Jamnagar's growing businesses.",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Custom theme development, payment gateway integration, app setup, and mobile optimization.",
+          "Outcome: A frictionless shopping experience that boosts cart size and reduces drop-offs."
+        ]
+      },
+      {
+        "id": "ssm",
+        "title": "SSM Service in Jamnagar",
+        "desc": "Engage your audience and build a loyal community on social media. We create viral content and manage your brand's reputation online.",
+        "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Social media strategy, content calendar, creative graphics/reels, and community management.",
+          "Outcome: Higher brand engagement, viral reach, and a strong social proof for your business."
+        ]
+      },
+      {
+        "id": "web-development",
+        "title": "Web Development Service in Jamnagar",
+        "desc": "Get a fast, modern, and highly secure website tailored for your business needs in Jamnagar. We build digital assets that perform.",
+        "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
+        "points": [
+          "Deliverables: Custom UI/UX design, full-stack development, speed optimization, and CMS setup.",
+          "Outcome: A scalable website that represents your brand perfectly and converts visitors into clients."
+        ]
+      }
+    ]
+  }
+]
+

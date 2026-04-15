@@ -1,0 +1,566 @@
+[
+  {
+    "id": "branding-services",
+    "title": "Branding Services",
+    "desc": "Build a brand people remember and choose. We craft positioning, messaging, visual identity, and guidelines that feel premium and sell. From logo to tone of voice to on-site storytelling, every element is designed to lift trust and conversion. Stand out in crowded markets and charge what you’re worth with consistency.",
+    "hangingBoard": "Build a brand that wins mindshare and sales. We shape positioning, identity, and packaging that look premium and sell better so you attract ideal customers, charge more, and scale with consistency across every touchpoint for measurable growth daily.",
+    "image": "/images/services/branding-services.webp",
+    "meta-title": "Branding Services | Strategy, Identity & Packaging | HJ Sysweb",
+    "meta-desc": "Build a brand buyers remember and choose. Positioning, logo systems, guidelines, and packaging engineered to lift trust, margins, and conversion.",
+    "inner-title": "Branding Services",
+    "inner-desc": "We build brands that buyers remember and choose. From strategy to visual identity, every asset is engineered to lift trust, justify price, and convert more visitors into enquiries and orders. Clear positioning + consistent design = higher margins, faster growth.",
+    "icon":"/gif/branding.gif",
+    "worktogether":"Branding is storytelling done right. We transform concepts into captivating brand experiences that speak directly to your audience. From defining tone and visuals to shaping perception, we ensure every touchpoint reflects authenticity, evokes emotion, and builds recognition that fuels sustainable digital growth.",
+    "subServices": [
+      {
+        "id": "logo-design",
+        "title": "Logo Design",
+        "desc": "Create a unique and memorable logo that reflects your brand identity, builds trust, and makes a strong first impression across all platforms.",
+        "image": "/service-inner/branding-services/logo-design.webp",
+        "points": [
+          "Deliverables : Custom logo concepts, revisions, final files in all formats for web, print, and branding use",
+          "Outcome : A strong visual identity that builds recognition and trust instantly"
+        ]
+      },
+      {
+        "id": "brand-strategy",
+        "title": "Brand Strategy",
+        "desc": "Define your brand positioning, messaging, and audience to create a clear direction that aligns your business goals with long-term growth.",
+        "image": "/service-inner/branding-services/brand-strategy.webp",
+        "points": [
+          "Deliverables :Brand positioning, audience insights, messaging framework, and strategic roadmap",
+          "Outcome : Clear brand direction that drives consistent growth and visibility"
+        ]
+      },
+      {
+        "id": "brand-identity",
+        "title": "Brand Identity",
+        "desc": "Develop a cohesive visual identity including colors, typography, and design elements that ensure consistency across all brand touchpoints.",
+        "image": "/service-inner/branding-services/brand-identity.webp",
+        "points": [
+          "Deliverables : Color palette, typography, visual assets, and brand identity system",
+          "Outcome : A consistent and professional brand presence across all platforms"
+        ]
+      },
+      {
+        "id": "brand-guidelines",
+        "title": "Brand Guidelines",
+        "desc": "Create detailed brand guidelines to ensure consistent use of visual elements, messaging, and tone across marketing materials and channels.",
+        "image": "/service-inner/branding-services/brand-guidelines.webp",
+        "points": [
+          "Deliverables : Brand usage rules, design standards, typography, color and logo guidelines",
+          "Outcome : Consistency that strengthens brand credibility and recognition"
+        ]
+      },
+      {
+        "id": "packaging-design",
+        "title": "Packaging Design",
+        "desc": "Design attractive and functional packaging that enhances product appeal, communicates brand value, and influences customer buying decisions.",
+        "image": "/service-inner/branding-services/packaging-design.webp",
+        "points": [
+          "Deliverables : Packaging concepts, print-ready designs, and branding integration files",
+          "Outcome : Packaging that attracts attention and boosts product sales"
+        ]
+      },
+      {
+        "id": "rebranding-services",
+        "title": "Rebranding Services",
+        "desc": "Transform your existing brand with updated visuals, messaging, and positioning to stay relevant, competitive, and aligned with market trends.",
+        "image": "/service-inner/branding-services/rebranding-services.webp",
+        "points": [
+          "Deliverables : New identity design, refreshed messaging, and brand transformation assets.",
+          "Outcome : A modern brand that reconnects with audience and drives growth"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "creative-advertising",
+    "title": "Creative Advertising",
+    "desc": "Thumb-stopping ads that persuade, not just look pretty. We design static, video, and story formats mapped to the funnel, test hooks and offers, and sync landing pages for message matches. Expect better click-throughs and cheaper acquisitions because creativity is paired with data, fast iterations, and ruthless focus on sales outcomes.",
+    "hangingBoard": "Creative that sells. We develop ideas, visuals, and scripts that travel across print, outdoor, TV, and digital. So your message is remembered, your ads convert, and every rupee works harder to grow enquiries, bookings, and measurable revenue faster.",
+    "image": "/images/services/creative-advertising.webp",
+    "meta-title": "Creative Advertising | Print, OOH, TV & Digital | HJ Sysweb",
+    "meta-desc": "Big ideas that sell. Concepts, copy, storyboards, and productions that boost recall, CTR, and ROAS across print, outdoor, TV, and digital.",
+    "inner-title": "Creative Advertising Services",
+    "inner-desc": "Big ideas, tightly produced. We turn insights into concepts, copy, and visuals that work across every channel print, OOH, TV, and digital. Expect message - market fit, consistent brand recall, and campaigns built to lift CTR, lower CPA, and increase ROAS.",
+    "icon":"/gif/creative-ads.gif",
+    "worktogether":"We craft creative advertising strategies that spark attention and drive measurable impact. From digital campaigns to visual storytelling, we combine design, emotion, and data-driven precision to connect brands with audiences, enhance visibility, and deliver results that inspire engagement and long-term growth.",
+    "subServices": [
+      {
+        "id": "print-advertising",
+        "title": "Print Advertising",
+        "desc": "Create impactful print advertisements that capture attention and communicate your brand message clearly across newspapers, magazines, brochures, and offline marketing channels.",
+        "image": "/service-inner/creative-advertising/print-advertising.webp",
+        "points": [
+          "Deliverables : Print ad designs, brochures, flyers, posters, and print-ready files optimized for high-quality output",
+          "Outcome : Strong offline presence that builds trust and increases brand visibility"
+        ]
+      },
+      {
+        "id": "outdoor-advertising",
+        "title": "Outdoor Advertising",
+        "desc": "Design high-visibility outdoor advertising materials like hoardings, billboards, and banners that grab attention and promote your brand effectively in high-traffic areas.",
+        "image": "/service-inner/creative-advertising/outdoor-advertising.webp",
+        "points": [
+          "Deliverables : Billboard designs, hoardings, banners, and outdoor creatives optimized for large-scale visibility.",
+          "Outcome : Maximum brand exposure in public spaces with strong audience recall"
+        ]
+      },
+      {
+        "id": "tv-commercials",
+        "title": "TV Commercials",
+        "desc": "Produce engaging TV commercials that deliver your brand story with strong visuals and messaging, helping you reach a wider audience and create lasting impressions..",
+        "image": "/service-inner/creative-advertising/tv-commercials.webp",
+        "points": [
+          "Deliverables : TV ad scripts, video production, editing, and broadcast-ready commercial formats",
+          "Outcome : Powerful storytelling that increases brand awareness and audience engagement"
+        ]
+      },
+      {
+        "id": "storyboarding",
+        "title": "Storyboarding",
+        "desc": "Create detailed storyboards that visually plan your advertising concepts, ensuring clarity in execution and alignment between creative ideas and final production outcomes.",
+        "image": "/service-inner/creative-advertising/storyboarding.webp",
+        "points": [
+          "Deliverables : Scene-by-scene storyboard frames, concept sketches, and visual storytelling layouts",
+          "Outcome : Clear creative direction that improves production quality and campaign success"
+        ]
+      },
+      {
+        "id": "copywriting-services",
+        "title": "Copywriting Services",
+        "desc": "Develop persuasive and engaging copy that communicates your brand message effectively, drives audience action, and enhances the impact of your advertising campaigns.",
+        "image": "/service-inner/creative-advertising/copywriting-services.webp",
+        "points": [
+          "Deliverables : Ad copy, headlines, taglines, scripts, and content aligned with brand voice",
+          "Outcome : Compelling messaging that boosts engagement and conversion rates"
+        ]
+      },
+      {
+        "id": "advertising-campaigns",
+        "title": "Advertising Campaigns",
+        "desc": "Plan and execute strategic advertising campaigns that align with your goals, ensuring consistent messaging, targeted reach, and measurable performance across channels.",
+        "image": "/service-inner/creative-advertising/advertising-campaigns.webp",
+        "points": [
+          "Deliverables : Campaign strategy, creatives, media planning, and performance tracking reports",
+          "Outcome : Integrated campaigns that deliver strong visibility and measurable results"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-marketing",
+    "title": "Digital Marketing",
+    "desc": "Full-stack digital growth under one roof. Strategy, SEO, content, social, email, and analytics working together to attract, nurture, and convert. We plan quarterly, execute weekly, and report in plain English. The result: steady pipeline, clearer attribution, and a system that compounds results instead of one-off campaign spikes month after month.",
+    "hangingBoard": "Grow faster with a digital engine built for revenue. We align strategy, search, and social to attract demand, convert more visitors, and cut wasted spend - so enquiries rise, CPL falls, and every rupee you invest works measurably harder.",
+    "image": "/images/services/digital-marketing.webp",
+    "meta-title": "Digital Marketing Services | SEO, Local SEO & SMO | HJ Sysweb",
+    "meta-desc": "A connected growth system across search and social. Capture intent, build demand, and convert more visitors with dashboards that prove ROI.",
+    "inner-title": "Digital Marketing Services",
+    "inner-desc": "We don’t run isolated tactics - we build a connected growth system. Search captures intent, social builds demand, and on-site UX turns interest into enquiries. You get a simple plan, weekly execution, and dashboards that prove what’s driving leads, sales, and ROI.",
+    "icon":"/gif/digital-marketing.gif",
+    "worktogether":"We design data-backed digital marketing strategies that convert. From SEO to social media and performance ads, we focus on increasing visibility, engagement, and ROI. Our goal is simply turning digital channels into measurable growth opportunities for your business.",
+    "subServices": [
+      {
+        "id": "seo",
+        "title": "SEO",
+        "desc": "Improve your website’s visibility on search engines with advanced SEO strategies, helping you rank higher, attract quality traffic, and generate consistent organic leads.",
+        "image": "/service-inner/digital-marketing/seo.webp",
+        "points": [
+          "Built for : sustained, qualified traffic and lower acquisition costs.",
+          "What we improve: technical health, search intent coverage, internal linking, and click-through.",
+          "Playbook : fix speed & indexing → build topic clusters → earn relevant links → optimize titles/snippets by CTR.",
+          "What you see : rising non-brand clicks, keywords in Top-3, longer sessions, and leads attributed to organic."
+        ]
+      },
+      {
+        "id": "local-seo",
+        "title": "Local SEO",
+        "desc": "",
+        "image": "/service-inner/digital-marketing/local-seo.webp",
+        "points": [
+          "Built for : calls, visits, and bookings from nearby customers.",
+          "What we improve: Google Business Profile, NAP citations, reviews, and location/service pages.",
+          "Playbook : GBP overhaul → review engine → city/area pages with FAQs → map-pack tracking.",
+          "What you see : more “near me” visibility, 3-Pack wins, direction requests, and call logs tied to revenue."
+        ]
+      },
+      {
+        "id": "smo",
+        "title": "Social Media Optimization",
+        "desc": "",
+        "image": "/service-inner/digital-marketing/smo.webp",
+        "points": [
+          "Built for : awareness that converts - community + content that fuels paid and organic.",
+          "What we improve : content themes, creative cadence, hooks, and on-platform CTAs.",
+          "Playbook : audience research → thumb-stopping creatives (reels/carousels) → offer testing → UTM-tracked landing journeys.",
+          "What you see : growing reach and saves, qualified traffic from social, lower retargeting CPA, and more enquiries."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "performance-marketing",
+    "title": "Performance Marketing",
+    "desc": "Profit-first ad management across Google, Meta, and LinkedIn. We rebuild structure, sharpen targeting, test creative and offers, and align landing pages for higher quality scores and conversion. Budgets move to winners daily. Expect lower Cost Per Lead, stronger ROAS, and decision-making based on dashboards, not guesswork so growth is predictable and profitable.",
+    "hangingBoard": "Scale profitably with ads engineered for ROI. We rebuild structure, sharpen targeting, and align creative with landing pages then optimize daily. Expect lower CPL, stronger ROAS, and a predictable pipeline powered by testing, automation, and dashboards you understand.",
+    "image": "/images/services/performance-marketing.webp",
+    "meta-title": "Performance Marketing | Google Ads, Meta & CRO | HJ Sysweb",
+    "meta-desc": "Profit-first campaigns. Rebuilt accounts, testing, landing pages, and automation that lower CPL, raise ROAS, and create a predictable pipeline.",
+    "inner-title": "Performance Marketing Services",
+    "inner-desc": "We don’t “run ads.” We build a revenue system. Search captures high intent, paid social creates demand, and conversion/automation turn clicks into customers. You get a clear 90-day plan, daily optimizations, and plain-English reporting that ties spend to pipeline and profit.",
+     "icon":"/gif/performance-marketing.gif",
+     "worktogether":"Our performance marketing strategies are built to deliver measurable ROI. We combine analytics, targeting, and optimization to ensure every ad, click, and conversion drives value. From search to social, we help brands maximize revenue and achieve data-backed digital growth.",
+    "subServices": [
+      {
+        "id": "google-ads",
+        "title": "Google Ads Management",
+        "desc": "Run high-performing Google Ads campaigns that target intent-driven users, increase website traffic, and generate qualified leads with optimized bidding and ad strategies.",
+        "image": "/service-inner/performance-marketing/google-ads-management.webp",
+        "points": [
+          "Outcome : High-quality leads, better ROI, and consistent performance from paid campaigns"
+        ]
+      },
+      {
+        "id": "meta-ads",
+        "title": "Meta Ads Management",
+        "desc": "Create and manage Facebook and Instagram ad campaigns that engage your audience, boost brand awareness, and drive conversions with precise targeting and creative strategies.",
+        "image": "/service-inner/performance-marketing/meta-ads-management.webp",
+        "points": [
+          "Outcome : Increased reach, engagement, and conversions across Meta advertising platforms"
+        ]
+      },
+      {
+        "id": "linkedin-ads",
+        "title": "LinkedIn Ads",
+        "desc": "Execute LinkedIn ad campaigns focused on B2B targeting, helping you reach decision-makers, generate quality leads, and build strong professional brand presence.",
+        "image": "/service-inner/performance-marketing/linkedin-ads.webp",
+        "points": [
+          "Outcome : High-quality B2B leads and improved brand authority in your industry"
+        ]
+      },
+      {
+        "id": "cro",
+        "title": "Conversion Rate Optimization (CRO)",
+        "desc": "Improve your website performance by analyzing user behavior and optimizing key elements to increase conversions, enhance user experience, and reduce drop-offs.",
+        "image": "/service-inner/performance-marketing/conversion-rate-optimization.webp",
+        "points": [
+          "Outcome : Higher conversion rates and better user engagement across your website"
+        ]
+      },
+      {
+        "id": "lpo",
+        "title": "Landing Page Optimization",
+        "desc": "Optimize landing pages with better design, messaging, and structure to increase conversions, reduce bounce rates, and maximize the effectiveness of your marketing campaigns.",
+        "image": "/service-inner/performance-marketing/landing-page-optimization.webp",
+        "points": [
+          "Outcome : Improved conversion rates and better campaign performance results"
+        ]
+      },
+      {
+        "id": "marketing-automation",
+        "title": "Marketing Automation",
+        "desc": "Implement marketing automation systems to streamline workflows, nurture leads, and improve efficiency by automating repetitive marketing tasks and communication processes.",
+        "image": "/service-inner/performance-marketing/marketing-automation.webp",
+        "points": [
+          "Outcome : Improved efficiency, better lead nurturing, and higher conversion opportunities"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "website-development",
+    "title": "Website Development",
+    "desc": "Fast, conversion-focused websites that load under two seconds and sell your offer. We design, write, and build in WordPress or Next.js, integrate forms, WhatsApp, and analytics, and launch with SEO best practices. Clean code, strong security, and scalable architecture keep your site reliable today and ready for tomorrow to scale.",
+    "hangingBoard": "Launch a fast conversion-ready website that sells. We design, write, and build scalable sites with code, clear messaging, and tracking - so pages load quickly, rank better, and turn visitors into enquiries, orders, and revenue you can measure weekly.",
+    "image": "/images/services/website-development.webp",
+    "meta-title": "Website Development | WordPress, Webflow & E-commerce | HJ Sysweb",
+    "meta-desc": "Fast, secure, conversion-focused websites. UX, copy, and tracking baked in built to rank, load under 2.5s, and turn clicks into enquiries.",
+    "inner-title": "Website Development Services",
+    "inner-desc": "Your website should be a sales engine, not a brochure. We plan the structure, craft persuasive copy and UX, build on reliable tech, and wire in analytics and automation. Expect faster load times, higher conversions, and clean hand-off to marketing for measurable growth.",
+     "icon":"/gif/web-dev.gif",
+     "worktogether":"HJ Sysweb builds websites that inspire confidence and deliver performance. From custom designs to robust backend systems, we combine creativity with cutting-edge technology to create responsive, secure, and SEO-ready websites that help brands grow, engage audiences, and stand out online.",
+    "subServices": [
+      {
+        "id": "wordpress",
+        "title": "WordPress Development",
+        "desc": "Build powerful and easy-to-manage WordPress websites with custom themes, SEO-friendly structure, and scalable features designed to support your business growth.",
+        "image": "/service-inner/website-development/wordpress-development.webp",
+        "points": [
+          "What we do : custom themes/ACF blocks, schema, SEO basics, form/CRM/WhatsApp integrations, multilingual, staging & QA.",
+          "Outcome : A flexible, user-friendly website that supports growth and easy content management"
+        ]
+      },
+      {
+        "id": "webflow",
+        "title": "Webflow Development",
+        "desc": "Create visually stunning and high-performing Webflow websites with clean design, smooth animations, and responsive layouts tailored for modern digital experiences.",
+        "image": "/service-inner/website-development/webflow-development.webp",
+        "points": [
+          "What we do : component libraries, CMS collections, interactions, SEO setup, Airtable/Make/Zapier automations.",
+          "Outcome : A modern, visually engaging website with smooth performance and scalability"
+        ]
+      },
+      {
+        "id": "ecommerce",
+        "title": "E-commerce Website Design",
+        "desc": "Design conversion-focused e-commerce websites that deliver seamless shopping experiences, optimized product pages, and secure checkout for increased online sales.",
+        "image": "/service-inner/website-development/ecommerce-website-design.webp",
+        "points": [
+          "What we do : Shopify/Woo architecture, product PDP/PLP UX, checkout optimization, payments/shipping, reviews, upsell/cross-sell flows.",
+          "Outcome : An optimized online store that increases sales and enhances customer experience"
+        ]
+      },
+      {
+        "id": "ui-ux",
+        "title": "UI/UX Design",
+        "desc": "Design intuitive user interfaces and engaging experiences that improve usability, increase interaction, and guide users toward desired actions effectively.",
+        "image": "/service-inner/website-development/ui-ux-design.webp",
+        "points": [
+          "What we do : user journeys, wireframes → hi-fi UI, micro-copy, design systems, accessibility checks, clickable prototypes.",
+          "Outcome : Improved user experience leading to higher engagement and better conversions"
+        ]
+      },
+      {
+        "id": "responsive",
+        "title": "Responsive Website Design",
+        "desc": "Develop responsive websites that adapt seamlessly across all devices, ensuring consistent user experience, faster loading, and improved performance on mobile and desktop.",
+        "image": "/service-inner/website-development/responsive-website-design.webp",
+        "points": [
+          "What we do : fluid grids, touch targets, image/video optimization, device testing, Core Web Vitals alignment.",
+          "Outcome : Better user experience across devices with improved engagement and retention"
+        ]
+      },
+      {
+        "id": "speed-optimization",
+        "title": "Website Speed Optimization",
+        "desc": "Optimize your website speed by improving loading time, performance, and technical efficiency to enhance user experience and boost search engine rankings.",
+        "image": "/service-inner/website-development/website-speed-optimization.webp",
+        "points": [
+          "What we do : LCP/CLS fixes, lazy loading, code splitting, asset compression, CDN, server tuning, third-party audit.",
+          "Outcome : Faster website performance with better SEO rankings and user satisfaction."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ecommerce-solutions",
+    "title": "E-commerce Solutions",
+    "desc": "Storefronts built to convert and scale. We set up catalogs, payments, shipping, and automation; craft product pages that rank and persuade; and run cart recovery, upsell, and remarketing flows. From Shopify/Woo to custom stacks, your store gets faster growth, better margins, and clearer reporting from day one with less waste.",
+    "hangingBoard": "Sell more on every marketplace. We set up stores, fix listings, manage ads, and automate fulfillment - so products rank, carts convert, and margins grow. Clear dashboards, compliant operations, and campaigns built for purchases and measurable ROI each month.",
+    "image": "/images/services/ecommerce-solutions.webp",
+    "meta-title": "E-commerce Solutions | Amazon, Flipkart & Listing SEO | HJ Sysweb",
+    "meta-desc": "Marketplace setup, A+ content, PPC, FBA compliance, and product SEO. Improve rank, conversion, and ROAS while protecting margins.",
+    "inner-title": "E-commerce Solutions Services",
+    "inner-desc": "We build a sales system across marketplaces - not just listings. From onboarding and compliance to SEO-rich content and profit-first ads, we make sure your products are easy to find, trust, and buy. Expect higher rank, healthier margins, and repeatable growth you can track.",
+     "icon":"/gif/e-commerce-sol.gif",
+     "worktogether":"E-commerce success begins with smart technology and strategy. HJ Sysweb creates scalable online stores that combine design excellence with high performance. We optimize speed, UX, and functionality to help businesses expand reach, increase sales, and deliver a superior customer journey.",
+    "subServices": [
+      {
+        "id": "amazon",
+        "title": "Amazon Seller Services",
+        "desc": "Set up and optimize your Amazon seller account with strategic product listings, keyword optimization, and account management to increase visibility and drive consistent sales growth.",
+        "image": "/service-inner/ecommerce-solutions/amazon-seller-services.webp",
+        "points": [
+          "What we do : account setup, Brand Registry, catalog build, A+ Content, keyword research, reviews strategy, pricing/coupons, FBA/FBM setup, and PPC (SP/SB/SD) with ACOS guardrails.",
+          "Outcome : Increased product visibility, higher sales, and improved marketplace performance"
+        ]
+      },
+      {
+        "id": "flipkart",
+        "title": "Flipkart Seller Setup",
+        "desc": "Launch your Flipkart seller account with proper setup, product cataloging, and optimization to ensure smooth operations and maximum visibility in the marketplace.",
+        "image": "/service-inner/ecommerce-solutions/flipkart-seller-setup.webp",
+        "points": [
+          "What we do : GST/KYC, catalog mapping, listing QC, Smart Fulfillment, promotions, and Flipkart Ads with performance dashboards.",
+          "Outcome : Faster setup, better visibility, and increased sales on Flipkart platform"
+        ]
+      },
+      {
+        "id": "meesho",
+        "title": "Meesho Glowroad Services",
+        "desc": "Start and manage your Meesho and GlowRoad seller presence with optimized product listings, pricing strategies, and catalog management to maximize reach and profitability.",
+        "image": "/service-inner/ecommerce-solutions/meesho-glowroad-services.webp",
+        "points": [
+          "What we do : onboarding, catalog/import, attribute hygiene, competitive pricing, logistics alignment, promo calendar, and return-rate reduction.",
+          "Outcome : Improved reach, higher order volume, and consistent marketplace growth"
+        ]
+      },
+      {
+        "id": "product-listing",
+        "title": "Product Listing Optimization",
+        "desc": "Optimize product listings with SEO-friendly titles, descriptions, images, and keywords to improve search visibility, attract buyers, and increase conversion rates.",
+        "image": "/service-inner/ecommerce-solutions/product-listing-optimization.webp",
+        "points": [
+          "What we do : keyword-led titles, bullets, and descriptions; image stacks, infographics, and video; attributes/search terms; compliance checks across Amazon/Flipkart/Meesho/Shopify.",
+          "Outcome : Better product ranking, increased clicks, and higher conversion rates"
+        ]
+      },
+      {
+        "id": "fba",
+        "title": "FBA Compliance Services",
+        "desc": "Ensure your products meet Amazon FBA compliance standards with proper packaging, labeling, and documentation to avoid penalties and ensure smooth fulfillment operations.",
+        "image": "/service-inner/ecommerce-solutions/fba-compliance-services.webp",
+        "points": [
+          "What we do : prep/pack/label, barcode & cartonization, dangerous-goods review, shipment creation, reconciliation, returns processing, and account-health monitoring.",
+          "Outcome : Smooth fulfillment process with reduced errors and improved delivery efficiency"
+        ]
+      },
+      {
+        "id": "ecommerce-marketing",
+        "title": "E-commerce Marketing",
+        "desc": "Drive traffic and sales through strategic e-commerce marketing using ads, SEO, and promotional campaigns to increase brand visibility and maximize online revenue.",
+        "image": "/service-inner/ecommerce-solutions/ecommerce-marketing.webp",
+        "points": [
+          "What we do : Amazon Ads, Flipkart Ads, Google Shopping, Meta remarketing, influencer/UGC, email/WhatsApp flows, coupons, and LTV programs all UTM/tracked.",
+          "Outcome : Higher traffic, increased sales, and improved return on investment"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mobile-app-development",
+    "title": "Mobile App Development",
+    "desc": "Launch mobile apps users love and keep. We design intuitive journeys, build in Flutter or native, connect APIs and payments, and instrument analytics for growth. Quality assurance, performance tuning, and store optimization are standard. From MVP to scale, we ship updates fast and measure retention, engagement, and revenue over time.",
+    "hangingBoard": "Launch an app people love to use - and pay for. We design, build, and grow mobile apps with fast performance, clean UX, and measurable funnels, so installs turn into retention, reviews, and revenue while your costs stay predictable and efficient.",
+    "image": "/images/services/mobile-app-development.webp",
+    "meta-title": "Mobile App Development | Flutter, Android & iOS | HJ Sysweb",
+    "meta-desc": "Design, build, and grow premium apps. Smooth UX, clean analytics, ASO, and maintenance, so installs turn into retention and revenue.",
+    "inner-title": "Mobile App Development Services",
+    "inner-desc": "We ship apps that feel premium, load fast, and convert. From product strategy and UI/UX to Flutter/native builds, analytics, ASO, and growth loops - we align features with business goals, shorten time-to-market, and prove ROI with dashboards you understand.",
+     "icon":"/gif/mobile-dev.gif",
+     "worktogether":"We develop high-performing mobile applications that enhance user experience and drive business growth. Our expert team crafts secure, scalable, and intuitive apps for Android and iOS - turning innovative ideas into seamless digital products that engage users and deliver measurable results.",
+    "subServices": [
+      {
+        "id": "flutter",
+        "title": "Flutter App Development",
+        "desc": "Build high-performance cross-platform apps using Flutter that deliver consistent user experience, faster development, and scalable solutions for Android and iOS platforms.",
+        "image": "/service-inner/mobile-app-development/flutter-app-development.webp",
+        "points": [
+          "What we do : architecture, state management, API/payment integration, offline mode, push notifications, CI/CD, QA.",
+          "Outcome : Faster app launch with consistent performance across Android and iOS devices"
+        ]
+      },
+      {
+        "id": "android",
+        "title": "Android App Development",
+        "desc": "Develop robust and scalable Android applications tailored to your business needs with smooth performance, user-friendly design, and advanced functionalities.",
+        "image": "/service-inner/mobile-app-development/android-app-development.webp",
+        "points": [
+          "What we do : Kotlin/Jetpack, clean architecture, permissions/privacy, device coverage, Play integrity, analytics events.",
+          "Outcome : Reliable Android apps that enhance engagement and improve user experience"
+        ]
+      },
+      {
+        "id": "ios",
+        "title": "iOS App Development",
+        "desc": "Create high-quality iOS applications with premium design, secure architecture, and seamless performance to deliver an exceptional user experience on Apple devices.",
+        "image": "/service-inner/mobile-app-development/iOS-app-development.webp",
+        "points": [
+          "What we do : Swift/SwiftUI, HIG-aligned UI, iCloud/keychain, in-app purchases, TestFlight pipelines, App Review readiness.",
+          "Outcome : High-performing iOS apps that ensure smooth experience and strong user retention"
+        ]
+      },
+      {
+        "id": "ui-ux-apps",
+        "title": "UI/UX Design for Apps",
+        "desc": "Design intuitive and engaging mobile app interfaces that enhance usability, improve navigation, and create a seamless experience that keeps users engaged.",
+        "image": "/service-inner/mobile-app-development/ui-ux-design-for-apps.webp",
+        "points": [
+          "What we do : product discovery, user journeys, wireframes → hi-fi UI, micro-copy, prototypes, accessibility checks.",
+          "Outcome : Better user experience leading to higher engagement and improved retention"
+        ]
+      },
+      {
+        "id": "app-store",
+        "title": "App Store Optimization(ASO)",
+        "desc": "Optimize your app store listings with keywords, visuals, and descriptions to improve visibility, increase downloads, and enhance app discoverability.",
+        "image": "/service-inner/mobile-app-development/app-store-optimization.webp",
+        "points": [
+          "What we do : keyword research, titles/subtitles, descriptions, screenshots & video, A/B testing (Store Listing/CPP), ratings strategy.",
+          "Outcome : Higher app visibility, increased downloads, and improved ranking in app stores"
+        ]
+      },
+      {
+        "id": "app-support",
+        "title": "App Maintenance & Support",
+        "desc": "Provide ongoing app maintenance, updates, and technical support to ensure smooth performance, security, and continuous improvement of your mobile applications.",
+        "image": "/service-inner/mobile-app-development/app-maintenance-support.webp",
+        "points": [
+          "What we do : crash/error monitoring, OS/device updates, security patches, performance tuning, feature sprints, analytics reviews.",
+          "Outcome : Stable app performance with improved reliability and long-term user satisfaction"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "growth-marketing",
+    "title": "Growth Marketing",
+    "desc": "A repeatable system for compounding results. We combine research, CRO, content, lifecycle emails, and paid experiments to find traction, then double down. Weekly sprints deliver new tests; monthly reviews move the budget to winners. The aim: more qualified leads and revenue every month, with clear attribution and lower acquisition cost overall.",
+    "hangingBoard": "Build a repeatable growth engine, not one-off campaigns. We unify research, offers, funnels, and automation to attract demand, convert more visitors, and keep customers returning so leads rise, acquisition cost falls, and revenue compounds predictably month after month.",
+    "image": "/images/services/growth-marketing.webp",
+    "meta-title": "Growth Marketing | Lead Gen, Funnels, CRM & Automation | HJ Sysweb",
+    "meta-desc": "A repeatable engine for compounding results. Offers, funnels, email/WhatsApp automation, and experiments that lower CAC and increase LTV.",
+    "inner-title": "Growth Marketing Services",
+    "inner-desc": "We design a connected system that attracts the right audience, guides them through a clear funnel, and nurtures them into loyal customers. Strategy, execution, and measurement run in weekly sprints - so you see steady lead flow, lower CPL, and growth you can track.",
+     "icon":"/gif/growth-market.gif",
+     "worktogether":"Our growth marketing strategies blend creativity with analytics to accelerate measurable results. We focus on customer acquisition, engagement, and retention through data-driven campaigns that amplify visibility, optimize conversions, and turn marketing investments into sustainable long-term business growth.",
+    "subServices": [
+      {
+        "id": "lead-gen",
+        "title": "Lead Generation Services",
+        "desc": "Generate high-quality leads through targeted campaigns, optimized funnels, and data-driven strategies that attract the right audience and convert them into potential customers.",
+        "image": "/service-inner/growth-marketing/lead-gen-services.webp",
+        "points": [
+          "Outcome : Consistent flow of qualified leads that drive business growth and sales"
+        ]
+      },
+      {
+        "id": "sales-funnel",
+        "title": "Sales Funnel Design",
+        "desc": "Design optimized sales funnels that guide users from awareness to conversion, ensuring a smooth journey that maximizes engagement and increases conversion rates.",
+        "image": "/service-inner/growth-marketing/sales-funnel-design.webp",
+        "points": [
+          "Outcome : Improved customer journey with higher conversions and better sales performance"
+        ]
+      },
+      {
+        "id": "client-retention",
+        "title": "Client Retention Strategies",
+        "desc": "Develop strategies to retain existing customers through engagement, personalization, and loyalty programs that improve customer satisfaction and long-term value.",
+        "image": "/service-inner/growth-marketing/client-retention-strategies.webp",
+        "points": [
+          "Outcome : Stronger customer relationships with increased retention and lifetime value"
+        ]
+      },
+      {
+        "id": "email-automation",
+        "title": "Email Marketing Automation",
+        "desc": "Automate email campaigns to nurture leads, engage customers, and drive conversions with personalized messaging and strategic workflows across the customer lifecycle.",
+        "image": "/service-inner/growth-marketing/email-marketing-automation.webp",
+        "points": [
+          "Outcome : Better engagement, improved lead nurturing, and increased conversion rates"
+        ]
+      },
+      {
+        "id": "crm-setup",
+        "title": "CRM Setup & Integration",
+        "desc": "Set up and integrate CRM systems to manage leads, track customer interactions, and streamline sales processes for better efficiency and improved decision-making.",
+        "image": "/service-inner/growth-marketing/crm-setup-integration.webp",
+        "points": [
+          "Outcome : Improved lead management and streamlined sales operations for better results"
+        ]
+      },
+      {
+        "id": "roi-campaigns",
+        "title": "ROI Marketing Campaigns",
+        "desc": "Execute data-driven marketing campaigns focused on maximizing return on investment by optimizing targeting, messaging, and performance tracking across channels.",
+        "image": "/service-inner/growth-marketing/roi-marketing-campaigns.webp",
+        "points": [
+          "Outcome : Higher ROI with improved campaign performance and measurable business growth"
+        ]
+      }
+    ]
+  }
+]

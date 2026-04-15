@@ -1,0 +1,286 @@
+/* ===== Section base ===== */
+.wt-wrap {
+      position: relative;
+      color: #fff;
+      overflow: hidden;
+      isolation: isolate;
+      /* background-image: url('/Service-page/yellow-bg.png'); */
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+}
+
+/* background image covers the whole section */
+.wt-bg {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+}
+
+.wt-bg-img {
+      object-fit: cover;
+      opacity: .9;
+}
+
+/* ===== Top rounded box ===== */
+.wt-top {
+      max-width: 80%;
+      margin: 0 auto clamp(20px, 8vw, 20px);
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: clamp(20px, 3vw, 40px);
+      padding: 50px;
+      /* background: rgba(255, 255, 255, 0.03); */
+      /* box-shadow: inset 0 0 120px rgba(252, 193, 15, .06); */
+      /* backdrop-filter: blur(1px); */
+      position: relative;
+      border-radius: 50px;
+}
+
+.wt-top::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 50px;
+      /* same radius */
+      padding: 5px;
+      /* border thickness */
+      background: linear-gradient(180deg,
+                  #fcc10f 0%,
+                  rgba(252, 193, 15, 0) 67.79%);
+      -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      z-index: 1;
+}
+
+
+
+.wt-heading {
+      margin: 0 0 16px;
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-weight: 800;
+      font-size: clamp(22px, 2.6vw, 34px);
+      text-align: center;
+}
+
+.wt-highlight {
+      color: #FCC10F;
+}
+
+.wt-stats {
+      display: flex;
+      gap: clamp(24px, 6vw, 60px);
+     justify-content: center;
+}
+
+.wt-stat {
+      display: flex;
+      flex-direction: column;
+}
+
+.wt-num {
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-weight: 800;
+      font-size: clamp(40px, 6vw, 76px);
+      color: #FCC10F;
+      line-height: 1;
+}
+
+.wt-lab {
+      margin-top: 8px;
+      font-family: "Belgrano", serif;
+      font-size: clamp(14px, 1.6vw, 18px);
+      color: #e9e9e9;
+}
+
+.wt-para {
+      margin: 0;
+      font-family: "Belgrano", serif;
+      font-size: clamp(14px, 1.3vw, 16px);
+      line-height: 1.9;
+      color: #e8e8e8;
+}
+
+.wt-sep {
+      margin: clamp(12px, 1.8vw, 16px) 0;
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, rgba(252, 193, 15, .25), transparent);
+}
+
+.wt-top-col.wt-top-left {
+  border-style: solid;
+  border-width: 0 1px 0 0; /* right side only */
+  /* vertical gradient on the right border */
+  border-image: linear-gradient(to bottom, rgba(252,193,15,.25), rgba(252,193,15,0)) 1;
+}
+
+
+/* ===== Big callout ===== */
+.wt-callout {
+      position: relative;
+      max-width: 1400px;
+      margin: 0 auto;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: clamp(24px, 4vw, 50px);
+      padding: 30px clamp(12px, 4vw, 24px);
+}
+
+/* Shared line styling */
+.wt-line {
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-weight: 700;
+      letter-spacing: .02em;
+      color: #fff;
+      line-height: 1;
+      /* tight for the hero vibe */
+      text-transform: uppercase;
+      word-break: break-word;
+      /* avoid overflow on tiny screens */
+}
+
+/* Fluid sizes via clamp */
+/* Desktop ~180px → tablet ~96px → mobile ~42px */
+.wt-line-1,
+.wt-line-2 {
+      font-size: clamp(42px, 12vw, 120px);
+}
+
+/* FAB between the two lines (desktop/tablet) */
+.wt-fab {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: grid;
+      place-items: center;
+      width: clamp(72px, 9vw, 150px);
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      background: #FCC10F;
+      color: #000;
+      text-decoration: none;
+      box-shadow:
+            0 14px 36px rgba(252, 193, 15, .35),
+            inset 0 0 0 1px rgba(0, 0, 0, .07);
+      transition: transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
+      z-index: 2;
+}
+
+.wt-fab:hover {
+      transform: translate(-50%, -50%) scale(1.04);
+      box-shadow:
+            0 18px 44px rgba(252, 193, 15, .45),
+            inset 0 0 0 1px rgba(0, 0, 0, .09);
+      background: #000;
+      color: #fff;
+}
+
+.wt-fab-txt {
+      font-family: "Belgrano", serif;
+      font-size: clamp(12px, 1.4vw, 18px);
+      line-height: 1.2;
+      font-weight: 400;
+      text-align: center;
+      text-transform: capitalize;
+}
+
+.wt-fab-arrow {
+      display: block;
+      margin-top: 4px;
+      font-weight: 700;
+}
+
+.wt-fab-arrow img {
+      width: clamp(12px, 1.4vw, 26px);
+      height: auto;
+      margin-left: 8px;
+      vertical-align: middle;
+}
+
+.arrow-img {
+      width: clamp(14px, 1.6vw, 20px);
+      height: auto;
+      transition: filter .3s ease;
+}
+
+.wt-fab:hover .arrow-img {
+      filter: brightness(0) invert(1);
+}
+
+/* ---------- Breakpoints ---------- */
+
+/* Laptops and below: give the fab a little more space between lines */
+@media (max-width: 1200px) {
+      .wt-callout {
+            gap: clamp(20px, 4vw, 40px);
+      }
+}
+
+/* Tablets: slightly looser line-height so letters don't touch */
+@media (max-width: 992px) {
+      .wt-line {
+            line-height: 1.05;
+      }
+}
+
+/* Phones: stack tighter and move FAB below the first line to avoid overlap */
+@media (max-width: 680px) {
+      .wt-fab {
+            position: static;
+            /* take it out of absolute center */
+            transform: none;
+            margin: 8px auto;
+            /* sits between the two lines */
+      }
+
+      .wt-callout {
+            gap: 0;
+      }
+}
+
+/* Small phones: reduce spacing further */
+@media (max-width: 420px) {
+      .wt-callout {
+            gap: 0;
+      }
+
+      .wt-fab {
+            width: clamp(64px, 22vw, 84px);
+      }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+      .wt-top {
+            grid-template-columns: 1fr;
+      }
+}
+
+@media (max-width: 640px) {
+      .wt-top {
+            padding: 16px;
+            border-radius: 14px;
+            min-width: 90%;
+      }
+
+      .wt-fab {
+            width: 88px;
+      }
+
+      .wt-heading {
+            text-align: center;
+      }
+
+      .wt-stats {
+            justify-content: center;
+      }
+}

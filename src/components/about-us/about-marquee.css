@@ -1,0 +1,101 @@
+/* ===== Slanted endless marquee ===== */
+.about-marquee {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+      margin-top: 20px;
+  z-index: 0;
+  transform: rotate(var(--marquee-angle, -6deg));
+}
+
+.about-marquee-image {
+    position: absolute;
+}
+
+/* icon above the strip */
+.about-marquee__icon {
+  position: absolute;
+    top: -90px;
+    left: 40px;                 
+  width: 130px;
+  height: 130px;
+    transform: rotate(20deg);
+  transform-origin: center;
+}
+
+.about-marquee__track {
+  display: inline-flex;
+  white-space: nowrap;
+  will-change: transform;
+  animation: about-marquee-move var(--marquee-speed, 24s) linear infinite;
+}
+
+.about-marquee__item {
+  display: inline-block;
+  padding-right: 3rem;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-size: 39px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  
+}
+
+@keyframes about-marquee-move {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-33.333%); } /* 3 copies => shift by one width */
+}
+
+.about-marquee:hover .about-marquee__track {
+  animation-play-state: paused; /* optional: pause on hover */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-marquee__track { animation: none; }
+}
+
+@media (max-width: 992px) {
+  .about-marquee {
+    transform: rotate(calc(var(--marquee-angle, -6deg) * 0.6));
+    padding-block: clamp(8px, 2vw, 14px);
+  }
+  .about-marquee__item {
+    letter-spacing: 0.04em;
+  }
+  .about-marquee__icon {
+    left: clamp(8px, 2.5vw, 24px);
+  }
+}
+
+/* ----- Mobile (<= 768px) ----- */
+@media (max-width: 768px) {
+  .about-marquee {
+    /* nearly flat so text doesn’t clip on narrow screens */
+    transform: rotate(calc(var(--marquee-angle, -6deg) * 0.35));
+  }
+  .about-marquee__item {
+    font-size: clamp(16px, 4.2vw, 24px);
+    padding-right: clamp(0.75rem, 2.6vw, 1.5rem);
+  }
+  .about-marquee__icon {
+    top: clamp(-46px, -6vw, -36px);
+    left: clamp(8px, 3vw, 16px);
+    width: clamp(40px, 8.5vw, 64px);
+    height: clamp(40px, 8.5vw, 64px);
+    opacity: 0.9;
+  }
+}
+
+/* ----- Small phones (<= 480px) ----- */
+@media (max-width: 480px) {
+  .about-marquee {
+    transform: rotate(0deg);      /* fully flat for safety */
+    padding-block: 10px;
+  }
+  .about-marquee__item {
+    font-size: clamp(15px, 5vw, 20px);
+    letter-spacing: 0.03em;
+  }
+  .about-marquee__icon { display: none; }  /* optional: hide if it crowds */
+}

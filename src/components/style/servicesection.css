@@ -1,0 +1,344 @@
+/* Section */
+.service {
+  padding: 10px;
+  color: #fff;
+}
+
+.service-head {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 50px;
+}
+
+.service-head h2 {
+  font-size: 49px;
+  line-height: 1.15;
+  margin: 0 0 8px;
+  font-family: "Space Grotesk";
+  font-weight: 700;
+}
+
+/* .service-head h2::after {
+  content: "";
+  position: absolute;
+  left: 56.5%;
+
+  bottom: -24.5%;
+  width: 134px;
+  height: 14px;
+
+  background: url(/blog/title-vector.png) no-repeat center;
+  background-size: contain;
+} */
+
+.service-head p {
+  font-size: 20px;
+  margin: 0 auto;
+  font-family: "Belgrano";
+  font-weight: 400;
+}
+
+.service-grid {
+  width: 90%;
+  overflow: hidden;
+  margin: auto;
+}
+
+/* Slick spacing */
+.service-slider .slide-pad {
+  padding: 0 14px;
+}
+
+.service-slider .slick-list {
+  overflow: visible;
+}
+
+/* allow ring to be visible at edges */
+.service-slider .slick-dots li button:before {
+  color: #fff;
+  opacity: 0.45;
+}
+
+.service-slider .slick-dots li.slick-active button:before {
+  opacity: 1;
+}
+
+.service-slider .slick-arrow {
+  z-index: 2;
+}
+
+/* Card */
+.service-card {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Title alternation via order */
+.service-card.title-top .service-body {
+  order: -1;
+}
+
+.service-card.title-bottom .service-body {
+  order: 1;
+}
+
+.service-body {
+  padding: 14px 16px 10px;
+}
+
+.service-title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  margin-left: 30px;
+}
+
+.highlight-word {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.highlight-word::after {
+  content: "";
+  display: block;
+  width: 100px; /* adjust width to match image */
+  height: 10px; /* height of vector */
+  margin-top: 2px;
+  /* background: url("/title-vector.webp") no-repeat center/contain; */
+}
+
+/* Media (image area) */
+.service-media {
+  position: relative;
+  flex: 1;
+  /* fill remaining height */
+  border-radius: 20px;
+  overflow: hidden;
+  /* background: rgba(0, 0, 0, 0.4); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-media img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.04);
+  transition: transform 0.6s ease;
+  border-radius: 20px;
+}
+
+.service-card:hover .service-media img {
+  transform: scale(1.08);
+}
+
+/* Rotating ring on IMAGE ONLY */
+.service-ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.service-ring-track,
+.service-ring-runner {
+  vector-effect: non-scaling-stroke;
+}
+
+.service-ring-track {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.08);
+  stroke-width: 2;
+}
+
+.service-ring-runner {
+  fill: none;
+  stroke: var(--color-primary, rgba(101, 77, 6, 1));
+  /* gold */
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-dasharray: 10 90;
+  stroke-dashoffset: 0;
+  animation: ring-run 7s linear infinite;
+}
+
+@keyframes ring-run {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+.spider-vector {
+  position: absolute;
+  z-index: 1;
+  /* top: 80%; */
+  left: 108px;
+}
+
+img.spider-big-image {
+  position: relative;
+  top: 180px;
+  right: 55px;
+  animation: spin 18s linear infinite;
+}
+
+img.spider-small-image {
+  position: relative;
+  left: 40px;
+  animation: spin 25s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Optional: reverse direction keyframes */
+@keyframes spin-rev {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .spider-img {
+    animation: none;
+  }
+}
+
+
+.spark-vector {
+  /* margin-bottom: 1px; */
+  position: relative;
+  bottom: 80px;
+}
+
+img.spark-vector-image {
+  position: absolute;
+  right: 0px;
+  /* top: 10px; */
+  height: 200px;
+}
+
+/* Responsive sizes */
+@media (max-width: 1600px) {
+img.spider-small-image{
+      left: 40px !important;
+      width: 80px;
+}
+.spider-vector-cta{
+  right: 0 !important;
+}
+img.spider-big-image{
+  right: 30px !important;
+      width: 110px;
+}
+}
+
+@media (max-width: 1300px) {
+.service-title{
+  font-size: 24px;
+}
+.service-head p{
+  font-size: 18px;
+}
+}
+
+@media (max-width: 1024px) {
+  .service-card {
+    height: 440px;
+  }
+  .spider-vector{
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card {
+    height: 420px;
+  }
+
+  .service-slider .slide-pad {
+    padding: 0 10px;
+  }
+
+  .service-head h2 {
+    font-size: 25px;
+  }
+
+  .service-head h2::after {
+    display: none !important;
+    content: none !important;
+  }
+
+  .service-head p {
+    font-size: 12px;
+    margin: 0 auto;
+    font-family: "Belgrano";
+    font-weight: 400;
+  }
+
+  .spider-vector,
+  img.spark-vector-image {
+    display: none;
+  }
+  .service-title{
+    font-size: 24px;
+  }
+}
+
+/* mobile: force inner slide to full width */
+@media (max-width: 768px) {
+  .service-grid {
+    width: 100%;
+  }
+
+  .service-slider .slick-list {
+    overflow: hidden;
+  }
+
+  .service-slider .slick-slide > div {
+    width: 100% !important;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .service-media img {
+    width: 100%;
+    height: auto;
+    max-height: 360px;
+    object-fit: cover;
+  }
+
+  .service-title {
+    margin-left: 0;
+    text-align: center;
+  }
+  img.spark-vector-image{
+    height: 120px ;
+  }
+}

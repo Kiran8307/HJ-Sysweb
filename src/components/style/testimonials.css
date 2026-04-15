@@ -1,0 +1,181 @@
+/* Shell */
+.twrap {
+  position: relative;
+  /* needed for absolute decor */
+  overflow: hidden;
+  /* clip the decor */
+  color: #fff;
+  padding: clamp(24px, 4vw, 40px) clamp(16px, 5vw, 48px);
+}
+
+.thead {
+  max-width: 860px;
+  margin: 0 auto 18px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.approach-text {
+  position: relative;
+  display: inline-block;
+}
+
+.approach-text::after {
+     content: "";
+    position: absolute;
+    left: 78%;
+    transform: translateX(-50%);
+    bottom: -6px;
+    width: 123px;
+    height: 12px;
+    /* background: url(/blog/title-vector.png) no-repeat center; */
+    background-size: contain;
+}
+
+.thead h2 {
+  margin: 0 0 6px;
+  font: 800 clamp(24px, 4vw, 42px)/1.1 "Space Grotesk", system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  margin-bottom: 30px;
+}
+
+.thead p {
+  margin: 0;
+  opacity: .9;
+}
+
+/* Left decorative image */
+.t-decor-img {
+    position: absolute;
+    left: -40px;
+    top: 50%;
+ transform: translateY(-50%) rotate(1deg);
+    /*    width: clamp(275px, 81vw, 500px); */
+    height: auto;
+    /* opacity: .75; */
+    pointer-events: none;
+    user-select: none;
+    /* filter: drop-shadow(0 14px 32px rgba(0, 0, 0, .35)); */
+    z-index: 0;
+  /* behind real content */
+}
+
+/* Viewport with soft fade top/bottom */
+.tviewport {
+  position: relative;
+  z-index: 1;
+  height: clamp(360px, 60vh, 520px);
+  margin: 0 auto;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, transparent 0, black 10%, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, black 10%, black 80%, transparent 100%);
+  border-radius: 20px;
+
+ 
+
+}
+
+/* Track: grid that moves up & down */
+.ttrack {
+  --scroll-dist: 0px;
+  --scroll-duration: 25s;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(260px, 1fr));
+  gap: 24px;
+  padding: 12px;
+
+  /* one direction, no reverse */
+  animation: marquee var(--scroll-duration) linear infinite;
+  will-change: transform;
+}
+.tviewport:hover .ttrack {
+  animation-play-state: paused;
+}
+
+
+
+
+
+
+@keyframes marquee {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    /* move up by full distance */
+    transform: translateY(calc(-1 * var(--scroll-dist)));
+  }
+}
+
+
+
+/* Cards */
+.tcard {
+  border-radius: 18px;
+  padding: 18px;
+  background: rgba(252, 199, 39, 0.05);
+
+}
+
+.tmeta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.tavatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, .12);
+}
+
+.ttext {
+  margin: 10px 0 14px;
+  font: 500 18px/1.8 ui-serif, Georgia, "Times New Roman", serif;
+  letter-spacing: .02em;
+}
+
+.tstars {
+  color: #f6c21a;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.tstars .dim {
+  color: rgba(255, 255, 255, .18);
+}
+
+/* Responsive columns */
+@media (max-width:1200px) {
+  .ttrack {
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+  }
+}
+
+@media (max-width:900px) {
+  .ttrack {
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+  }
+}
+
+@media (max-width:560px) {
+  .ttrack {
+    grid-template-columns: 1fr;
+  }
+
+  .t-decor-img {
+    display: none;
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .ttrack {
+    animation: none !important;
+  }
+}

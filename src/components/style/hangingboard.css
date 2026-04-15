@@ -1,0 +1,391 @@
+  /* ========= Two-stick hanging board (unique: hb2-*) ========= */
+
+  .handing-board.mt {
+    position: relative;
+    margin-top: -7px;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .hb2-wrap {
+    position: relative;
+    padding-top: 86px;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    transform: translateY(16px);
+    margin: auto;
+  }
+
+  .hb2-board {
+  overflow: visible;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.hb2-text {
+  white-space: pre-wrap;           /* keep line breaks/spaces */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  padding-right: 0.2em;            /* avoids last glyph/caret cut */
+}
+
+
+  .hb2-in {
+    animation: hb2-reveal 600ms ease-out forwards;
+  }
+
+  @keyframes hb2-reveal {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  .hb2-in .hb2-board {
+    animation:
+      hb2-attach 600ms cubic-bezier(.2, 1, .2, 1) 520ms forwards,
+      hb2-wobble 1500ms cubic-bezier(.17, .84, .44, 1) 1.2s 1 forwards,
+      hb2-sway 2s ease-in-out 1.8s 1 forwards,
+      hb2-flat 0.1s linear 10s forwards;
+    /* 👈 final reset */
+  }
+
+  /* final reset after ~17s (when sway ends) */
+  @keyframes hb2-flat {
+    from {
+      transform: rotateX(0deg);
+    }
+
+    to {
+      transform: none;
+    }
+  }
+
+  /* default: perspective for animation */
+  .hb2-wrap {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+
+  /* once flat animation is finished, drop perspective */
+  .hb2-wrap.hb2-done {
+    perspective: none;
+    transform-style: flat;
+  }
+
+
+  .hb2-stick-group {
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    height: 0;
+    z-index: 2;
+  }
+
+  /* ✅ fixed the unclosed comment + your custom colors kept */
+  .hb2-stick {
+    width: 12px;
+    height: 88px !important;
+    margin: 0 auto;
+    background: #654D0666;
+    border-radius: 8px;
+    /* box-shadow: inset 0 0 0 1px rgba(255, 193, 15, 0.18); */
+  }
+
+  .hb2-in .hb2-stick-group .hb2-stick {
+    animation: hb2-stick-drop 720ms cubic-bezier(.2, .9, .2, 1) forwards;
+  }
+
+  @keyframes hb2-stick-drop {
+    0% {
+      height: 0;
+    }
+
+    80% {
+      height: 86px;
+    }
+
+    100% {
+      height: 76px;
+    }
+
+    /* tiny settle up */
+  }
+
+  .hb2-knob {
+    position: absolute;
+    top: 72px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #322703;
+    opacity: 0;
+  }
+
+  .hb2-in .hb2-stick-group .hb2-knob {
+    animation: hb2-knob-in 320ms ease-out 420ms forwards;
+  }
+
+  @keyframes hb2-knob-in {
+    from {
+      transform: translate(-50%, -8px) scale(.85);
+      opacity: 0;
+    }
+
+    to {
+      transform: translate(-50%, 0) scale(1);
+      opacity: 1;
+    }
+  }
+
+  /* ===== Board with forward/backward sway ===== */
+  .hb2-board {
+    width: 100%;
+    min-height: 160px;
+    padding: 34px 40px;
+    border-radius: 20px;
+    background: #654D0640;
+    /* border: 1px solid rgba(255,193,15,0.18); */
+    color: #fff;
+    text-align: center;
+    transform-origin: top center;
+    /* 👈 pivot from the top edge */
+    opacity: 0;
+    z-index: 1;
+  }
+
+  /* chain: attach -> wobble once -> continuous sway */
+  /* Board attach + wobble + continuous slow hanging sway */
+  /* attach → wobble → one-time slow sway, then stop */
+  .hb2-in .hb2-board {
+    animation:
+      hb2-attach 600ms cubic-bezier(.2, 1, .2, 1) 520ms forwards,
+      hb2-wobble 1500ms cubic-bezier(.17, .84, .44, 1) 1.2s 1,
+      hb2-sway 14s ease-in-out 2.8s 1 forwards;
+    /* 👈 1 time */
+  }
+
+
+  @keyframes hb2-attach {
+    from {
+      transform: translateY(-14px) scale(.96);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes hb2-wobble {
+    0% {
+      transform: rotateX(0deg);
+    }
+
+    20% {
+      transform: rotateX(-3deg);
+    }
+
+    40% {
+      transform: rotateX(2deg);
+    }
+
+    60% {
+      transform: rotateX(-1.2deg);
+    }
+
+    80% {
+      transform: rotateX(0.6deg);
+    }
+
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+
+  /* 👇 slow “hanging” swing */
+  @keyframes hb2-sway {
+    0% {
+      transform: rotateX(6deg);
+    }
+
+    50% {
+      transform: rotateX(-6deg);
+    }
+
+    100% {
+      transform: rotateX(6deg);
+    }
+  }
+
+
+  .hb2-text {
+    margin: 0;
+    font-family: "Belgrano", serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.9;
+    color: #ffffff;
+  }
+
+  .hb2-caret {
+    display: inline-block;
+    width: 12px;
+    margin-left: 2px;
+    border-left: 2px solid #FCC10F;
+    animation: hb2-caret 700ms steps(1, end) infinite;
+  }
+
+  @keyframes hb2-caret {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .hb2-wrap {
+      padding-top: 78px;
+    }
+
+    .hb2-knob {
+      top: 66px;
+    }
+
+    .hb2-board {
+      padding: 24px 18px;
+      border-radius: 16px;
+    }
+  }
+
+
+  @media (max-width:1600px) and (min-width:1441px) {
+    .hb2-wrap {
+      max-width: min(1040px, 92vw);
+    }
+
+    .hb2-text {
+      font-size: 19px;
+    }
+  }
+
+  /* ===== 1440 → 1301 ===== */
+  @media (max-width:1440px) and (min-width:1301px) {
+    .hb2-wrap {
+      max-width: min(980px, 92vw);
+    }
+
+    .hb2-text {
+      font-size: 18.5px;
+    }
+  }
+
+  /* ===== 1300 → 1001 ===== */
+  @media (max-width:1300px) and (min-width:1001px) {
+    .hb2-wrap {
+      max-width: min(920px, 94vw);
+    }
+
+    .hb2-board {
+      padding: 28px 28px;
+    }
+
+    .hb2-text {
+      font-size: 18px;
+    }
+  }
+
+  /* ===== 1000 → 769 (tablet landscape) ===== */
+  @media (max-width:1000px) and (min-width:769px) {
+    .hb2-wrap {
+      max-width: min(860px, 94vw);
+      padding-top: 82px;
+    }
+
+    .hb2-board {
+      padding: 24px 22px;
+      border-radius: 18px;
+    }
+
+    .hb2-text {
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .hb2-knob {
+      top: 70px;
+    }
+  }
+
+  /* ===== ≤768 (tablet portrait / large phones) ===== */
+  @media (max-width:768px) {
+    .handing-board.mt {
+      margin-top: 0;
+    }
+
+    .hb2-wrap {
+      padding-top: 76px;
+      max-width: 96vw;
+    }
+
+    .hb2-board {
+      padding: 20px 18px;
+      border-radius: 16px;
+    }
+
+    .hb2-text {
+      font-size: 16.5px;
+      line-height: 1.8;
+    }
+
+    .hb2-stick {
+      width: 10px;
+    }
+
+    .hb2-knob {
+      top: 66px;
+      width: 22px;
+      height: 22px;
+    }
+
+    .hb2-caret {
+      width: 9px;
+    }
+  }
+
+  /* ===== ≤480 (small phones) ===== */
+  @media (max-width:480px) {
+    .hb2-wrap {
+      padding-top: 70px;
+      max-width: 98vw;
+    }
+
+    .hb2-board {
+      padding: 18px 14px;
+      border-radius: 14px;
+    }
+
+    .hb2-text {
+      font-size: 12.5px;
+      line-height: 1.75;
+    }
+
+    .hb2-stick {
+      width: 8px;
+    }
+
+    .hb2-knob {
+      top: 62px;
+      width: 20px;
+      height: 20px;
+    }
+
+    .hb2-caret {
+      width: 8px;
+    }
+  }

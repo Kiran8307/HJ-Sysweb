@@ -1,0 +1,712 @@
+.blog-detail-container {
+      display: grid;
+      grid-template-columns: 340px minmax(0, 1fr) 320px;
+      /* ✅ add right column */
+      gap: 40px;
+      padding: clamp(20px, 4vw, 20px) clamp(16px, 5vw, 20px);
+      color: #fff;
+      background-color: rgb(255 255 255);
+}
+
+/* --------------------
+   Sticky Sidebar (TOC)
+-------------------- */
+.table-of-content {
+      position: sticky;
+      top: 120px;
+      align-self: start;
+      background: rgba(252, 199, 39, 0.05);
+      /* border: 1px solid rgba(255, 255, 255, 0.1); */
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(12px);
+}
+
+.table-of-content::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 1px;
+      /* border thickness */
+      background: linear-gradient(180deg,
+                  rgba(0, 0, 0, 0.4) 0%,
+                  rgba(252, 199, 39, 0) 100%);
+      -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      /* punch the center out */
+      pointer-events: none;
+      /* don’t block clicks */
+      z-index: 1;
+      /* sit above content (but masked) */
+}
+
+.table-of-content h3 {
+      margin-bottom: 12px;
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: #000000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 8px;
+}
+
+.table-of-content ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 10px;
+}
+
+.table-of-content li {
+      line-height: 1.5;
+}
+
+.table-of-content a {
+      color: #000000;
+      text-decoration: none;
+      font-size: 15px;
+      opacity: 0.85;
+      transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.table-of-content a:hover {
+      color: #9b780f;
+      opacity: 1;
+}
+
+/* --------------------
+   Blog Content
+-------------------- */
+.blog-content {
+      font-family: "Space Grotesk", sans-serif;
+      max-width: 100%;
+      line-height: 1.8;
+      font-size: 17px;
+      color: #000000;
+}
+
+/* Headings */
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4 {
+      color: #000000;
+      margin: 32px 0 16px;
+      font-weight: 700;
+      line-height: 1.3;
+}
+
+
+.blog-content h3{
+  font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+}
+.blog-content h4{
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+}
+.blog-content h5{
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+}
+.blog-content h6{
+  font-size: clamp(1rem, 1.6vw, 1.2rem) !important;
+  margin: 0 !important;
+}
+
+/* Ensure strong/b are actually bold inside blog */
+.blog-content b,
+.blog-content strong {
+      font-weight: 800 !important;
+      color: #000000;
+
+}
+
+/* When strong is inside a link, keep link color */
+.blog-content a b,
+.blog-content a strong {
+      font-weight: 800 !important;
+      color: #5460e7;
+}
+
+
+
+
+
+/* Lists */
+.blog-content ul,
+.blog-content ol {
+      margin: 20px 0 20px 24px;
+      padding: 0;
+}
+
+.blog-content li {
+      margin-bottom: 8px;
+      position: relative;
+}
+
+.blog-content ul li::marker {
+      color: #030302;
+}
+
+/* Links */
+.blog-content a {
+      color: #3072bd;
+      text-decoration: underline;
+      transition: opacity 0.3s ease;
+}
+
+.blog-content a:hover {
+      opacity: 0.8;
+}
+
+/* Images */
+.blog-content img {
+      max-width: 100%;
+      border-radius: 14px;
+      margin: 24px 0;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Blockquotes */
+.blog-content blockquote {
+      border-left: 4px solid #FCC10F;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 16px 20px;
+      margin: 24px 0;
+      font-style: italic;
+      color: #ddd;
+      border-radius: 8px;
+}
+
+/* Code blocks */
+.blog-content pre,
+.blog-content code {
+      background: #111;
+      color: #FCC10F;
+      font-family: monospace;
+      border-radius: 8px;
+      padding: 6px 10px;
+}
+
+/* ---------- RIGHT RAIL ---------- */
+.right-rail {
+      min-width: 0;
+}
+
+.right-sticky {
+      position: sticky;
+      top: 120px;
+      /* match your left sticky offset */
+      display: grid;
+      gap: 16px;
+}
+
+/* Card shell to match left */
+.aside-card {
+      border-radius: 16px;
+      padding: 16px;
+      background: rgba(252, 199, 39, 0.05);
+      /* border: 1px solid rgba(255,255,255,0.10); */
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(12px);
+}
+
+.aside-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 1px;
+      /* border thickness */
+      background: linear-gradient(180deg,
+                  rgba(0, 0, 0, 0.4) 0%,
+                  rgba(252, 199, 39, 0) 100%);
+      -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      /* punch the center out */
+      pointer-events: none;
+      /* don’t block clicks */
+      z-index: 1;
+      /* sit above content (but masked) */
+}
+
+.recent-title:hover {
+      color: #FCC10F;
+      opacity: 1;
+}
+
+
+
+.aside-heading {
+      margin: 0 0 10px 0;
+      font: 800 18px/1.2 "Space Grotesk", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: #000000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 8px;
+}
+
+/* Recent list */
+.recent-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+}
+
+.recent-item {
+      display: block;
+}
+
+.recent-link {
+      display: grid;
+      /* grid-template-columns: 72px 1fr; */
+      gap: 12px;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+      border-radius: 12px;
+      padding: 8px;
+      transition: background .25s ease, transform .2s ease;
+}
+
+.recent-link:hover {
+      background: rgba(255, 255, 255, 0.06);
+      transform: translateY(-1px);
+}
+
+.recent-thumb {
+      width: 72px;
+      height: 72px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.recent-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+}
+
+.recent-meta {
+      display: grid;
+      gap: 4px;
+}
+
+.recent-title {
+      color: #000000;
+      text-decoration: none;
+      font-size: 15px;
+      opacity: 0.85;
+      transition: color 0.3s ease, opacity 0.3s ease;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      /* clamp to 2 lines */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+}
+
+/* Promo image (300px tall) */
+.promo-card {
+      position: relative;
+      display: block;
+      height: 300px;
+      /* ✅ requested height */
+      border-radius: 16px;
+      overflow: hidden;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.promo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: saturate(.95);
+      transition: transform .45s ease, filter .35s ease;
+}
+
+.promo-card:hover img {
+      transform: scale(1.03);
+      filter: saturate(1);
+}
+
+.promo-overlay {
+      position: absolute;
+      inset: auto 0 0 0;
+      padding: 14px;
+      background: linear-gradient(180deg, rgb(0 0 0 / 7%) 0%, rgba(0, 0, 0, .65) 15%);
+}
+
+.promo-overlay span {
+      display: block;
+      font-size: 12px;
+      opacity: .9;
+    
+}
+
+.promo-overlay strong {
+      display: block;
+      font-size: 22px;
+      margin-top: 4px;
+      color: #FCC10F;
+      text-align: center;
+}
+
+.author-box {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin: 40px 0 0;
+ border-radius: 16px;
+    padding: 16px;
+    background: rgba(252, 199, 39, 0.05);
+    /* border: 1px solid rgba(255, 255, 255, 0.10); */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    color: #000000;
+}
+
+.author-avatar {
+  width: 110px;
+  height: 110px;
+  /* border-radius: 50%; */
+  object-fit: cover;
+  flex: 0 0 110px;
+  /* box-shadow: 0 2px 10px rgba(0,0,0,0.15); */
+}
+
+.author-meta {
+  display: grid;
+  gap: 6px;
+}
+
+.author-name {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.author-bio {
+  margin: 0;
+  opacity: 0.9;
+}
+
+.cta-banner {
+  display: flex;
+  flex-direction: column;
+ 
+  gap: 12px;
+  margin: 40px 0 0;
+  border-radius: 16px;
+  padding: 24px;
+  background: rgba(252, 199, 39, 0.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(12px);
+  color: #000;
+  text-align: left;
+}
+
+.cta-banner-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cta-banner-content h3 {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.cta-banner-content p {
+  font-size: 16px;
+  margin-bottom: 16px;
+  line-height: 1.6;
+  max-width: 90%;
+}
+a.cta-btn-blog {
+    text-decoration: none;
+    color: black;
+}
+
+
+.cta-btn-blog {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #FCC10F;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-btn-blog:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+/* ================================================== */
+ /* =======Blog table Of Content Css Code==========  */
+
+
+/* Add borders and styling to blog tables */
+.blog-content table {
+  width: 100%;
+  border-collapse: collapse; /* This makes the lines single instead of double */
+  margin: 20px 0;
+}
+
+.blog-content table th,
+.blog-content table td {
+  border: 1px solid #ddd; /* This creates the actual lines */
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.blog-content table th {
+  background-color: #f8f9fa; /* Optional: adds a nice light grey to the heading row */
+  font-weight: bold;
+  border-bottom: 2px solid #ccc; /* Makes the bottom line of the header slightly thicker */
+}
+
+/* Optional: Zebra striping for better readability */
+.blog-content table tbody tr:nth-of-type(even) {
+  background-color: #fdfdfd;
+}
+
+
+
+
+
+
+ /*=================== Code Ended ======================  */
+
+
+/* 🖥️ 1600px and below - slightly tighter grid */
+@media (max-width: 1600px) {
+  .blog-detail-container {
+    grid-template-columns: 300px minmax(0, 1fr) 300px;
+    gap: 32px;
+  }
+  .blog-content {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  .right-sticky{
+      top: 30px;
+  }
+  .table-of-content{
+      top: 30px;
+  }
+}
+
+/* 💻 1300px and below - narrow layout */
+@media (max-width: 1300px) {
+  .blog-detail-container {
+    grid-template-columns: 280px minmax(0, 1fr) 280px;
+    gap: 28px;
+  }
+
+  .table-of-content,
+  .right-rail .aside-card {
+    padding: 16px;
+  }
+
+  .blog-content {
+    font-size: 17px;
+  }
+}
+
+/* 📱 Tablet Landscape (≤1100px) */
+@media (max-width: 1100px) {
+  .blog-detail-container {
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .right-rail {
+    display: none; /* hide right sidebar for cleaner mobile layout */
+  }
+
+  .table-of-content {
+    position: sticky;
+    top: 100px;
+  }
+}
+
+/* 📲 Tablet Portrait (≤980px) */
+@media (max-width: 980px) {
+  .blog-detail-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 24px;
+  }
+
+  .table-of-content {
+    position: static;
+    width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .table-of-content h3 {
+    font-size: 17px;
+  }
+
+  .blog-content {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  .blog-content img {
+    width: 100%;
+    height: auto;
+  }
+
+  .right-rail {
+    display: none;
+  }
+}
+
+/* 📱 Mobile Large (≤768px) */
+@media (max-width: 768px) {
+  .blog-detail-container {
+    padding: 28px 20px;
+    gap: 20px;
+  }
+
+  .table-of-content {
+    padding: 14px;
+  }
+
+  .table-of-content a {
+    font-size: 14px;
+  }
+
+  .blog-content h2 {
+    font-size: 22px;
+  }
+
+  .blog-content h3 {
+    font-size: 19px;
+  }
+
+  .blog-content p,
+  .blog-content li {
+    font-size: 15px;
+  }
+
+  .blog-content blockquote {
+    padding: 12px 16px;
+    font-size: 14.5px;
+  }
+
+  .promo-card {
+    height: 220px;
+  }
+  .author-box{
+    flex-direction: column;
+  }
+}
+
+/* 📱 Mobile Small (≤480px) */
+@media (max-width: 480px) {
+  .blog-detail-container {
+    padding: 24px 16px;
+  }
+
+  .table-of-content {
+    padding: 12px;
+  }
+
+  .table-of-content h3 {
+    font-size: 16px;
+  }
+
+  .table-of-content a {
+    font-size: 13px;
+  }
+
+  .blog-content {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .blog-content h2 {
+    font-size: 20px;
+  }
+
+  .blog-content h3 {
+    font-size: 17px;
+  }
+
+  .blog-content img {
+    border-radius: 10px;
+    margin: 16px 0;
+  }
+
+  .promo-card {
+    height: 180px;
+  }
+
+  .promo-overlay strong {
+    font-size: 18px;
+  }
+}
+
+/* 📱 Extra Small (≤360px) */
+@media (max-width: 360px) {
+  .blog-detail-container {
+    padding: 18px 12px;
+  }
+
+  .blog-content {
+    font-size: 14px;
+  }
+
+  .table-of-content {
+    padding: 10px;
+  }
+
+  .table-of-content h3 {
+    font-size: 15px;
+  }
+}
+
+
+
+/* Responsive */
+@media (max-width: 980px) {
+      .blog-detail-container {
+            grid-template-columns: 1fr;
+      }
+
+      .table-of-content {
+            position: static;
+            margin-bottom: 32px;
+      }
+
+      .blog-content {
+            font-size: 16px;
+      }
+}
+
+@media (max-width: 480px) {
+      .blog-content img {
+            height: 100%;
+            width: 100%;
+      }
+}

@@ -1,0 +1,491 @@
+[
+    {
+        "id": "logo-design",
+        "typeof": "branding-services",
+        "title": "Logo Design",
+        "desc": "Distinctive, scalable marks that work everywhere from storefront to social to app icons. We combine market research with creative exploration to craft logos that carry meaning and perform in the real world.",
+        "image": "/service-inner/branding-services/logo-design.webp",
+        "points": [
+            "Deliverables: discovery & moodboards, 3-5 concepts, primary/secondary marks, monochrome/knockout versions, favicon/app icons, usage preview mockups.",
+            "Outcome: recognition at a glance, stronger recall, and a professional first impression that supports premium pricing"
+        ]
+    },
+    {
+        "id": "brand-strategy",
+        "typeof": "branding-services",
+        "title": "Brand Strategy",
+        "desc": "Your brand’s foundation: who you serve, why you win, and how you’re different. We define the promise, messaging pillars, voice, and proof so your marketing sounds confident and consistent.",
+        "image": "/service-inner/branding-services/brand-strategy.webp",
+        "points": [
+            "Deliverables: positioning statement, value proposition, audience personas, competitive map, messaging matrix, tone-of-voice guide.",
+            "Outcome: crystal-clear story that aligns teams and improves conversion across ads, website, and sales decks."
+        ]
+    },
+    {
+        "id": "brand-identity",
+        "typeof": "branding-services",
+        "title": "Brand Identity",
+        "desc": "A cohesive visual system that feels premium and sells. We design typography, colour, imagery, iconography and layout rules that scale across web, print, and packaging.",
+        "image": "/service-inner/branding-services/brand-identity.webp",
+        "points": [
+            "Deliverables: logo system application, colour palette with accessibility checks, font pairings, grids & components, imagery style, icon set.",
+            "Outcome: instant credibility and consistent experiences that increase trust and time-on-page."
+        ]
+    },
+    {
+        "id": "brand-guidelines",
+        "typeof": "branding-services",
+        "title": "Brand Guidelines",
+        "desc": "Guardrails that keep every touchpoint on brand, no matter who creates it. Easy for teams and vendors to follow.",
+        "image": "/service-inner/branding-services/brand-guidelines.webp",
+        "points": [
+            "Deliverables: do/don’t rules, clear space & sizing, file exports, layout examples, tone & copy rules, social/media templates.",
+            "Outcome: fewer revisions, faster production, and a brand that looks the same everywhere your buyer sees you."
+        ]
+    },
+    {
+        "id": "packaging-design",
+        "typeof": "branding-services",
+        "title": "Packaging Design",
+        "desc": "Shelf-stopping design that communicates benefits in seconds and drives purchase. We blend compliance, print practicality, and storytelling.",
+        "image": "/service-inner/branding-services/packaging-design.webp",
+        "points": [
+            "Deliverables: structural consultation, front/back label systems, variant & flavour architecture, print-ready files, 3D mockups, barcode/legals checks.",
+            "Outcome: higher pick-up rates, easier line extensions, and packaging that photographs well for e-commerce."
+        ]
+    },
+    {
+        "id": "rebranding-services",
+        "typeof": "branding-services",
+        "title": "Rebranding Services",
+        "desc": "When growth, markets, or perception change, we reset the brand without losing equity. We plan the shift, update assets, and launch with a clear communication plan.",
+        "image": "/service-inner/branding-services/rebranding-services.webp",
+        "points": [
+            "Deliverables: audit & stakeholder interviews, strategy refresh, new identity system, migration roadmap, asset kit, launch campaign.",
+            "Outcome: modern brand presence, smoother rollout, and a measurable lift in consideration and conversion."
+        ]
+    },
+    {
+        "id": "print-advertising",
+        "typeof": "creative-advertising",
+        "title": "Print Advertising",
+        "desc": "High-impact layouts that persuade at a glance. We combine strong headlines, clear hierarchy, and brand consistency to convert attention into action across magazines and newspapers.",
+        "image": "/service-inner/creative-advertising/print-advertising.webp",
+        "points": [
+            "Deliverables: concepts, layouts/typography, imagery direction, media sizes, press-ready files.",
+            "Outcome: memorable ads, stronger response rates, and clean handoff to publishers."
+        ]
+    },
+    {
+        "id": "outdoor-advertising",
+        "typeof": "creative-advertising",
+        "title": "Outdoor Advertising",
+        "desc": "Billboards and transit ads that are unmissable - and readable in seconds. We design for distance, speed, and repetition so the core message sticks.",
+        "image": "/service-inner/creative-advertising/outdoor-advertising.webp",
+        "points": [
+            "Deliverables: site/adaptations, location planning support, legibility checks, print/LED specs.",
+            "Outcome: higher brand recall and more direct searches, calls, and store visits."
+        ]
+    },
+    {
+        "id": "tv-commercials",
+        "typeof": "creative-advertising",
+        "title": "TV Commercials",
+        "desc": "Concept to cut. We script, cast, and produce television spots that tell a sharp story and end with a clear call to action.",
+        "image": "/service-inner/creative-advertising/tv-commercials.webp",
+        "points": [
+            "Deliverables: creative concepts, scripts, production management, edit & sound design, broadcaster compliance.",
+            "Outcome: emotion + clarity that drives enquiries and lifts branded search."
+        ]
+    },
+    {
+        "id": "storyboarding",
+        "typeof": "creative-advertising",
+        "title": "Storyboarding",
+        "desc": "Your campaign, shot by shot. We translate ideas into frames that align creative, marketing, and production teams before the camera rolls.",
+        "image": "/service-inner/creative-advertising/storyboarding.webp",
+        "points": [
+            "Deliverables: visual boards, camera/scene notes, timing, VO cues.",
+            "Outcome: smoother shoots, fewer reshoots, and on-budget delivery."
+        ]
+    },
+    {
+        "id": "copywriting-services",
+        "typeof": "creative-advertising",
+        "title": "Copywriting Services",
+        "desc": "Words that work. From headlines and taglines to long copy and CTAs, we write to sell-simple, on-brand, and conversion-focused.",
+        "image": "/service-inner/creative-advertising/copywriting-services.webp",
+        "points": [
+            "Deliverables: messaging options, ad copy sets, testing variants, tone guidelines.",
+            "Outcome: higher CTRs, better quality scores, and more actions from every impression."
+        ]
+    },
+    {
+        "id": "advertising-campaigns",
+        "typeof": "creative-advertising",
+        "title": "Advertising Campaigns",
+        "desc": "Integrated campaigns built to perform across media. We align the idea, audience, offers, and landing pages - then test and optimise weekly.",
+        "image": "/service-inner/creative-advertising/advertising-campaigns.webp",
+        "points": [
+            "Deliverables: campaign strategy, creative toolkit (static/video), media plan coordination, reporting dashboards.",
+            "Outcome: consistent story everywhere, lower CPA, and scalable ROAS."
+        ]
+    },
+    {
+        "id": "seo",
+        "typeof": "digital-marketing",
+        "title": "SEO",
+        "desc": "",
+        "image": "/service-inner/digital-marketing/seo.webp",
+        "points": [
+            "Built for: sustained, qualified traffic and lower acquisition costs.",
+            "What we improve: technical health, search intent coverage, internal linking, and click-through.",
+            "Playbook: fix speed & indexing → build topic clusters → earn relevant links → optimize titles/snippets by CTR.",
+            "What you see: rising non-brand clicks, keywords in Top-3, longer sessions, and leads attributed to organic."
+        ]
+    },
+    {
+        "id": "local-seo",
+        "typeof": "digital-marketing",
+        "title": "Local SEO",
+        "desc": "",
+        "image": "/service-inner/digital-marketing/local-seo.webp",
+        "points": [
+            "Built for: calls, visits, and bookings from nearby customers.",
+            "What we improve: Google Business Profile, NAP citations, reviews, and location/service pages.",
+            "Playbook: GBP overhaul → review engine → city/area pages with FAQs → map-pack tracking.",
+            "What you see: more “near me” visibility, 3-Pack wins, direction requests, and call logs tied to revenue."
+        ]
+    },
+    {
+        "id": "smo",
+        "typeof": "digital-marketing",
+        "title": "Social Media Optimization",
+        "desc": "",
+        "image": "/service-inner/digital-marketing/smo.webp",
+        "points": [
+            "Built for: awareness that converts - community + content that fuels paid and organic.",
+            "What we improve: content themes, creative cadence, hooks, and on-platform CTAs.",
+            "Playbook: audience research → thumb-stopping creatives (reels/carousels) → offer testing → UTM-tracked landing journeys.",
+            "What you see: growing reach and saves, qualified traffic from social, lower retargeting CPA, and more enquiries."
+        ]
+    },
+    {
+        "id": "google-ads",
+        "typeof": "performance-marketing",
+        "title": "Google Ads Management",
+        "desc": "Own high-intent moments. We restructure accounts (Search, Performance Max, Shopping), tighten match types and negatives, layer audiences, and sync ad copy to landing page offers. We automate bidding with ROAS/CPL guardrails and monitor budget pacing daily.",
+        "image": "/service-inner/performance-marketing/google-ads-management.webp",
+        "points": [
+            "Outcome: lower CPC/CPL, higher Quality Score, and reliable lead volume without waste."
+        ]
+    },
+    {
+        "id": "meta-ads",
+        "typeof": "performance-marketing",
+        "title": "Meta Ads Management",
+        "desc": "Creative + audience science. We build hook-driven statics and short videos, run structured tests (angles, formats, offers), and keep message-match with landing pages. Pixel/CAPI are configured for clean attribution; exclusions prevent fatigue.",
+        "image": "/service-inner/performance-marketing/meta-ads-management.webp",
+        "points": [
+            "Outcome: faster learnings, cheaper acquisition, stronger ROAS, and a growing library of proven winners."
+        ]
+    },
+    {
+        "id": "linkedin-ads",
+        "typeof": "performance-marketing",
+        "title": "LinkedIn Ads",
+        "desc": "B2B pipeline, not vanity metrics. We target firmographics (industry, size, seniority), run Lead Gen Forms vs. Website conversions, and use Conversation/Document ad formats with compelling offers (case studies, calculators, events).",
+        "image": "/service-inner/performance-marketing/linkedin-ads.webp",
+        "points": [
+            "Outcome: qualified meetings from ICP accounts, lower cost per opportunity, and clear CRM attribution."
+        ]
+    },
+    {
+        "id": "cro",
+        "typeof": "performance-marketing",
+        "title": "Conversion Rate Optimization (CRO)",
+        "desc": "Turn more visits into enquiries. We use analytics, heatmaps, and session replays to find friction, then A/B test offers, layouts, headlines, and forms. Priorities are ranked by projected revenue impact.",
+        "image": "/service-inner/performance-marketing/conversion-rate-optimization.webp",
+        "points": [
+            "Outcome: 30–80% conversion lifts over 90–120 days and lower blended CPL across channels."
+        ]
+    },
+    {
+        "id": "lpo",
+        "typeof": "performance-marketing",
+        "title": "Landing Page Optimization",
+        "desc": "Pages that sell the click. We fix speed (LCP < 2.5s), tighten above-the-fold value, improve message-match, add proof (reviews, logos, stats), and simplify forms with WhatsApp/phone handoff.",
+        "image": "/service-inner/performance-marketing/landing-page-optimization.webp",
+        "points": [
+            "Outcome: higher Quality Scores, stronger CVR, and immediate improvements to paid efficiency and SEO engagement."
+        ]
+    },
+    {
+        "id": "marketing-automation",
+        "typeof": "performance-marketing",
+        "title": "Marketing Automation",
+        "desc": "No lead left behind. We connect CRM, WhatsApp, email, and SMS to route hot leads, trigger follow-ups, and nurture colder prospects. Lead scoring, sales alerts, and pipeline dashboards keep teams aligned.",
+        "image": "/service-inner/performance-marketing/marketing-automation.webp",
+        "points": [
+            "Outcome: faster speed-to-lead, higher show rates, better close rates, and more revenue from the same ad spend."
+        ]
+    },
+    {
+        "id": "wordpress",
+        "typeof": "website-development",
+        "title": "WordPress Development",
+        "desc": "Flexible, marketer-friendly builds that are fast, secure, and easy to update.",
+        "image": "/service-inner/website-development/wordpress-development.webp",
+        "points": [
+            "What we do: custom themes/ACF blocks, schema, SEO basics, form/CRM/WhatsApp integrations, multilingual, staging & QA.",
+            "Outcome: a stable site your team can manage without developers - built to convert and rank."
+        ]
+    },
+    {
+        "id": "webflow",
+        "typeof": "website-development",
+        "title": "Webflow Development",
+        "desc": "Design precision with production reliability.",
+        "image": "/service-inner/website-development/webflow-development.webp",
+        "points": [
+            "What we do: component libraries, CMS collections, interactions, SEO setup, Airtable/Make/Zapier automations.",
+            "Outcome: pixel-perfect pages your marketers can ship quickly, with clean CMS and conversion tracking."
+        ]
+    },
+    {
+        "id": "ecommerce",
+        "typeof": "website-development",
+        "title": "E-commerce Website Design",
+        "desc": "Storefronts engineered to sell - beautiful, blazing fast, and simple to manage.",
+        "image": "/service-inner/website-development/ecommerce-website-design.webp",
+        "points": [
+            "What we do: Shopify/Woo architecture, product PDP/PLP UX, checkout optimization, payments/shipping, reviews, upsell/cross-sell flows.",
+            "Outcome: higher AOV and conversion, fewer abandons, and dashboards that show true ROAS."
+        ]
+    },
+    {
+        "id": "ui-ux",
+        "typeof": "website-development",
+        "title": "UI/UX Design",
+        "desc": "Interfaces that guide users to action.",
+        "image": "/service-inner/website-development/ui-ux-design.webp",
+        "points": [
+            "What we do: user journeys, wireframes → hi-fi UI, micro-copy, design systems, accessibility checks, clickable prototypes.",
+            "Outcome: clearer paths, fewer drop-offs, and pages that feel premium & trustworthy."
+        ]
+    },
+    {
+        "id": "responsive",
+        "typeof": "website-development",
+        "title": "Responsive Website Design",
+        "desc": "One experience, all screens - built mobile-first.",
+        "image": "/service-inner/website-development/responsive-website-design.webp",
+        "points": [
+            "What we do: fluid grids, touch targets, image/video optimization, device testing, Core Web Vitals alignment.",
+            "Outcome: better engagement on mobile, stronger SEO signals, and more form fills and calls."
+        ]
+    },
+    {
+        "id": "speed-optimization",
+        "typeof": "website-development",
+        "title": "Website Speed Optimization",
+        "desc": "Speed that users and Google love.",
+        "image": "/service-inner/website-development/website-speed-optimization.webp",
+        "points": [
+            "What we do: LCP/CLS fixes, lazy loading, code splitting, asset compression, CDN, server tuning, third-party audit.",
+            "Outcome: sub-2.5s LCP on key pages, improved rankings/Quality Scores, and a visible lift in conversion."
+        ]
+    },
+    {
+        "id": "amazon",
+        "typeof": "ecommerce-solutions",
+        "title": "Amazon Seller Services",
+        "desc": "Win search and the Buy Box with a clean, compliant store.",
+        "image": "/service-inner/ecommerce-solutions/amazon-seller-services.webp",
+        "points": [
+            "What we do: account setup, Brand Registry, catalog build, A+ Content, keyword research, reviews strategy, pricing/coupons, FBA/FBM setup, and PPC (SP/SB/SD) with ACOS guardrails.",
+            "Outcome: higher ranking, stronger conversion, ACOS under control - and a scalable path to ROAS."
+        ]
+    },
+    {
+        "id": "flipkart",
+        "typeof": "ecommerce-solutions",
+        "title": "Flipkart Seller Setup",
+        "desc": "Launch right and grow quickly on Flipkart.",
+        "image": "/service-inner/ecommerce-solutions/flipkart-seller-setup.webp",
+        "points": [
+            "What we do: GST/KYC, catalog mapping, listing QC, Smart Fulfillment, promotions, and Flipkart Ads with performance dashboards.",
+            "Outcome: faster approvals, better visibility in search/Deals, and steady orders at a profitable CPC."
+        ]
+    },
+    {
+        "id": "meesho",
+        "typeof": "ecommerce-solutions",
+        "title": "Meesho Glowroad Services",
+        "desc": "Optimize for price-led marketplaces without killing margin.",
+        "image": "/service-inner/ecommerce-solutions/meesho-glowroad-services.webp",
+        "points": [
+            "What we do: onboarding, catalog/import, attribute hygiene, competitive pricing, logistics alignment, promo calendar, and return-rate reduction.",
+            "Outcome: more impressions and carts with smart discounting, lower cancellations, and healthier contribution per order."
+        ]
+    },
+    {
+        "id": "product-listing",
+        "typeof": "ecommerce-solutions",
+        "title": "Product Listing Optimization",
+        "desc": "Listings that rank and persuade in seconds.",
+        "image": "/service-inner/ecommerce-solutions/product-listing-optimization.webp",
+        "points": [
+            "What we do: keyword-led titles, bullets, and descriptions; image stacks, infographics, and video; attributes/search terms; compliance checks across Amazon/Flipkart/Meesho/Shopify.",
+            "Outcome: higher click-through and conversion, better organic rank, and reduced ad dependence."
+        ]
+    },
+    {
+        "id": "fba",
+        "typeof": "ecommerce-solutions",
+        "title": "FBA Compliance Services",
+        "desc": "Ship to FBA without penalties or delays.",
+        "image": "/service-inner/ecommerce-solutions/fba-compliance-services.webp",
+        "points": [
+            "What we do: prep/pack/label, barcode & cartonization, dangerous-goods review, shipment creation, reconciliation, returns processing, and account-health monitoring.",
+            "Outcome: fewer stranded units, faster inbounds, lower fees, and a cleaner seller score."
+        ]
+    },
+    {
+        "id": "ecommerce-marketing",
+        "typeof": "ecommerce-solutions",
+        "title": "E-commerce Marketing",
+        "desc": "Profit-first traffic that compounds.",
+        "image": "/service-inner/ecommerce-solutions/ecommerce-marketing.webp",
+        "points": [
+            "What we do: Amazon Ads, Flipkart Ads, Google Shopping, Meta remarketing, influencer/UGC, email/WhatsApp flows, coupons, and LTV programs all UTM/tracked.",
+            "Outcome: lower CPA, higher ROAS, repeat purchases, and a dashboard tying every rupee to revenue."
+        ]
+    },
+    {
+        "id": "flutter",
+        "typeof": "mobile-app-development",
+        "title": "Flutter App Development",
+        "desc": "One codebase, native feel. We build Flutter apps that are smooth, scalable, and easy to maintain across Android and iOS.",
+        "image": "/service-inner/mobile-app-development/flutter-app-development.webp",
+        "points": [
+            "What we do: architecture, state management, API/payment integration, offline mode, push notifications, CI/CD, QA.",
+            "Outcome: faster launches, lower maintenance cost, consistent UX on both platforms."
+        ]
+    },
+    {
+        "id": "android",
+        "typeof": "mobile-app-development",
+        "title": "Android App Development",
+        "desc": "Built for reach and reliability. We ship modern Android apps using best practices for performance, security, and battery efficiency.",
+        "image": "/service-inner/mobile-app-development/android-app-development.webp",
+        "points": [
+            "What we do: Kotlin/Jetpack, clean architecture, permissions/privacy, device coverage, Play integrity, analytics events.",
+            "Outcome: stable releases, better ratings, and higher activation on the world’s biggest mobile platform."
+        ]
+    },
+    {
+        "id": "ios",
+        "typeof": "mobile-app-development",
+        "title": "iOS App Development",
+        "desc": "Delightfully smooth, Apple-grade polish. We craft iOS apps that feel at home on iPhone and iPad and pass review confidently.",
+        "image": "/service-inner/mobile-app-development/iOS-app-development.webp",
+        "points": [
+            "What we do: Swift/SwiftUI, HIG-aligned UI, iCloud/keychain, in-app purchases, TestFlight pipelines, App Review readiness.",
+            "Outcome: premium UX, strong retention, and a frictionless path to monetization."
+        ]
+    },
+    {
+        "id": "ui-ux-apps",
+        "typeof": "mobile-app-development",
+        "title": "UI/UX Design for Apps",
+        "desc": "Interfaces that are obvious, fast, and friendly. We design flows that reduce taps, remove friction, and guide users to value.",
+        "image": "/service-inner/mobile-app-development/ui-ux-design-for-apps.webp",
+        "points": [
+            "What we do: product discovery, user journeys, wireframes → hi-fi UI, micro-copy, prototypes, accessibility checks.",
+            "Outcome: higher onboarding completion, better feature adoption, and more 5-star reviews."
+        ]
+    },
+    {
+        "id": "app-store",
+        "typeof": "mobile-app-development",
+        "title": "App Store Optimization(ASO)",
+        "desc": "Be discoverable and chosen. We optimize metadata and creatives to lift browse/search visibility and conversion.",
+        "image": "/service-inner/mobile-app-development/app-store-optimization.webp",
+        "points": [
+            "What we do: keyword research, titles/subtitles, descriptions, screenshots & video, A/B testing (Store Listing/CPP), ratings strategy.",
+            "Outcome: more organic installs at lower CPI and stronger install-to-open rates."
+        ]
+    },
+    {
+        "id": "app-support",
+        "typeof": "mobile-app-development",
+        "title": "App Maintenance & Support",
+        "desc": "Keep the momentum. We monitor, fix, and improve with data, not guesswork.",
+        "image": "/service-inner/mobile-app-development/app-maintenance-support.webp",
+        "points": [
+            "What we do: crash/error monitoring, OS/device updates, security patches, performance tuning, feature sprints, analytics reviews.",
+            "Outcome: fewer crashes, faster releases, happier users, and predictable upkeep costs."
+        ]
+    },
+    {
+        "id": "lead-gen",
+        "typeof": "growth-marketing",
+        "title": "Lead Generation Services",
+        "desc": "Fill your pipeline with qualified enquiries not random clicks. We align offers, targeting, and landing journeys, then optimize channels (search, social, partners) with tight tracking.",
+        "image": "/service-inner/growth-marketing/lead-gen-services.webp",
+        "points": [
+            "Outcome: more right-fit leads at a lower CPL, with dashboards showing source, quality, and next steps."
+        ]
+    },
+    {
+        "id": "sales-funnel",
+        "typeof": "growth-marketing",
+        "title": "Sales Funnel Design",
+        "desc": "Turn interest into revenue with a frictionless path from ad to repeat purchase. We map stages, remove blockers, and build conversion assets (LPs, forms, checkout, calendars).",
+        "image": "/service-inner/growth-marketing/sales-funnel-design.webp",
+        "points": [
+            "Outcome: higher conversion, better show-up rates, and clear visibility into where money leaks and gets fixed."
+        ]
+    },
+    {
+        "id": "client-retention",
+        "typeof": "growth-marketing",
+        "title": "Client Retention Strategies",
+        "desc": "Make customers stay longer and buy more. We create lifecycle programs (onboarding, win-back, referral, loyalty) across email/WhatsApp and in-app prompts.",
+        "image": "/service-inner/growth-marketing/client-retention-strategies.webp",
+        "points": [
+            "Outcome: higher LTV, reduced churn, and predictable repeat revenue without raising ad spend."
+        ]
+    },
+    {
+        "id": "email-automation",
+        "typeof": "growth-marketing",
+        "title": "Email Marketing Automation",
+        "desc": "Right message, right moment automatically. We build segmented flows (welcome, nurture, cart/lead recovery, reactivation) and test copy, creative, and cadence.",
+        "image": "/service-inner/growth-marketing/email-marketing-automation.webp",
+        "points": [
+            "Outcome: stronger open/click rates, more recoveries, and dependable revenue from owned channels."
+        ]
+    },
+    {
+        "id": "crm-setup",
+        "typeof": "growth-marketing",
+        "title": "CRM Setup & Integration",
+        "desc": "Clean data, faster follow-ups. We implement and integrate your CRM with forms, ads, and calendars, add lead scoring, and automate sales alerts.",
+        "image": "/service-inner/growth-marketing/crm-setup-integration.webp",
+        "points": [
+            "Outcome: shorter speed-to-lead, better qualification, and a pipeline view your team trusts."
+        ]
+    },
+    {
+        "id": "roi-campaigns",
+        "typeof": "growth-marketing",
+        "title": "ROI Marketing Campaigns",
+        "desc": "Every rupee is accountable. We plan experiments with success metrics upfront, route spend to winners, and pause waste quickly.",
+        "image": "/service-inner/growth-marketing/roi-marketing-campaigns.webp",
+        "points": [
+            "Outcome: lower CAC, higher ROAS, and monthly reports in plain English - what worked, what didn’t, and what we’ll do next."
+        ]
+    }
+]

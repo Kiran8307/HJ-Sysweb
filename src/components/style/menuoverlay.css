@@ -1,0 +1,556 @@
+:root {
+      --accent: #fec93f;
+      --text: #ffffff;
+      --muted: #bdbdbd;
+      --edge: #ffffff26;
+      /* dividers */
+}
+
+/* ===== Overlay base (unchanged) ===== */
+.menu-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 10000;
+      pointer-events: none;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+}
+
+.menu-overlay.is-open {
+      pointer-events: auto;
+}
+
+.menu-backdrop {
+      position: absolute;
+      inset: 0;
+      /* left→right dark with subtle yellow glow bottom-left like the mock */
+      background:
+            radial-gradient(900px 700px at 35% 85%, rgba(254, 201, 63, .10), transparent 60%),
+            linear-gradient(90deg, #0c0c0c 0% 58%, #000 58% 100%);
+      opacity: .98;
+}
+
+.menu-panel {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      color: var(--text);
+      background: transparent;
+      
+}
+
+/* ===== Top bar ===== */
+.menu-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 28px;
+      background: #000000A6;
+}
+
+.menu-logo img {
+      /* width: 40px; */
+      height: auto;
+}
+
+.menu-close {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+}
+
+.menu-close span {
+      position: absolute;
+      left: 8px;
+      right: 8px;
+      top: 50%;
+      height: 2px;
+      background: var(--accent);
+}
+
+.menu-close span:first-child {
+      transform: translateY(-50%) rotate(45deg)
+}
+
+.menu-close span:last-child {
+      transform: translateY(-50%) rotate(-45deg)
+}
+
+/* ===== FLEX layout (replaces grid) ===== */
+.menu-grid {
+      /* FLEX instead of grid */
+      display: flex;
+      align-items: stretch;
+      gap: 0;
+      flex: 1 1 auto;
+      /* border-top: 1px solid var(--edge); */
+      min-height: 0;
+      overflow-y: auto;
+      /* avoid overflow on small screens */
+}
+
+/* LEFT column */
+.menu-left {
+  flex: 0 0 58%;
+  max-width: 58%;
+  padding: 10px 56px;
+  display: flex;
+  align-items: flex-start; /* so items start at top */
+  justify-content: flex-start;
+  background: #000000A6;
+  backdrop-filter: blur(102px);
+  -webkit-backdrop-filter: blur(65px);
+
+  /* 🔽 scrolling behavior */
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 100vh;      /* keep inside viewport */
+  scrollbar-width: thin;  /* Firefox thin scrollbar */
+  scrollbar-color: #EBB40E #000; /* gold thumb on black */
+    position: relative;            /* enable absolute layers */
+  /* overflow: hidden;              hide any spill */
+}
+
+/* optional nice scrollbar for WebKit browsers */
+.menu-left::-webkit-scrollbar {
+  width: 6px;
+}
+.menu-left::-webkit-scrollbar-thumb {
+  background: #EBB40E;
+  border-radius: 10px;
+}
+.menu-left::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+/* background image anchored on the left */
+.menu-left::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background: url("/yellow-bg1.png") no-repeat left 100% / 100% auto;       */
+    /* opacity: 0.85; */
+    pointer-events: none;
+    z-index: 0;
+    /* filter: saturate(1.1) hue-rotate(205deg) brightness(1.05); */
+    mix-blend-mode: screen;
+    background-position: bottom;
+}
+
+
+
+/* ensure actual menu content sits above the artwork */
+.menu-left > * {
+  position: relative;
+  z-index: 1;
+}
+
+.menu-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 50px;
+    padding: 11px 0;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 700;
+    font-family: "DM sans";
+    line-height: 60px;
+}
+
+.menu-link:hover {
+      color: var(--accent)
+}
+
+.menu-divider {
+      height: 1px;
+      background: var(--edge)
+}
+
+.with-caret .caret {
+      margin-left: 14px;
+      color: var(--accent);
+      transition: transform .3s
+}
+
+.has-sub.open .with-caret .caret {
+      transform: rotate(180deg)
+}
+
+.menu-link-row{
+    display: flex
+;
+    align-items: center;
+    justify-content: flex-start;
+    /* padding: 18px 0; */
+    gap: 15px;       
+}
+
+.caret-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:transparent;
+  border:0;
+  padding:0;
+  cursor:pointer;
+  color:inherit;
+}
+
+.caret{ transition: transform .25s ease; color: var(--accent, #fec93f); }
+.has-sub.open .caret{ transform: rotate(180deg); }
+
+
+/* Submenu (under Services) */
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 2px;
+  transition: max-height 0.3s ease;
+}
+
+/* When submenu is open */
+.has-sub.open .submenu {
+  max-height: 240px; /* height limit for scroll area */
+  overflow-y: auto;  /* ✅ enable vertical scroll */
+  padding-top: 6px;
+  padding-bottom: 10px;
+}
+
+/* Optional: custom scrollbar styling */
+.has-sub.open .submenu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.has-sub.open .submenu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.has-sub.open .submenu::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border-radius: 4px;
+}
+
+/* Links inside submenu */
+.submenu a {
+  font-size: 18px;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  padding-right: 10px;
+  white-space: nowrap; /* keep single line */
+}
+
+.submenu a:hover {
+  color: var(--accent);
+}
+
+/* caret button styling */
+button.menu-link.with-caret {
+  background: none;
+  border: none;
+}
+
+/* RIGHT column */
+.menu-right {
+      flex: 1 1 42%;
+      max-width: 42%;
+      padding: 42px 48px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      justify-content: flex-end;
+      /* subtle right dark with radial yellow glow top-left like the mock */
+      background:#000000A6;
+}
+
+.right-block a {
+      display: block;
+      color: var(--text);
+      text-decoration: none;
+      margin-bottom: 6px;
+      font-size: 20px;
+      font-family: "Belgrano";
+      line-height: 36px;
+      font-weight: 400;
+
+}
+
+.right-block a:hover {
+      color: var(--accent)
+}
+
+.right-social {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 6px 0 2px
+}
+
+/* .right-social a {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      text-decoration: none;
+      color: var(--accent);
+      border: 1.5px solid var(--accent);
+      font-weight: 700;
+      font-size: 14px;
+} */
+
+/*    
+.right-address {
+      font-style: normal;
+      color: #d7d7d7;
+      line-height: 1.6;
+      font-size: 14px
+}
+
+
+
+/* ===== Hover underline accent (thin) ===== */
+
+/* Base palette (everywhere) */
+:root {
+      --icon-fg: #FCC10F;
+      /* white */
+      --icon-accent: #ffff;
+      /* yellow */
+}
+
+/* In the HEADER only, invert them */
+.header {
+      --icon-fg: #ffff;
+      --icon-accent: #FCC10F;
+}
+
+/* Icon/link styles using variables */
+.icon-link-hs {
+      display: flex;
+      align-items: center;
+      color: var(--icon-fg);
+      font-size: 26px;
+      text-decoration: none;
+      transition: color .3s ease;
+      position: relative;
+}
+
+.icon-link-hs .icon-hs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: 2px solid var(--icon-fg);
+      color: var(--icon-fg);
+      border-radius: 8px;
+      transition: border-color .3s ease, color .3s ease;
+}
+
+/* label hidden by default */
+.icon-link-hs .label-hs {
+      margin-left: 10px;
+      white-space: nowrap;
+      color: var(--icon-accent);
+      font-size: 15px;
+      opacity: 0;
+      max-width: 0;
+      overflow: hidden;
+      transform: translateX(-10px);
+      transition: opacity 2s ease, transform 2s ease, max-width 2s ease;
+}
+
+/* hover */
+.icon-link-hs:hover .label-hs {
+      opacity: 1;
+      max-width: 200px;
+      transform: translateX(0);
+}
+
+.icon-link-hs:hover .icon-hs {
+      border-color: var(--icon-accent);
+      color: var(--icon-accent);
+}
+
+
+address.right-address {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      font-family: 'Belgrano';
+      line-height: 36px;
+}
+
+.menu-link {
+      position: relative;
+}
+
+.menu-link:after {
+      /* content: "";
+      position: absolute;
+      left: 0;
+      right: 65%;
+      bottom: 8px;
+      height: 2px;
+      background: var(--accent);
+      opacity: 0;
+      transition: opacity .25s, right .35s; */
+}
+
+.menu-link:hover:after {
+      opacity: .8;
+      right: 75%;
+}
+
+
+/* close icon  */
+
+/* === Close X button === */
+.closex {
+      --x-size: 40px;
+      /* button box */
+      --x-stroke: 4px;
+      /* dash thickness */
+      --x-yellow: #FCC10F;
+      /* HJ yellow */
+      --x-white: #ffffff;
+
+      position: relative;
+      width: 40px;
+      height: 3px;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      display: inline-block;
+      transition: transform .2s ease;
+}
+
+.closex:hover {
+      transform: scale(1.05);
+}
+
+/* each dash is a short rounded rectangle placed along the diagonals */
+.closex .dash {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: calc(40px * 0.62);
+      height: 4px;
+      border-radius: 999px;
+      /* rounded ends */
+      transform-origin: center;
+}
+
+/* 45° arm (two segments) */
+.closex .d1 {
+      background: var(--x-yellow);
+      transform: translate(-50%, -50%) rotate(45deg) translateX(-36%);
+}
+
+.closex .d2 {
+      background: var(--x-yellow);
+      transform: translate(-50%, -50%) rotate(45deg) translateX(36%);
+}
+
+/* -45° arm (two segments) */
+.closex .d3 {
+      background: var(--x-white);
+      transform: translate(-50%, -50%) rotate(-45deg) translateX(-36%);
+}
+
+.closex .d4 {
+      background: var(--x-white);
+      transform: translate(-50%, -50%) rotate(-45deg) translateX(36%);
+}
+
+/* click animation: slow spin before closing */
+.closex.closing {
+      animation: closex-spin 1s ease both;
+}
+
+@keyframes closex-spin {
+      0% {
+            transform: rotate(0deg);
+            opacity: 1;
+      }
+
+      100% {
+            transform: rotate(180deg);
+            opacity: .95;
+      }
+}
+
+/* respect reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+
+      .closex,
+      .closex.closing {
+            transition: none;
+            animation: none;
+      }
+}
+
+
+/* ===== Responsive ===== */
+@media (max-width:1200px) {
+      .menu-link {
+            font-size: 36px
+      }
+}
+
+@media (max-width:980px) {
+      .menu-grid {
+            flex-direction: column;
+      }
+
+      .menu-left,
+      .menu-right {
+            max-width: 100%;
+            flex-basis: auto;
+            padding: 28px 22px;
+      }
+
+      .menu-left {
+            border-right: none;
+      }
+
+      .menu-link {
+            font-size: 30px;
+      }
+}
+
+@media (max-width:520px) {
+      .menu-link {
+            font-size: 26px;
+            line-height: 60px;
+            padding: 0;
+      }
+
+      .right-social a {
+           
+            /* font-size: 12px; */
+            border-radius: 6px;
+      }
+      .right-social{
+            justify-content: flex-start;
+      }
+      .menu-logo img{
+            width: 70%;
+      }
+}

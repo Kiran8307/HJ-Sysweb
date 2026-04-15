@@ -1,0 +1,122 @@
+/* Page frame */
+.nf-section {
+  min-height: 100vh;
+
+  color: #fff;
+  display: grid;
+  place-items: center;
+  padding: clamp(16px, 3vw, 40px);
+  overflow: hidden;
+}
+
+.nf-wrap {
+  width: min(1200px, 100%);
+  text-align: center;
+  margin-inline: auto;
+}
+
+/* Single 404 hero image (fully responsive) */
+.nf-hero-img {
+  width: min(92vw, 1100px);
+  height: auto;
+  display: block;
+  margin: 0 auto clamp(14px, 3vw, 24px);
+  filter: drop-shadow(0 8px 28px rgba(0,0,0,0.45));
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Subtitle */
+.nf-sub {
+  color: #cfcfcf;
+  font-size: clamp(14px, 1.8vw, 16px);
+  line-height: 1.8;
+  max-width: 62ch;
+  margin: 0 auto clamp(18px, 3vw, 26px);
+  padding-inline: 8px;
+}
+
+/* CTA */
+.nf-btn {
+   font-family: "Belgrano", sans-serif;
+   margin-top: 40px;
+}
+.spider-vector-nf {
+    position: absolute;
+    bottom: 22%;
+    left: 10%;
+}
+
+img.spider-big-image {
+  position: relative;
+  top: 180px;
+  right: 55px;
+  animation: spin 18s linear infinite;
+}
+
+img.spider-small-image {
+  position: relative;
+  left: 40px;
+  animation: spin 25s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Optional: reverse direction keyframes */
+@keyframes spin-rev {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .spider-img {
+    animation: none;
+  }
+}
+ @media (max-width:768px) {
+.spider-vector-nf{
+      display: none;
+}}
+
+@media (min-width: 1200px) {
+  .nf-hero-img { width: min(88vw, 1100px); }
+}
+
+/* Tablets (<=1024px): pull vectors closer & shrink slightly */
+@media (max-width: 1024px) {
+  .spider-vector-nf {
+    bottom: clamp(8%, 12vh, 16%);
+    left: clamp(2vw, 6vw, 8%);
+  }
+  img.spider-big-image { width: clamp(110px, 12vw, 180px); }
+  img.spider-small-image { width: clamp(60px, 7vw, 100px); }
+}
+
+/* Mobiles (<=768px): keep vectors but smaller and further out */
+@media (max-width: 768px) {
+  .nf-hero-img { width: min(96vw, 760px); }
+  .spider-vector-nf {
+    bottom: 10%;
+    left: 4vw;
+  }
+  img.spider-big-image { width: clamp(90px, 22vw, 140px); }
+  img.spider-small-image { width: clamp(48px, 16vw, 96px); }
+}
+
+/* Small mobiles (<=520px): hide vectors if they clutter */
+@media (max-width: 520px) {
+  .spider-vector-nf { display: none; }
+}

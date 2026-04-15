@@ -1,0 +1,673 @@
+/* Canvas */
+.cs-wrap {
+  --previewW: 400px;
+  /* expanded width of the active pill */
+  --pillW: 100px;
+  /* collapsed pill width */
+  --pillH: 400px;
+  /* pill height */
+  --gap: 20px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 28px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+
+
+/* Rail = horizontal row of pills */
+.cs-rail {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Pill (kept as a flex item so it can grow) */
+.cs-pill {
+  flex: 0 0 var(--pillW);
+  /* fixed width in row */
+  width: var(--pillW);
+  height: var(--pillH);
+  background: var(--clr);
+  color: #fff;
+  border-radius: 42px;
+  cursor: pointer;
+  box-shadow: 0 0 30px 0 rgba(255, 214, 51, 0.1);
+  transition:
+    flex-basis .9s ease,
+    width .35s ease,
+    border-radius .35s ease,
+    box-shadow .35s ease,
+    padding .35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* expand to the LEFT:
+   - make the pill wider
+   - keep the label on the RIGHT by flipping grid columns below */
+.cs-pill:hover,
+.cs-pill.is-active {
+  flex-basis: var(--previewW);
+  width: var(--previewW);
+  border-radius: 16px;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, .38);
+  background: transparent;
+  padding: 20px;
+  background: rgba(10, 8, 1, 0.75);
+  border: 1px solid rgba(118, 90, 7, 1);
+}
+
+/* Two-column grid INSIDE the pill:
+   column 1 = expanded card (LEFT)
+   column 2 = vertical label (RIGHT)  */
+.cs-pill-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* grid-template-columns: 1fr var(--pillW);  <-- flipped */
+}
+
+li.cs-pill.is-active .cs-pill-inner {
+  justify-content: center;
+}
+
+li.cs-pill.is-active .cs-pill-inner .cs-pill-label {
+  display: none;
+}
+
+/* Put label in column 2 so it stays at right edge */
+.cs-pill-label {
+  grid-column: 2;
+  /* <-- lock to right */
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-weight: 700;
+  letter-spacing: .3px;
+  text-align: center;
+  padding-block: 10px;
+  line-height: 1.1;
+  opacity: .95;
+  user-select: none;
+  font-size: 28px;
+  margin-top: 30px;
+
+}
+
+/* Expanded card area sits in column 1 (LEFT) */
+.cs-expanded {
+  grid-column: 1;
+  /* <-- left side */
+  opacity: 0;
+  transform: translateX(16px);
+  transition: opacity .28s ease, transform .28s ease;
+  display: flex;
+  align-items: center;
+  padding: 16px 18px 16px 14px;
+}
+
+.cs-pill:hover .cs-expanded,
+.cs-pill.is-active .cs-expanded {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Card content inside the expanded area */
+.cs-hero {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  position: relative;
+  padding: 18px 18px 20px 18px;
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  gap: 8px;
+}
+
+/* (Optional) if you show an inner card, style it here */
+.cs-title {
+  color: #fff;
+  font-weight: 800;
+
+  margin: 0;
+}
+
+.cs-desc {
+  color: rgba(255, 255, 255, .85);
+  margin: 0;
+  font-size: 13px;
+}
+
+/* Outline in collapsed view */
+/* .cs-pill::after{
+  content:"";
+  position: absolute; inset: 9px;
+  border-radius: inherit;
+  border: 1px solid rgba(255,255,255,.12);
+  pointer-events: none;
+} */
+
+.svc-badge3 {
+  width: 300px;
+  height: 300px;
+}
+
+.svc-badge3 .b3-outline,
+.svc-badge3 .b3-dashed {
+  fill: none;
+  stroke: rgba(255, 255, 255, 1);
+  stroke-width: 1;
+}
+
+.svc-badge3 .b3-dashed {
+  stroke-dasharray: 6 6;
+}
+
+.svc-badge3 .b3-solid {
+  fill: #FCC10F;
+}
+
+/* continuous merge/separate */
+.svc-badge3 .b3-merge {
+  transform-box: fill-box;
+  transform-origin: center;
+  /* animation: b3-merge 6s ease-in-out infinite; */
+}
+
+.cs-card-art .svc-badge3 .b3-spin {
+  animation: none;
+}
+
+/* hover -> all yellow */
+.svc-card:hover .svc-badge3 .b3-outline,
+.svc-card:hover .svc-badge3 .b3-dashed {
+  stroke: #fcc10f;
+}
+
+.svc-card:hover .svc-badge3 .b3-solid {
+  fill: #fcc10f;
+}
+
+/* keyframes for SVG */
+@keyframes b3-merge {
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(5px, 6px);
+  }
+
+  /* drift toward solid circle */
+  50% {
+    transform: translate(10px, 10px);
+  }
+
+  /* closest (merge-ish) */
+  75% {
+    transform: translate(5px, 6px);
+  }
+}
+
+@keyframes b3-spin {
+  to {
+    stroke-dashoffset: -60;
+  }
+}
+
+
+/* existing .cs-wrap / .cs-rail / .cs-pill rules keep as you have */
+
+/* pin the mini badge inside each pill */
+.cs-pill-icon {
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  /* put it near the left edge like your screenshot */
+  z-index: 2;
+  pointer-events: none;
+  /* don’t block hover */
+  opacity: .95;
+}
+
+/* optional gentle polish for the mini badge */
+.badge-mini circle {
+  transition: transform .25s ease;
+}
+
+.cs-pill:hover .badge-mini circle {
+  transform: translateY(-1px);
+}
+
+/* big badge styling (all yellow) */
+.svc-badge3 {
+  display: block;
+}
+
+.b3-outline {
+  fill: none;
+  stroke-width: 3px;
+}
+
+.b3-dashed {
+  fill: none;
+  stroke-width: 3px;
+  stroke-dasharray: 6 8;
+}
+
+.b3-solid {
+  stroke: none;
+}
+
+.cs-pill.is-active .cs-pill-icon {
+  display: none;
+}
+
+/* optional subtle slow spin for dashed ring in the big badge */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.svc-badge3 .b3-dashed {
+  transform-origin: 20px 42px;
+  animation: spin 14s linear infinite;
+}
+
+
+
+/* Responsive */
+@media (max-width: 860px) {
+  .cs-wrap {
+    --previewW: 100%;
+  }
+
+  .cs-rail {
+    align-items: stretch;
+  }
+
+  .cs-pill,
+  .cs-pill:hover,
+  .cs-pill.is-active {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  /* keep label narrow on mobile */
+  .cs-pill-inner {
+    grid-template-columns: 1fr 64px;
+  }
+}
+
+
+/* BACKGROUND LAYER */
+.cs-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* yellow shade image */
+.cs-yellow {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  width: 520px;
+  height: auto;
+  /* tweak to fit your frame */
+  opacity: .9;
+  filter: drop-shadow(0 0 18px rgba(252, 193, 15, .15));
+}
+
+/* spiders */
+.cs-spider {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  /* default, overridden per size */
+  transform-origin: 50% 50%;
+  animation: spin var(--spd, 14s) linear infinite;
+  opacity: .9;
+  filter: drop-shadow(0 0 10px rgba(252, 193, 15, .15));
+}
+
+/* big = faster */
+.cs-spider--big {
+  --spd: 12s;
+  /* faster */
+  right: 140px;
+  bottom: 24px;
+  /* position */
+  width: 130px;
+  height: 130px;
+}
+
+/* small = slower */
+.cs-spider--small {
+  --spd: 26s;
+  right: 8%;
+  bottom: 36%;
+  width: 80px;
+  height: 80px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* keep pills above bg */
+.cs-rail {
+  z-index: 2;
+}
+
+
+/* PARENT that spans both sections */
+.contact-page {
+  position: relative;
+  isolation: isolate;
+  /* keep z-index neat */
+}
+
+/* Right-side art layer (covers the full combined height) */
+.right-art {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  /* full height of both sections */
+  right: 0;
+  width: min(40vw, 620px);
+  /* how wide the yellow art sits */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Yellow PNG as background */
+.right-art__img {
+  position: absolute;
+  inset: 0;
+  /* background: url("/contact-us/contact-service-yellow.png") right center / contain no-repeat; */
+
+}
+
+
+/* Keep both sections above the art */
+.contact-page>*:not(.right-art) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Optional: tame on small screens */
+@media (max-width: 900px) {
+  .right-art {
+    width: 55vw;
+    opacity: .85;
+  }
+}
+
+@media (max-width: 640px) {
+  .right-art {
+    display: none;
+  }
+
+  /* hide if you want on mobile */
+}
+
+
+/* ========== 1440px → 1300px ========== */
+@media (min-width:1300px) and (max-width:1440px) {
+
+  /* .cs-wrap{ --previewW:560px; --pillW:96px; --pillH:420px; padding:24px; gap:22px; } */
+  .cs-pill-label {
+    font-size: 26px;
+  }
+
+  .cs-pill-icon {
+    top: 8px;
+    left: 12px;
+    transform: scale(.9);
+  }
+
+  .right-art {
+    width: min(38vw, 560px);
+  }
+
+  .right-art__img {
+    background-position: right 24px center;
+    background-size: 560px auto;
+  }
+
+  .cs-spider--big {
+    right: 110px;
+    bottom: 28px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .cs-spider--small {
+    right: 30px;
+    top: 32px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* ========== 1299px → 1025px ========== */
+@media (min-width:1025px) and (max-width:1299px) {
+  .cs-wrap {
+    --previewW: 480px;
+    --pillW: 92px;
+    --pillH: 380px;
+    padding: 22px;
+    gap: 18px;
+  }
+
+  .cs-pill-label {
+    font-size: 22px;
+  }
+
+  .cs-pill-icon {
+    top: 8px;
+    left: 10px;
+    transform: scale(.85);
+  }
+
+  .right-art {
+    width: min(44vw, 520px);
+  }
+
+  .right-art__img {
+    background-position: right 16px center;
+    background-size: 520px auto;
+  }
+
+  .cs-spider--big {
+    right: 90px;
+    bottom: 24px;
+    width: 110px;
+    height: 110px;
+  }
+
+  .cs-spider--small {
+    right: 24px;
+    top: 28px;
+    width: 64px;
+    height: 64px;
+  }
+
+  .svc-badge3 {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+/* ========== 1024px → 768px ========== */
+@media (min-width:768px) and (max-width:1024px) {
+
+  /* hide right-side art on very small phones */
+  .right-art {
+    display: none;
+  }
+
+  .cs-wrap {
+    --previewW: 100%;
+    --pillW: 84px;
+    --pillH: 220px;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .cs-rail {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* pills go full width; expanded state stays card-like */
+  .cs-pill,
+  .cs-pill:hover,
+  .cs-pill.is-active {
+    flex-basis: auto;
+    width: 100%;
+    border-radius: 16px;
+    padding: 16px;
+  }
+
+  /* grid inside pill so label stays on the right strip */
+  .cs-pill-inner {
+    display: grid;
+    grid-template-columns: 1fr 56px;
+  }
+
+  .cs-pill-label {
+    font-size: 14px;
+  }
+
+  /* scale the artwork a bit for smaller area */
+  .cs-card-art .svc-badge3 {
+    width: 160px;
+    height: 160px;
+  }
+
+  .cs-pill-icon {
+    top: 6px;
+    left: 8px;
+    transform: scale(.75);
+  }
+   li.cs-pill.is-active .cs-pill-inner .cs-pill-label {
+    display: block;
+  }
+.cs-expanded{
+  position: relative;
+    top: -40%;
+}
+h3.cs-card-title {
+    display: none;
+}
+}
+
+
+
+/* ========== 480px and below ========== */
+@media (max-width:480px) {
+
+  /* hide right-side art on very small phones */
+  .right-art {
+    display: none;
+  }
+
+  .cs-wrap {
+    --previewW: 100%;
+    --pillW: 84px;
+    --pillH: 220px;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .cs-rail {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* pills go full width; expanded state stays card-like */
+  .cs-pill,
+  .cs-pill:hover,
+  .cs-pill.is-active {
+    flex-basis: auto;
+    width: 100%;
+    border-radius: 16px;
+    padding: 16px;
+  }
+
+  /* grid inside pill so label stays on the right strip */
+  .cs-pill-inner {
+    display: grid;
+    grid-template-columns: 1fr 56px;
+  }
+
+  .cs-pill-label {
+    font-size: 14px;
+  }
+
+  /* scale the artwork a bit for smaller area */
+  .cs-card-art .svc-badge3 {
+    width: 160px;
+    height: 160px;
+  }
+
+  .cs-pill-icon {
+    top: 6px;
+    left: 8px;
+    transform: scale(.75);
+  }
+}
+
+
+/* ✅ mobile: show label again for active pill */
+@media (max-width: 480px) {
+  li.cs-pill.is-active .cs-pill-inner .cs-pill-label {
+    display: block;
+  }
+
+  /* make it horizontal on mobile */
+  .cs-pill-label {
+    writing-mode: horizontal-tb;
+    transform: none;
+    text-align: left;
+    margin-top: 0;
+    align-self: center;
+  }
+
+  /* tighten it a bit */
+  .cs-pill-inner {
+    display: grid;
+    grid-template-columns: 1fr; /* content full width */
+    gap: 10px;
+  }
+
+  /* optional: show the icon again on active */
+  .cs-pill.is-active .cs-pill-icon {
+    display: none;
+  }
+  .cs-expanded{
+    padding: 0;
+  }
+}

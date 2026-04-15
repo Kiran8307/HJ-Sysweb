@@ -1,0 +1,383 @@
+:root {
+  --hj-bg: #0a0a0a;
+  --hj-bg-2: #161616;
+  --hj-grad-1: #111111;
+  --hj-grad-2: #2a2a2a;
+  --hj-card: #1a1a1a;
+  --hj-border: rgba(255, 255, 255, .1);
+  --hj-text: #e8e8e8;
+  --hj-dim: #b9b9b9;
+  --hj-yellow: #FEC93F;
+}
+
+.hj-footer {
+  position: relative;
+  isolation: isolate;
+  /* background: radial-gradient(120% 120% at 80% 0%, var(--hj-grad-2) 0%, var(--hj-grad-1) 55%, var(--hj-bg) 100%); */
+  color: var(--hj-text);
+  padding: 10px 16px 0px;
+  overflow: hidden;
+  background: rgba(252, 199, 39, 0.05);
+
+}
+
+.hj-watermark {
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+
+
+.hj-container {
+  position: relative;
+  z-index: 1;
+
+
+}
+
+.hj-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1.1fr 1.1fr 1fr;
+}
+
+.card {
+  position: relative;
+  background: rgba(252, 199, 39, 0.05);
+  border-radius: 20px;
+  /* apply radius */
+  padding: 18px 20px;
+  z-index: 0;
+  /* keep content above ::before */
+  overflow: hidden;
+  /* clip children to rounded corners */
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* full cover */
+  border-radius: 20px;
+  /* same radius */
+  padding: 1px;
+  /* border thickness */
+  background: linear-gradient(180deg,
+      rgba(252, 199, 39, 0.4) 0%,
+      rgba(252, 199, 39, 0) 100%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+}
+
+
+
+.hj-links {
+  display: flex;
+  flex-direction: column;
+  /* gap:14px; */
+}
+
+.hj-links a {
+  color: var(--hj-text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 60px;
+  letter-spacing: .02em;
+  /* padding:14px 16px; */
+  /* border-radius:10px; */
+  transition: all .25s ease;
+  font-family: var(--ff-body);
+}
+
+.hj-links a:hover {
+  transform: translateY(-2px);
+  /* background: rgba(254,201,63,.08); */
+  border-color: rgba(254, 201, 63, .4);
+  color: var(--hj-yellow);
+}
+
+.hj-middle {
+  display: grid;
+  gap: 18px;
+}
+
+.hj-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  border-radius: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 34px;
+  color: var(--hj-text);
+  transition: all .2s ease;
+  font-family: var(--ff-body);
+}
+
+.hj-pill:hover {
+  color: var(--hj-yellow);
+}
+
+.hj-socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+}
+
+.icon-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 26px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.icon-link .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* label hidden by default */
+.icon-link .label {
+  margin-left: 10px;
+  white-space: nowrap;
+  color: #fbcf27;
+  /* yellow */
+  font-size: 15px;
+
+  opacity: 0;
+  max-width: 0;
+  overflow: hidden;
+  transform: translateX(-10px);
+
+  transition: opacity 2s ease, transform 2s ease, max-width 2s ease;
+}
+
+/* only show the label of the hovered icon */
+.icon-link:hover .label {
+  opacity: 1;
+  max-width: 200px;
+  /* large enough for your text */
+  transform: translateX(0);
+}
+
+
+/* hover effect on icon */
+.icon-link:hover .icon {
+  border-color: #fbcf27;
+  color: #fbcf27;
+}
+
+
+
+.hj-right {
+  display: grid;
+  gap: 18px;
+}
+
+.hj-address {
+  color: var(--hj-text);
+  line-height: 70.2px;
+  font-weight: 600;
+  font-family: var(--ff-body);
+  font-size: 39px;
+  font-style: normal;
+}
+
+.hj-ctas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-chip {}
+
+.hj-copy {
+  text-align: center;
+  color: rgba(101, 77, 6, 1);
+  font-size: 16px;
+  margin-top: 28px;
+  font-family: "Titillium Web";
+  line-height: 28.8px;
+  font-weight: 600;
+}
+
+.bg-vector {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  aspect-ratio: 1200 / 920;
+  /* background:
+    url("/footer/footer-yellow.png") no-repeat center bottom / contain; */
+  z-index: 0;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to top, black 72%, transparent 100%);
+  mask-image: linear-gradient(to top, black 72%, transparent 100%);
+  opacity: 1;
+}
+
+.hj-container,
+.hj-grid,
+.hj-watermark,
+.hj-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.hj-watermark img{
+  width: 100%;
+}
+
+@media (max-width: 1440px) {
+.hj-ctas{
+  flex-direction: column;
+}
+}
+
+@media (max-width: 1400px) {
+.hj-pill{
+  font-size: 24px;
+}
+.hj-address{
+    font-size: 24px;
+    line-height: 40px;
+}
+.hj-links a{
+  font-size: 40px;
+}
+}
+
+@media (max-width: 1400px) {
+  .hj-pill{
+  font-size: 20px;
+}
+}
+
+@media (max-width: 1024px) {
+  .hj-watermark-text {
+    font-size: 140px;
+  }
+
+  .hj-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .hj-watermark img{
+    /* opacity: .25 */
+            width: 100%;
+  }
+
+  .hj-watermark-text {
+    font-size: 86px;
+  }
+
+  .hj-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hj-links a {
+    font-size: 26px
+  }
+  .hj-pill{
+    font-size: 20px;
+  }
+  .hj-address{
+    font-size: 26px;
+    line-height: 44px;
+  }
+  .btn-chip img{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================== Location City Css ============================= */
+
+nav.location-card {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+a.location-city {
+  position: relative;
+    background: rgba(252, 199, 39, 0.05);
+    border-radius: 20px;
+    padding: 18px 20px;
+    z-index: 0;
+    overflow: hidden;
+    text-decoration: none;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 54px;
+    border-radius: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--hj-text);
+    transition: all .2s ease;
+    font-family: var(--ff-body); 
+}
+a.location-city::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 1px;
+    background: linear-gradient(180deg, rgba(252, 199, 39, 0.4) 0%, rgba(252, 199, 39, 0) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: -1;
+}
+.hj-grid {
+    padding-top: 30px;
+}
+
+a.location-city:hover {
+  transform: translateY(-2px);
+  /* background: rgba(254,201,63,.08); */
+  border-color: rgba(254, 201, 63, .4);
+  color: var(--hj-yellow);
+}
+/* ============================== Location City Css Code End =========================== */

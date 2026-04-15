@@ -1,0 +1,72 @@
+/* Collage container */
+.collage{
+  position: relative;
+  width: min(1228px, 96vw);     /* 814 + 404 + gaps ≈ 1228 */
+  margin: 10% auto;
+  aspect-ratio: 16 / 10;        /* overall shape */
+  --gap: 14px;
+  --col: calc((100% - 2*var(--gap)) / 3);   /* three equal columns */
+}
+
+/* tiles */
+.tile{
+  position: absolute;
+  overflow: hidden;
+  border-radius: 15px;          /* requested 14–15px */
+  box-shadow: 0 2px 18px rgba(0,0,0,.25);
+  outline: 1px solid rgba(255,255,255,.06);
+}
+.tile img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* columns */
+.col1{ left: 0; }
+.col2{ left: calc(var(--col) + var(--gap)); }
+.col3{ left: calc(2*var(--col) + 2*var(--gap)); }
+
+/* widths (span) */
+.w1{ width: var(--col); }
+.w2{ width: calc(2*var(--col) + var(--gap)); }
+
+/* aspect ratios to mimic your pixel sizes */
+.ratio-1   { aspect-ratio: 1 / 1; }     /* 404×404 or 814×814 */
+.ratio-2   { aspect-ratio: 2 / 1; }     /* 814×404 */
+.ratio-tall{ aspect-ratio: 3 / 4; }     /* tune tall center look */
+
+/* 7+8 pair inside one tile */
+.pair{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+.pair .pair-item{
+  overflow: hidden;
+  border-radius: 12px;
+}
+.pair .pair-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px){
+  .collage{ aspect-ratio: 3 / 4; }      /* nicer tablets */
+}
+
+@media (max-width: 768px){
+  .collage{ aspect-ratio: auto; }
+  .tile{
+    position: relative;      /* stack on phones */
+    left: auto; top: auto;
+    width: 100%;
+    margin-bottom: var(--gap);
+  }
+  .ratio-1   { aspect-ratio: 1 / 1; }
+  .ratio-2   { aspect-ratio: 16 / 9; }
+  .ratio-tall{ aspect-ratio: 3 / 4; }
+}

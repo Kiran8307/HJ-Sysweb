@@ -1,0 +1,137 @@
+/* ================================
+   HEADER (logo-only, swap on scroll)
+   ================================ */
+
+:root {
+  --rail-w: 88px; /* sidebar width */
+  --header-top: 26px; /* top offset for header logo */
+  --header-left-gap: 16px; /* gap between rail and logo */
+}
+
+.site-header-logo {
+  position: fixed;
+  top: var(--header-top);
+  left:10%;
+  z-index: 50;
+  line-height: 0;
+  transition: transform 0.25s ease;
+      display: flex
+;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.site-header-logo a {
+  display: inline-block;
+  position: relative;
+  height: auto;
+  width: auto;
+  line-height: 0;
+}
+
+/* two stacked logos; fade between them */
+.site-header-logo .logo {
+  display: block;
+  width: auto;
+  height: auto; /* respect intrinsic dimensions */
+  max-height: 36px; /* control size without distortion */
+  transition: opacity 0.25s ease, filter 0.25s ease;
+}
+
+/* default (top of page): show light/yellow logo, hide dark */
+.site-header-logo .logo.light {
+  opacity: 1;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.25));
+}
+.site-header-logo .logo.dark {
+  opacity: 0;
+}
+
+/* after scroll: hide light, show dark */
+.site-header-logo.is-scrolled .logo.light {
+  opacity: 0;
+  filter: none;
+}
+.site-header-logo.is-scrolled .logo.dark {
+  opacity: 1;
+}
+
+/* small shrink on scroll (optional) */
+.site-header-logo.is-scrolled {
+  transform: translateY(-2px) scale(0.98);
+}
+
+.header-second-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mt{
+margin-left: 8%;
+}
+
+/* tweak sizes on smaller screens */
+
+@media (max-width: 1300px) {
+.site-header-logo .logo{
+  width: 270px;
+}
+}
+@media (max-width: 1024px) {
+  :root {
+    --rail-w: 64px;
+  }
+  .site-header-logo {
+    left: calc(var(--rail-w) + 50px);
+  }
+  .site-header-logo a {
+    height: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-header-logo {
+ display: none;
+  }
+  .site-header-logo a {
+    height: 28px;
+  }
+}
+
+/* =========================
+   LEFT SIDEBAR / STICKY RAIL
+   ========================= */
+
+
+
+
+.top-inline-nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex: 0 0 auto;
+  position: relative;
+  left: 50%;
+}
+
+.top-inline-nav a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  /* font-size: 14.5px; */
+}
+@media (max-width: 1600px) {
+.top-inline-nav{
+  left: 12%;
+}
+.top-inline-nav a{
+  font-size: 16px;
+}
+}
+
+@media (max-width: 1150px) {
+  .top-inline-nav {
+    display: none;
+  }
+}

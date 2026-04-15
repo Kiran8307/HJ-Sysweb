@@ -1,0 +1,25 @@
+{
+  "short_name": "HJ Sysweb",
+  "name": "HJ Sysweb helps businesses grow with SEO, conversion-ready websites, and performance marketing that ties spend to ROI.",
+  "icons": [
+    {
+      "src": "hj-favicon.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "hj-favicon.svg",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "hj-favicon.svg",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

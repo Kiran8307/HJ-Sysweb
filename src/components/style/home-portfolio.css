@@ -1,0 +1,242 @@
+.portfolio {
+  padding: clamp(32px, 6vw, 20px) clamp(16px, 5vw, 20px);
+  color: #fff;
+}
+
+
+.pf-head {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 28px;
+  font-family: "Space Grotesk", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.vector {
+  content: "";
+  position: absolute;
+  left: 56.5%;
+  /* transform: translateX(-50%); */
+  bottom: -24.5%;
+  width: 134px;
+  height: 14px;
+
+  /* background: url(/blog/title-vector.png) no-repeat center; */
+  background-size: contain;
+}
+
+
+
+
+
+:root {
+  --pf-gap: 6px;
+  --pf-radius: 6px;
+  --pf-page: #0b0b0b;
+  --pf-outline: 6px;
+}
+
+/* Container */
+.pf-grid.pf-bento4 {
+  /* width: min(1400px, 96vw); */
+  margin: 0 auto;
+  display: grid;
+  gap: var(--pf-gap);
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 columns */
+  grid-auto-rows: 400px;
+  padding: 0 40px;
+  /* base row height */
+}
+
+/* Tile base */
+.pf-card.tile {
+  position: relative;
+  border-radius: var(--pf-radius);
+  overflow: hidden;
+  margin: 0;
+}
+
+.pf-card.tile img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Keep your overlay look (you already had these) */
+.pf-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 14px;
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(transparent, rgba(0, 0, 0, .45));
+  opacity: 0;
+  transition: opacity .25s ease;
+}
+
+.pf-card:hover .pf-overlay {
+  opacity: 1;
+}
+
+.pf-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.pf-btn {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, .5);
+  border-radius: 999px;
+}
+
+/* ---- Exact 9-box layout mapping (same as your HTML) ---- */
+.t1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+/* big left block */
+.t2 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+/* small top-mid */
+.t3 {
+  grid-column: 4;
+  grid-row: 1 / span 2;
+}
+
+/* tall right */
+.t4 {
+  grid-column: 3;
+  grid-row: 2 / span 2;
+}
+
+/* under t2 (tall) */
+.t5 {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+/* wide middle bar */
+.t6 {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+/* small mid-right bottom row */
+.t7 {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+/* small far-right row 3 */
+.t8 {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+/* bottom-left */
+.t9 {
+  grid-column: 3 / span 2;
+  grid-row: 4;
+}
+
+/* wide bottom bar */
+
+/* Optional: lock 4 columns at all widths (no stacking) */
+/* If you do want it always 4 cols, keep as-is.
+   If you want it to compress on phones, add a media query to scale rows: */
+/*
+@media (max-width: 640px){
+  .pf-grid.pf-bento4{
+    grid-auto-rows: 120px;
+  }
+}
+ */
+
+ 
+@media (max-width: 1600px) {
+    .pf-grid.pf-bento4{
+grid-auto-rows:300px
+}
+}
+
+@media (max-width: 1300px) {
+  .vector {
+    display: none;
+    content: none;
+  }
+  .pf-grid.pf-bento4{
+grid-auto-rows:250px
+}
+}
+
+@media (max-width: 768px) {
+  .pf-grid.pf-bento4 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 220px;
+    padding: 0 18px;
+    gap: 8px;
+  }
+
+  /* Reset all custom placements */
+  .pf-card {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  /* Give a bit of variety: make hero tiles full-width */
+  .t1,
+  .t9 {
+    grid-column: 1 / -1;
+    grid-row: span 2;
+  }
+
+  /* wide hero strips */
+}
+
+/* ===== Small phones (<= 560): ultra simple, 1 column ===== */
+@media (max-width: 560px) {
+  .pf-grid.pf-bento4 {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 220px;
+    padding: 0 12px;
+    gap: 8px;
+  }
+
+  .pf-card {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .t1,
+  .t9 {
+    grid-row: span 2;
+  }
+
+  /* keep them a bit taller */
+  .vector {
+    display: none;
+    content: none;
+  }
+  .pf-title{
+    font-size: 22px;
+  }
+}
+
+/* ===== Tiny (<= 380): smaller rows so everything fits nicely ===== */
+@media (max-width: 380px) {
+  .pf-grid.pf-bento4 {
+    grid-auto-rows: 180px;
+  }
+}
