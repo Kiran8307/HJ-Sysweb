@@ -14,7 +14,8 @@ const markets = [
 export default function MarketsSection() {
   return (
     <section className="markets mt section-top">
-      <ul className="market-list" role="list">
+
+      <ul className="market-list" >
         {markets.map((m) => (
           <li key={m.code} className="market-item">
             <div className="flag-pill" tabIndex={0} aria-label={m.name}>
