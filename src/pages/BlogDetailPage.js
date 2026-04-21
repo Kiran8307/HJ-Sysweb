@@ -116,7 +116,7 @@ export default function BlogDetailPage() {
       });
 
       // optional: update URL without jump
-      window.history.pushState(null, "", `#${id}`);
+      // window.history.pushState(null, "", `#${id}`);
     }
   };
 
