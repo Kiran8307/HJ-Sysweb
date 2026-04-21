@@ -89,6 +89,7 @@ export default function LocationPage() {
                 key={it.id}
                 className={`ss-item ${isOpen ? "open" : ""}`}
                 style={{ "--bg": col.bg, "--edge": col.edge, marginLeft: '10%' }}
+                onClick={() => setHovered(isOpen ? -1 : i)}
                 onMouseEnter={() => setHovered(i)}
                 onMouseLeave={() => setHovered(-1)}
               >

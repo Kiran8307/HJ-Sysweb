@@ -23,6 +23,7 @@ export default function SubServiceStack({ items, palette, serviceId }) {
             key={it.id}
             className={`ss-item ${isOpen ? "open" : ""}`}
             style={{ "--bg": col.bg, "--edge": col.edge }}
+            onClick={() => setHovered(isOpen ? -1 : i)}
             onMouseEnter={() => setHovered(i)}
             onMouseLeave={() => setHovered(-1)}
           >
@@ -43,22 +44,20 @@ export default function SubServiceStack({ items, palette, serviceId }) {
                 <div className="ss-copy">
                   {it.points?.length ? (
                     <ul className="ss-list">
-                      {it.points.map((p, idx) => (
-                        <li key={idx}>{p}</li>
-                      ))}
+                      {it.points.map((p, idx) => {
+                        const colonIndex = p.indexOf(':');
+                        if (colonIndex !== -1) {
+                          const boldPart = p.slice(0, colonIndex + 1);
+                          const rest = p.slice(colonIndex + 1);
+                          return (
+                            <li key={idx}><strong>{boldPart}</strong>{rest}</li>
+                          );
+                        }
+                        return <li key={idx}>{p}</li>;
+                      })}
                     </ul>
                   ) : null}
                   {it.desc ? <p className="ss-desc">{it.desc}</p> : null}
-
-                  <div className="ss-descmore">
-                    <p>
-                      We deliver best problem solving solution for our client
-                      and provide finest finishing product in present and
-                      upcoming future. We deliver best problem solving solution
-                      for our client and provide finest finishing product in
-                      present and upcoming future.
-                    </p>
-                  </div>
                 </div>
 
                 <div className="ss-art">
