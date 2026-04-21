@@ -29,11 +29,11 @@ const logos = (rawClientLogos || []).map((item) => ({
 const SubService = () => {
   const { id, subId } = useParams();
 
-  const data = useMemo(() => services.find((s) => s.id === id), [subId]);
+  const data = useMemo(() => services.find((s) => s.id === id), [id]);
 
   const subData = useMemo(
-    () => data.subServices.find((d) => d.id === subId),
-    [subId],
+    () => data ? data.subServices.find((d) => d.id === subId) : null,
+    [data, subId]
   );
 
   return (
