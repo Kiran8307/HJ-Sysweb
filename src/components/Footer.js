@@ -62,7 +62,7 @@ export default function Footer() {
             Surat
           </Link>
           <Link className="location-city" to="/location/vadodara">
-            Vadodra
+            Vadodara
           </Link>
         </nav>
       </div>

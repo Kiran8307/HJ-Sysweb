@@ -109,22 +109,23 @@ export default function LocationPage() {
                     <div className="ss-copy">
                       {(it.features || it.points)?.length ? (
                         <ul className="ss-list">
-                          {(it.features || it.points).map((p, idx) => (
-                            <li key={idx}>{p}</li>
-                          ))}
+                          {(it.features || it.points).map((p, idx) => {
+                            const colonIndex = p.indexOf(':');
+                            if (colonIndex !== -1) {
+                              const boldPart = p.slice(0, colonIndex + 1);
+                              const rest = p.slice(colonIndex + 1);
+                              return (
+                                <li key={idx}><strong>{boldPart}</strong>{rest}</li>
+                              );
+                            }
+                            return <li key={idx}>{p}</li>;
+                          })}
                         </ul>
                       ) : null}
 
                       {it.description || it.desc ? (
                         <p className="ss-desc">{it.description || it.desc}</p>
                       ) : null}
-
-                      <div className="ss-descmore">
-                        <p>
-                          Build a powerful presence, attract the right audience,
-                          and achieve long-term growth with result-driven strategic execution.
-                        </p>
-                      </div>
                     </div>
 
                     <div className="ss-art">

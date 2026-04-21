@@ -87,6 +87,11 @@ export default function CityServiceDetail() {
                     {currentService.desc}
                 </p>
             ) : null}
+            {currentService.innerDesc ? (
+                <p className="inner-lead p" style={{ maxWidth: '800px', margin: '20px auto 0', color: '#aaa', lineHeight: '1.8' }}>
+                    {currentService.innerDesc}
+                </p>
+            ) : null}
           </div>
         </header>
       </section>
