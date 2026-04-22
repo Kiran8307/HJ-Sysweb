@@ -12,6 +12,7 @@ import LogoSlider from "../LogoSlider";
 import WorkTogetherSection from "../service/WorkTogetherSection";
 import Testimonials from "../Testimonials";
 import rawClientLogos from "../client-logo.json";
+import "../service/service-inner.css";
 
 const PALETTE = [
   { bg: "#5856D610", edge: "#5856D6" },
