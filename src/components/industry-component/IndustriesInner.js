@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { useParams, Navigate, Link } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import Seo from "../Seo";
 
 import BreadcrumbHero from "../BreadcrumbHero";
