@@ -1,7 +1,9 @@
 "use client";
 
-// import Image from "next/image";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import styles from "./sticky-stack.module.css";
+import { industriesData } from "./industriesData";
 
 const COLORS = [
   "#0f172a", // deep slate
@@ -14,85 +16,111 @@ const COLORS = [
   "#132b3a", // cyan
 ];
 
-const DATA = [
-  {
-    title: "Fashion",
-    desc: "We turn browsers into buyers with thumb-stopping creatives and conversion-ready product pages. From catalog feeds and season drops to influencer/UGC, email, and remarketing, every asset matches your brand’s voice and margin goals.",
-    img: "/Industry/fashion.webp",
-    tint: "#082e2a",
-  },
-  {
-    title: "FMCG",
-    desc: "Speed and scale matter. We build retail-ready packaging, drive awareness with OOH/digital, and grow marketplace share with optimized listings and profit-first ads. Trade promos, review engines, and geo-targeting ensure availability meets demand.",
-    img: "/Industry/fmcg.webp",
-  },
-  {
-    title: "Real Estate",
-    desc: "Capture high-intent leads and book site visits. We pair local SEO and paid search with landing pages, WhatsApp/call routing, and marketing automation. Virtual tours, floor-plan downloads, and eligibility calculators qualify prospects before sales calls.",
-    img: "/Industry/real-estate.webp",
-  },
-  {
-    title: "Healthcare",
-    desc: "Fill appointment books while protecting trust and compliance. We optimize Google Business Profiles, build fast, accessible pages, and run HIPAA-aware campaigns with call tracking and form encryption. Educational content boosts credibility.",
-    img: "/Industry/healthcare.webp",
-  },
-    {
-    title: "Education",
-    desc: "Increase admissions with intent-led search, parent/student nurturing, and counsellor scheduling. We build program pages, comparison matrices, and scholarship funnels; then automate follow-ups across email/WhatsApp.",
-    img: "/Industry/education.webp",
-  },
-      {
-    title: "Hospitality",
-    desc: "Own “near me” searches and direct bookings. We upgrade speed/UX, add socially-proofed menus/rooms, and deploy meta/search ads with remarketing. GMB photos, reviews, and event packs lift visibility while OTA strategy protects margin.",
-    img: "/Industry/hospitality.webp",
-  },
-      {
-    title: "Startups",
-    desc: "Launch fast, learn faster. We shape positioning, design conversion-ready sites, and run lean tests across search/social to find channel-offer fit. CRM + analytics show what’s working; automation catches every lead.",
-    img: "/Industry/startup.webp",
-  },
-];
-
-export default function StickyStack() {
+export default function StickyStack({ items = industriesData, isInner = false }) {
   return (
-    // StickyStack.jsx
     <section className="mt section-top">
       <div
         className={styles.stack}
-        style={{ "--count": DATA.length }} // ✅ add this
+        style={{ "--count": items.length }}
       >
-        {DATA.map((card, i) => {
+        {items.map((card, i) => {
           const isEven = i % 2 === 0;
           const tint = card.tint || COLORS[i % COLORS.length];
 
+          const cardVariants = {
+            hidden: { 
+              opacity: 0, 
+              y: 50
+            },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 0.5,
+                ease: "easeOut"
+              }
+            }
+          };
+
+          const truncateWords = (text, maxWords) => {
+            if (!text) return "";
+            const words = text.split(" ");
+            if (words.length <= maxWords) return text;
+            return words.slice(0, maxWords).join(" ") + "...";
+          };
+
+          const innerContent = (
+            <>
+              <div className={styles.media}>
+                <img
+                  src={card.img || "/Industry/fashion.webp"} // fallback image
+                  alt={card.title}
+                  className={styles.img}
+                />
+              </div>
+
+              <div className={styles.content}>
+                <h3 className={styles.title}>{card.title}</h3>
+                <p className={styles.desc}>
+                  {!isInner ? truncateWords(card.desc, 30) : card.desc}
+                </p>
+              </div>
+            </>
+          );
+
+          const innerStyle = isInner ? {
+            position: 'relative',
+            top: 'auto',
+            marginTop: i === 0 ? '0px' : '40px',
+            perspective: '1500px',
+            "--tint": tint,
+            "--idx": i
+          } : {
+            "--tint": tint,
+            "--idx": i
+          };
+
+          const ArticleComponent = isInner ? motion.article : "article";
+          const motionProps = isInner ? {
+            initial: "hidden",
+            whileInView: "visible",
+            whileHover: { 
+              scale: 1.05, 
+              rotateX: 5,
+              rotateY: -5,
+              boxShadow: "0px 20px 40px rgba(0,0,0,0.6)",
+              transition: { type: "spring", stiffness: 400, damping: 20 }
+            },
+            viewport: { once: false, amount: 0.15 },
+            variants: cardVariants
+          } : {};
+
           return (
-            <article
+            <ArticleComponent
               key={card.title}
               className={`${styles.card} ${
                 isEven ? styles.left : styles.right
               }`}
-              style={{ "--tint": tint, "--idx": i }}
+              style={innerStyle}
+              {...motionProps}
             >
-      
-
-              <div className={`${styles.inner} stack-inner`}>
-                <div className={styles.media}>
-                  <img
-                    src={card.img}
-                    alt={card.title}
-                    fill
-                    className={styles.img}
-                    sizes="(max-width: 900px) 100vw, 50vw"
-                    priority={i === 0}
-                  />
+              {!isInner && card.id ? (
+                <Link 
+                  to={`/industries-we-serve/${card.id}`}
+                  className={`${styles.inner} stack-inner`}
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                >
+                  {innerContent}
+                </Link>
+              ) : (
+                <div 
+                  className={`${styles.inner} stack-inner`}
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+                >
+                  {innerContent}
                 </div>
-
-                <div className={styles.content}>
-                  <h3 className={styles.title}>{card.title}</h3>
-                  <p className={styles.desc}>{card.desc}</p>
-                </div>
-              </div>
-            </article>
+              )}
+            </ArticleComponent>
           );
         })}
       </div>

@@ -45,23 +45,23 @@ export default function Footer() {
 
       <div className="hj-location-cites">
         <nav className="location-card">
-          <Link className="location-city" to="/location/ahmedabad">
+          <Link className="location-city" to="/location/ahmedabad" target="_blank">
             Ahmedabad
           </Link>
-          <Link className="location-city" to="/location/anand">
+          <Link className="location-city" to="/location/anand" target="_blank">
             Anand
           </Link>
-          <Link className="location-city" to="/location/jamnagar">
-            Jamnager
+          <Link className="location-city" to="/location/jamnagar" target="_blank">
+            Jamnagar
           </Link>
-          <Link className="location-city" to="/location/rajkot">
+          <Link className="location-city" to="/location/rajkot" target="_blank">
             Rajkot
           </Link>
 
-          <Link className="location-city" to="/location/surat">
+          <Link className="location-city" to="/location/surat" target="_blank">
             Surat
           </Link>
-          <Link className="location-city" to="/location/vadodara">
+          <Link className="location-city" to="/location/vadodara" target="_blank">
             Vadodara
           </Link>
         </nav>

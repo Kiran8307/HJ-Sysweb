@@ -1,0 +1,137 @@
+.wrapper {
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.row {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+  background: #111;
+}
+
+.row:hover {
+  box-shadow: 0 20px 40px rgba(250, 194, 31, 0.2);
+  border-color: #fac21f;
+  z-index: 10;
+}
+
+.bgImage {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  transition: transform 0.8s ease, opacity 0.5s ease;
+  opacity: 0.35;
+}
+
+.row.open .bgImage {
+  opacity: 0; /* Remove image when open */
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0.2) 100%);
+  transition: opacity 0.4s ease, background 0.4s ease;
+}
+
+.row.open .overlay {
+  background: rgba(17, 17, 17, 1); /* Solid dark background when open */
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  padding: 40px 30px;
+  color: #fff;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.row.open .title {
+  color: #fac21f;
+}
+
+.icon {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #fac21f;
+  transition: transform 0.3s ease;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.row.open .icon {
+  background: #fac21f;
+  color: #000;
+  border-color: #fac21f;
+}
+
+.body {
+  overflow: hidden;
+}
+
+.bodyInner {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.desc {
+  font-size: 1.1rem;
+  color: #ddd;
+  max-width: 100%;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #fac21f;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background: #fff;
+  transform: translateY(-2px);
+}

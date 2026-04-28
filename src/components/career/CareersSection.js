@@ -108,7 +108,7 @@ const jobs = [
   {
     id: "seo-executive",
     title: "SEO Executive",
-    meta: ["Remote", "Full Time", "Experience : 1 Year/Fresher"],
+    meta: ["On Site", "Full Time", "Experience : 1 Year/Fresher"],
     intro:
       "Own on-page, technical and off-page SEO initiatives that move the needle on organic traffic and conversions.",
     bullets: [
@@ -250,14 +250,14 @@ export default function CareersSection() {
       let data = {};
       try {
         data = await res.json();
-      } catch {}
+      } catch { }
       if (res.ok) {
         form.resetFields();
         navigate("/thank-you"); // ✅ redirect after success
       } else {
         setMsg(
           data?.message ||
-            `Something went wrong (${res.status}). Please try again.`,
+          `Something went wrong (${res.status}). Please try again.`,
         );
       }
     } catch (err) {

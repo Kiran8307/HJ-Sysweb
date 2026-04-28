@@ -11,6 +11,7 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import AuditPage from "./pages/Audit";
 import IndustriesPage from "./pages/Industries";
+import IndustriesInner from "./components/industry-component/IndustriesInner";
 import CareerPage from "./pages/Career";
 import PortfolioPage from "./pages/Portfolio";
 import CaseStudiesPage from "./pages/CaseStudies";
@@ -60,6 +61,7 @@ export default function App() {
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/audit" element={<AuditPage />} />
             <Route path="/industries-we-serve" element={<IndustriesPage />} />
+            <Route path="/industries-we-serve/:industryId" element={<IndustriesInner />} />
             <Route path="/career" element={<CareerPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/case-studies" element={<CaseStudiesPage />} />
