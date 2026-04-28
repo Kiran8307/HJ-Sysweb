@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "./hybrid-accordion.module.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default function HybridIndustryAccordion({ items, parentImg }) {
   const [activeIndex, setActiveIndex] = useState(-1);
@@ -24,12 +24,12 @@ export default function HybridIndustryAccordion({ items, parentImg }) {
               viewport={{ once: true, amount: 0.1 }}
               transition={{ delay: (idx % 8) * 0.05, type: "spring", stiffness: 100 }}
             >
-              <div 
-                className={styles.bgImage} 
+              <div
+                className={styles.bgImage}
                 style={{ backgroundImage: `url(${item.img || parentImg || '/Industry/fashion.webp'})` }}
               ></div>
               <div className={styles.overlay}></div>
-              
+
               <div className={styles.content}>
                 <div className={styles.header}>
                   <h3 className={styles.title}>{item.title}</h3>
@@ -49,9 +49,7 @@ export default function HybridIndustryAccordion({ items, parentImg }) {
                         <p className={styles.desc}>
                           {item.desc || `We provide specialized end-to-end technical solutions and expert consulting tailored specifically for the ${item.title} sector. Elevate your operational efficiency and drive true digital transformation.`}
                         </p>
-                        <Link to="/contact-us" className={styles.btn}>
-                          Get Started
-                        </Link>
+
                       </div>
                     </motion.div>
                   )}
