@@ -11,7 +11,6 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import AuditPage from "./pages/Audit";
 import IndustriesPage from "./pages/Industries";
-import IndustriesInner from "./components/industry-component/IndustriesInner";
 import CareerPage from "./pages/Career";
 import PortfolioPage from "./pages/Portfolio";
 import CaseStudiesPage from "./pages/CaseStudies";
@@ -26,6 +25,8 @@ import ThankYouPage from "./pages/ThankYouPage";
 import SubService from "./pages/SubService";
 import LocationPage from "./components/Locationcites/LocationPage";
 import CityServiceDetail from "./components/Locationcites/CityServiceDetail";
+
+import IndustriesInner from "./components/industry-component/IndustriesInner";
 
 const SITE_URL = "https://www.hjsysweb.com";
 
@@ -54,34 +55,35 @@ export default function App() {
       </Helmet>
 
       <RootLayout>
-          <ScrollToTop />
-          <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="/about-us" element={<AboutUs />} />
-            <Route path="/contact-us" element={<ContactUs />} />
-            <Route path="/audit" element={<AuditPage />} />
-            <Route path="/industries-we-serve" element={<IndustriesPage />} />
-            <Route path="/industries-we-serve/:industryId" element={<IndustriesInner />} />
-            <Route path="/career" element={<CareerPage />} />
-            <Route path="/portfolio" element={<PortfolioPage />} />
-            <Route path="/case-studies" element={<CaseStudiesPage />} />
-            <Route path="/case-studies/:slug" element={<CaseStudySingle />} />
-            <Route path="/services" element={<ServicesPage />} />
-            <Route path="/services/:id" element={<ServiceSinglePage />} />
-            <Route path="/services/:id/:subId" element={<SubService />} />
-            <Route path="/blogs" element={<BlogListPage />} />
-            <Route path="/blogs/:slug" element={<BlogDetailPage />} />
-            <Route path="/thank-you" element={<ThankYouPage />} />
-            <Route path="*" element={<NotFound />} />
-            
-            {/* CITY ROUTES */}
-            <Route path="/location/:cityId" element={<LocationPage />} />
-          
-            {/* All city Services  */}
-            <Route path="/location/:cityId/:serviceId" element={<CityServiceDetail />} />
-            
-          </Routes>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/audit" element={<AuditPage />} />
+          <Route path="/industries-we-serve" element={<IndustriesPage />} />
+          <Route path="/industries-we-serve/:industryId" element={<IndustriesInner />} />
+          <Route path="/career" element={<CareerPage />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/case-studies" element={<CaseStudiesPage />} />
+          <Route path="/case-studies/:slug" element={<CaseStudySingle />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/services/:id" element={<ServiceSinglePage />} />
+          <Route path="/services/:id/:subId" element={<SubService />} />
+          <Route path="/blogs" element={<BlogListPage />} />
+          <Route path="/blogs/:slug" element={<BlogDetailPage />} />
+          <Route path="/thank-you" element={<ThankYouPage />} />
+          <Route path="*" element={<NotFound />} />
+
+          {/* CITY ROUTES */}
+          <Route path="/location/:cityId" element={<LocationPage />} />
+
+          {/* All city Services  */}
+          <Route path="/location/:cityId/:serviceId" element={<CityServiceDetail />} />
+
+
+        </Routes>
       </RootLayout>
     </>
   );
-}
+}

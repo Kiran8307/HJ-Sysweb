@@ -19,7 +19,7 @@
   --top: 100px;
   position: sticky;
   top: var(--top);
-  margin-top: 40px;
+  margin-top: 60px;
   border-radius: var(--radius);
   overflow: hidden;
   height: 380px; /* Fixed height for uniformity */

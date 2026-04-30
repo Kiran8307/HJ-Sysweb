@@ -50,6 +50,26 @@ export default function HybridIndustryAccordion({ items, parentImg }) {
                           {item.desc || `We provide specialized end-to-end technical solutions and expert consulting tailored specifically for the ${item.title} sector. Elevate your operational efficiency and drive true digital transformation.`}
                         </p>
 
+                        <div className={styles.pointsGrid}>
+                          {(item.points || [
+                            "Strategic Market Analysis",
+                            "Custom Growth Planning",
+                            "Digital Presence Audit",
+                            "Targeted Lead Generation",
+                            "Performance Monitoring",
+                            "ROI Driven Optimization"
+                          ]).map((point, pIdx) => (
+                            <div key={pIdx} className={styles.pointItem}>
+                              <span className={styles.pointIcon}>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                                  <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                              </span>
+                              <span>{point}</span>
+                            </div>
+                          ))}
+                        </div>
+
                       </div>
                     </motion.div>
                   )}

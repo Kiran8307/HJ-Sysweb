@@ -1,564 +1,1280 @@
 export const industriesData = [
   {
-    "id": "healthcare-marketing",
-    "title": "Healthcare Marketing",
-    "desc": "We provide unparalleled expertise when it comes to Healthcare Marketing. Our team of experts works tirelessly to optimize every touchpoint. Anim ut labore est sint labore labore Lorem non in commodo reprehenderit do occaecat proident veniam reprehenderit veniam id sit. We focus on delivering measurable results that scale. Minim deserunt in ipsum non sint officia dolor non ea officia sed velit dolore magna. Join hundreds of satisfied clients who have transformed their business.",
-    "img": "https://hjsysweb.com/Industry/healthcare.webp",
-    "subIndustries": [
+    id: "healthcare-marketing",
+    title: "Healthcare",
+    innerDesc:
+      "Digital marketing solutions for hospitals, clinics, and healthcare providers to increase patient trust, online visibility, and appointment bookings.",
+    desc: "We help healthcare providers grow with SEO, local marketing, and patient-focused campaigns that build trust, improve visibility, and generate more appointments through targeted digital strategies.",
+    img: "/Industry/healthcare.webp",
+    subIndustries: [
       {
-        "title": "Hospitals",
-        "img": "",
-        "desc": "Boost your Hospitals with our cutting-edge strategies. Stay ahead of the competition with innovative approaches tailored for you. Elit nulla esse labore esse dolore in velit est sint esse reprehenderit amet do id consectetur veniam in exercitation Lorem. By leveraging data-driven insights, we uncover hidden opportunities. In ut consectetur mollit aute consequat Excepteur in reprehenderit nostrud laboris magna Lorem aliqua anim. Experience the difference of a truly dedicated partnership."
+        title: "Hospitals",
+        img: "",
+        desc: "At HJ Sysweb, we provide advanced digital marketing solutions for hospitals to enhance online visibility, build patient trust, and increase appointment bookings. Our strategies include healthcare SEO, Google My Business optimization, website development, and performance marketing tailored for hospitals. We focus on improving search rankings for medical services, promoting specialties, and driving targeted traffic. With result-driven campaigns, we help hospitals attract more patients, strengthen brand authority, and grow consistently in competitive healthcare markets.",
+        points: [
+          "Digital Marketing Service for Hospitals",
+          "Social Media Marketing Service for Hospitals",
+          "SEO Service for Hospitals",
+          "Website Development Service for Hospitals",
+          "Branding Service for Hospitals",
+        ],
       },
       {
-        "title": "Clinics",
-        "img": "",
-        "desc": "Transform the way you approach Clinics today. We integrate seamlessly with your existing processes to drive efficiency. Anim culpa laborum culpa do sit eiusmod non magna quis sunt elit ullamco pariatur officia aute quis anim incididunt do. Our team of experts works tirelessly to optimize every touchpoint. Magna consectetur ut labore elit et incididunt nulla eiusmod tempor fugiat mollit voluptate ut incididunt. Experience the difference of a truly dedicated partnership."
+        title: "Clinics",
+        img: "",
+        desc: "HJ Sysweb delivers powerful digital marketing services for clinics to generate quality leads and boost patient engagement. Our clinic-focused strategies include local SEO, social media marketing, website optimization, and paid advertising campaigns. We ensure your clinic ranks higher in local searches, making it easier for patients to find and trust your services. By creating targeted campaigns and optimizing online presence, we help clinics increase patient inquiries, improve retention, and establish a strong and reliable healthcare brand.",
+        points: [
+          "Digital Marketing Service for Clinics",
+          "Social Media Marketing Service for Clinics",
+          "SEO Service for Clinics",
+          "Website Development Service for Clinics",
+          "Branding Service for Clinics",
+        ],
       },
       {
-        "title": "Pharmacy",
-        "img": "",
-        "desc": "Transform the way you approach Pharmacy today. Our team of experts works tirelessly to optimize every touchpoint. Incididunt fugiat elit in enim eiusmod voluptate eu Duis ut commodo occaecat laborum ut in Lorem consectetur nostrud quis cupidatat. From strategic planning to flawless execution, we handle it all. In anim anim adipiscing ad do ipsum officia quis aute in officia minim veniam in. Unlock new revenue streams and build lasting customer relationships."
-      }
-    ]
+        title: "Pharmacy",
+        img: "",
+        desc: "We offer specialized digital marketing solutions for pharmacies to increase product visibility, drive local traffic, and boost online sales. At HJ Sysweb, our strategies include SEO optimization, local listing management, e-commerce marketing, and targeted advertising campaigns. We help pharmacies rank for relevant medicine and healthcare searches, ensuring better reach and engagement. With a focus on customer trust and convenience, we support pharmacies in growing both their offline and online presence effectively.",
+        points: [
+          "Digital Marketing Service for Pharmacy",
+          "Social Media Marketing Service for Pharmacy",
+          "SEO Service for Pharmacy",
+          "Website Development Service for Pharmacy",
+          "E-commerce Web Development Service for Pharmacy",
+          "Branding Service for Pharmacy",
+        ],
+      },
+    ],
   },
   {
-    "id": "finance-marketing",
-    "title": "Finance Marketing",
-    "desc": "Discover the true potential of Finance Marketing with our help. From strategic planning to flawless execution, we handle it all. Cillum culpa sed enim in ullamco irure consequat Duis ex sunt fugiat sed consequat fugiat reprehenderit eiusmod aliquip aute officia. By leveraging data-driven insights, we uncover hidden opportunities. Incididunt officia Excepteur ut esse nisi aliquip tempor non in et quis ea in amet. Reach out today to start your journey toward market leadership.",
-    "img": "/Industry/startup.webp",
-    "subIndustries": [
+    id: "finance-marketing",
+    title: "Finance ",
+    innerDesc:
+      "Strategic marketing services for financial firms, CPA agencies, and consultants to build authority, generate leads, and enhance brand credibility.",
+    desc: "Our finance marketing solutions focus on lead generation, trust building, and SEO optimization, helping financial businesses attract qualified clients and grow their online presence effectively.",
+    img: "/Industry/finance.png",
+    subIndustries: [
       {
-        "title": "Financial Advisors",
-        "img": "",
-        "desc": "Our specialized solutions for Financial Advisors are designed to maximize ROI. We focus on delivering measurable results that scale. Qui qui dolore esse occaecat fugiat velit quis ea fugiat incididunt do esse in exercitation laborum velit labore reprehenderit proident. By leveraging data-driven insights, we uncover hidden opportunities. Commodo Lorem Lorem et exercitation in tempor labore reprehenderit occaecat ea in Ut enim id. Experience the difference of a truly dedicated partnership."
+        title: "Financial Advisors",
+        img: "",
+        desc: "We help financial advisors build strong digital authority and attract high-value clients through result-driven marketing strategies. Our services include SEO for financial advisors, content marketing, social media management, and lead generation campaigns. We focus on improving online visibility, building trust, and positioning advisors as industry experts. With targeted digital marketing, we help financial advisors connect with potential clients, increase consultations, and grow their advisory business consistently.",
+        points: [
+          "Digital Marketing Service for Financial Advisors",
+          "Social Media Marketing Service for Financial Advisors",
+          "SEO Service for Financial Advisors",
+          "Website Development Service for Financial Advisors",
+          "Branding Service for Financial Advisors",
+        ],
       },
       {
-        "title": "Accounting Firms",
-        "img": "",
-        "desc": "Boost your Accounting Firms with our cutting-edge strategies. Stay ahead of the competition with innovative approaches tailored for you. Aliquip in nulla et deserunt in officia Excepteur proident magna ad consequat nostrud quis Excepteur eu laboris aute elit in. Stay ahead of the competition with innovative approaches tailored for you. Ullamco mollit fugiat in do est sint cupidatat consequat magna cillum amet eiusmod pariatur Duis. Unlock new revenue streams and build lasting customer relationships."
+        title: "Accounting Firms",
+        img: "",
+        desc: "HJ Sysweb provides specialized digital marketing solutions for accounting firms to generate qualified leads and strengthen their online presence. Our strategies include local SEO, website optimization, PPC campaigns, and content marketing tailored for accounting services. We help firms rank higher on search engines, attract business clients, and improve conversion rates. By focusing on trust-building and professional branding, we ensure accounting firms grow their client base and achieve long-term success in competitive markets.",
+        points: [
+          "Digital Marketing Service for Accounting Firms",
+          "Social Media Marketing Service for Accounting Firms",
+          "SEO Service for Accounting Firms",
+          "Website Development Service for Accounting Firms",
+          "Branding Service for Accounting Firms",
+        ],
       },
       {
-        "title": "Wealth Management Firms",
-        "img": "",
-        "desc": "Discover the true potential of Wealth Management Firms with our help. We integrate seamlessly with your existing processes to drive efficiency. Officia in nulla anim eu minim id ex occaecat culpa dolor minim ipsum dolore dolor id aute reprehenderit laboris irure. We integrate seamlessly with your existing processes to drive efficiency. Sit ullamco pariatur consectetur dolor nostrud in occaecat in esse sit dolore proident et est. Experience the difference of a truly dedicated partnership."
+        title: "Wealth Management Firms",
+        img: "",
+        desc: "We offer premium digital marketing services for wealth management firms to attract high-net-worth clients and build a strong brand identity. At HJ Sysweb, our strategies include SEO, branding, targeted campaigns, and reputation management. We focus on positioning your firm as a trusted authority in wealth management services. By enhancing digital visibility and delivering personalized marketing solutions, we help firms increase client engagement, generate quality leads, and establish long-term financial relationships.",
+        points: [
+          "Digital Marketing Service for Wealth Management Firms",
+          "Social Media Marketing Service for Wealth Management Firms",
+          "SEO Service for Wealth Management Firms",
+          "Website Development Service for Wealth Management Firms",
+          "Branding Service for Wealth Management Firms",
+        ],
       },
       {
-        "title": "Mortgage Brokers",
-        "img": "",
-        "desc": "Discover the true potential of Mortgage Brokers with our help. From strategic planning to flawless execution, we handle it all. Enim minim quis consectetur aliquip Lorem dolore eu ex ad in aliqua elit ut reprehenderit minim mollit sit eu dolore. From strategic planning to flawless execution, we handle it all. Elit dolor ipsum voluptate exercitation id in est eu ex id laboris laboris culpa dolore. Join hundreds of satisfied clients who have transformed their business."
+        title: "Mortgage Brokers",
+        img: "",
+        desc: "HJ Sysweb helps mortgage brokers generate consistent leads and increase loan inquiries through performance-driven digital marketing strategies. Our services include SEO, Google Ads, landing page optimization, and local marketing campaigns. We ensure your business ranks for high-intent keywords, making it easier for clients to find mortgage solutions. With targeted campaigns and conversion-focused strategies, we help mortgage brokers grow their client base, increase applications, and boost overall business performance.",
+        points: [
+          "Digital Marketing Service for Mortgage Brokers",
+          "Social Media Marketing Service for Mortgage Brokers",
+          "SEO Service for Mortgage Brokers",
+          "Website Development Service for Mortgage Brokers",
+          "Branding Service for Mortgage Brokers",
+        ],
       },
       {
-        "title": "CA",
-        "img": "",
-        "desc": "Achieve unprecedented growth in your CA sector. We integrate seamlessly with your existing processes to drive efficiency. Tempor officia cillum dolor aliqua non eu adipiscing ullamco ullamco culpa veniam occaecat consequat deserunt consectetur eiusmod sint officia cupidatat. Our team of experts works tirelessly to optimize every touchpoint. Lorem esse qui ut eu eu do tempor cupidatat labore magna Lorem do magna sunt. Let us help you dominate your market and achieve sustainable success."
-      }
-    ]
+        title: "CA",
+        img: "",
+        desc: "We deliver tailored digital marketing solutions for Chartered Accountants to increase visibility and attract business clients. Our strategies include SEO, local search optimization, website development, and content marketing designed for CA services. We help professionals rank higher for tax, audit, and compliance-related searches. By building a strong online presence and trust-driven branding, we support CAs in generating consistent leads and expanding their professional practice.",
+        points: [
+          "Digital Marketing Service for CA",
+          "Social Media Marketing Service for CA",
+          "SEO Service for CA",
+          "Website Development Service for CA",
+          "Branding Service for CA",
+        ],
+      },
+    ],
   },
   {
-    "id": "restaurant-marketing",
-    "title": "Restaurant Marketing",
-    "desc": "Boost your Restaurant Marketing with our cutting-edge strategies. From strategic planning to flawless execution, we handle it all. Culpa adipiscing dolor mollit est in ipsum ut dolore non mollit laborum culpa ea ad ut sint tempor eu aliquip. Stay ahead of the competition with innovative approaches tailored for you. Minim non incididunt Ut dolore sed Ut esse reprehenderit ipsum Lorem mollit reprehenderit nostrud dolor. Your success is our priority, and our track record proves it.",
-    "img": "/Industry/startup.webp",
-    "subIndustries": [
+    id: "restaurant-marketing",
+    title: "Restaurant",
+    desc: "We boost restaurant growth through local SEO, social media campaigns, and online ordering optimization, helping you attract more customers, increase engagement, and maximize daily sales.",
+    innerDesc:
+      "Result-driven digital marketing for restaurants to increase footfall, online orders, and brand visibility across local and online platforms.",
+
+    img: "/Industry/Restaurant.png",
+    subIndustries: [
       {
-        "title": "Restaurants & Cafes",
-        "img": "",
-        "desc": "Discover the true potential of Restaurants & Cafes with our help. We focus on delivering measurable results that scale. Ut dolor Lorem sed esse in ullamco in ut occaecat adipiscing est et nostrud elit aliquip amet ut Excepteur id. By leveraging data-driven insights, we uncover hidden opportunities. Occaecat laboris ut pariatur quis aute Duis aliqua sed et aute dolore nulla non irure. Let us help you dominate your market and achieve sustainable success."
+        title: "Restaurants & Cafes",
+        img: "",
+        desc: "We provide result-driven digital marketing solutions for restaurants and cafes to increase footfall, online orders, and brand visibility. Our strategies include local SEO, Google My Business optimization, social media marketing, and online ordering integration. We help your restaurant rank higher in “near me” searches, attract local customers, and boost engagement. With targeted campaigns and strong branding, we ensure your restaurant grows consistently and stands out in a competitive food industry.",
+        points: [
+          "Digital Marketing Service for Restaurants",
+          "Social Media Marketing Service for Restaurants",
+          "SEO Service for Restaurants",
+          "Website Development Service for Restaurants",
+          "E-commerce Web Development Service for Restaurants",
+          "Branding Service for Restaurants",
+        ],
       },
       {
-        "title": "Catering Businesses",
-        "img": "",
-        "desc": "Boost your Catering Businesses with our cutting-edge strategies. We focus on delivering measurable results that scale. Fugiat ea aliquip ut proident aliquip aliqua cillum eu exercitation velit Ut dolore mollit sint aliqua enim sit ipsum dolor. Stay ahead of the competition with innovative approaches tailored for you. Incididunt non ut incididunt eu deserunt amet consequat dolor irure tempor Lorem dolor anim est. Join hundreds of satisfied clients who have transformed their business."
+        title: "Catering Businesses",
+        img: "",
+        desc: "HJ Sysweb delivers powerful digital marketing services for catering businesses to generate high-quality leads and increase event bookings. Our approach includes SEO optimization, website development, social media promotions, and targeted advertising campaigns. We focus on showcasing your catering services, menus, and past events to build trust and attract potential clients. By improving online visibility and engagement, we help catering businesses secure more bookings and expand their customer base effectively.",
+        points: [
+          "Digital Marketing Service for Catering Businesses",
+          "Social Media Marketing Service for Catering Businesses",
+          "SEO Service for Catering Businesses",
+          "Website Development Service for Catering Businesses",
+          "Branding Service for Catering Businesses",
+        ],
       },
       {
-        "title": "Bars & Pubs",
-        "img": "",
-        "desc": "Transform the way you approach Bars & Pubs today. We integrate seamlessly with your existing processes to drive efficiency. Nostrud id anim do tempor officia in enim sunt adipiscing consequat officia in eu nulla id labore ea cillum eu. Stay ahead of the competition with innovative approaches tailored for you. Esse ea non dolore non ex laborum laboris dolor tempor in cillum ullamco sint quis. Join hundreds of satisfied clients who have transformed their business."
-      }
-    ]
+        title: "Bars & Pubs",
+        img: "",
+        desc: "We help bars and pubs grow their customer base with creative and performance-driven digital marketing strategies. Our services include social media marketing, local SEO, event promotions, and paid advertising campaigns. We focus on increasing visibility for nightlife searches, promoting special events, and engaging local audiences. With strong branding and targeted campaigns, we help bars and pubs attract more visitors, boost foot traffic, and create a memorable brand presence.",
+        points: [
+          "Digital Marketing Service for Bars",
+          "Social Media Marketing Service for Bars",
+          "SEO Service for Bars & Pubs",
+          "Website Development Service for Bars",
+          "Branding Service for Bars",
+        ],
+      },
+    ],
   },
   {
-    "id": "real-estate-marketing",
-    "title": "Real Estate Marketing",
-    "desc": "Boost your Real Estate Marketing with our cutting-edge strategies. We focus on delivering measurable results that scale. Ut ea Excepteur in cillum id aute laborum Duis ullamco ipsum reprehenderit qui ipsum et in et velit Lorem culpa. From strategic planning to flawless execution, we handle it all. Qui ex dolore sint sed proident fugiat nostrud nulla eu eu amet eu cillum Lorem. Your success is our priority, and our track record proves it.",
-    "img": "/Industry/startup.webp",
-    "subIndustries": [
+    id: "real-estate-marketing",
+    title: "Real Estate",
+    innerDesc:
+      "High-conversion marketing strategies for real estate businesses to generate leads, showcase properties, and build a strong digital presence.",
+    desc: "Our real estate marketing services help generate high-quality leads, promote listings, and improve visibility through SEO, paid ads, and targeted campaigns for faster conversions.",
+    img: "/Industry/real-estate.webp",
+    subIndustries: [
       {
-        "title": "Real Estate Agencies",
-        "img": "",
-        "desc": "Transform the way you approach Real Estate Agencies today. We integrate seamlessly with your existing processes to drive efficiency. Elit in exercitation in exercitation est in officia fugiat magna magna sint quis sint id sunt Duis reprehenderit irure irure. Stay ahead of the competition with innovative approaches tailored for you. Ullamco labore ipsum ut irure minim dolore dolore dolor elit irure qui irure qui exercitation. Let us help you dominate your market and achieve sustainable success."
+        title: "Real Estate Agencies",
+        img: "",
+        desc: "We help real estate agencies generate high-quality leads and increase property inquiries through result-driven digital marketing strategies. Our services include real estate SEO, Google Ads, social media marketing, and website optimization tailored for property listings. We ensure your agency ranks higher in local searches, attracts serious buyers, and improves conversion rates. With targeted campaigns and strong branding, we help real estate agencies grow consistently in competitive markets.",
+        points: [
+          "Digital Marketing Service for Real Estate Agencies",
+          "Social Media Marketing Service for Real Estate Agencies",
+          "SEO Service for Real Estate Agencies",
+          "Website Development Service for Real Estate Agencies",
+          "Branding Service for Real Estate Agencies",
+        ],
       },
       {
-        "title": "Real Estate Developers",
-        "img": "",
-        "desc": "Discover the true potential of Real Estate Developers with our help. We integrate seamlessly with your existing processes to drive efficiency. Laborum exercitation reprehenderit eiusmod ipsum mollit velit sint Lorem adipiscing dolor sunt amet cillum consectetur sunt enim id magna ea. From strategic planning to flawless execution, we handle it all. Ut in consequat ea do in non in in minim ut minim id Excepteur nostrud. Experience the difference of a truly dedicated partnership."
+        title: "Real Estate Developers",
+        img: "",
+        desc: "HJ Sysweb delivers powerful marketing solutions for real estate developers to promote projects, generate leads, and build a strong brand presence. Our strategies include project-based SEO, landing page optimization, paid advertising, and social media campaigns. We focus on showcasing your developments with high-impact visuals and targeted promotions. By improving online visibility and lead generation, we help developers attract investors, buyers, and achieve faster project sales.",
+        points: [
+          "Digital Marketing Service for Real Estate Developers",
+          "Social Media Marketing Service for Real Estate Developers",
+          "SEO Service for Real Estate Developers",
+          "Website Development Service for Real Estate Developers",
+          "Branding Service for Real Estate Developers",
+        ],
       },
       {
-        "title": "Real Estate Brokers",
-        "img": "",
-        "desc": "Transform the way you approach Real Estate Brokers today. We focus on delivering measurable results that scale. Laborum officia do ut incididunt deserunt laborum Duis in adipiscing Lorem ipsum non qui laborum et consequat fugiat minim sed. Our team of experts works tirelessly to optimize every touchpoint. Magna labore esse Lorem culpa aliquip cillum do sit pariatur ut magna et consectetur ullamco. Unlock new revenue streams and build lasting customer relationships."
+        title: "Real Estate Brokers",
+        img: "",
+        desc: "We provide customized digital marketing services for real estate brokers to increase client inquiries and close more deals. Our approach includes local SEO, personal branding, social media marketing, and lead generation campaigns. We help brokers rank for high-intent property searches, making it easier for buyers and sellers to connect. With strategic marketing efforts, we support brokers in building trust, expanding networks, and growing their real estate business.",
+        points: [
+          "Digital Marketing Service for Real Estate Brokers",
+          "Social Media Marketing Service for Real Estate Brokers",
+          "SEO Service for Real Estate Brokers",
+          "Website Development Service for Real Estate Brokers",
+          "Branding Service for Real Estate Brokers",
+        ],
       },
       {
-        "title": "Property Investment Firms",
-        "img": "",
-        "desc": "Transform the way you approach Property Investment Firms today. Stay ahead of the competition with innovative approaches tailored for you. Aliqua dolor dolore laboris magna cupidatat aliquip exercitation voluptate laborum amet aliquip sit consectetur do aliquip deserunt magna dolor in. By leveraging data-driven insights, we uncover hidden opportunities. Nulla commodo sint do sit sit dolore Duis consequat in sint sunt ex Lorem Excepteur. Experience the difference of a truly dedicated partnership."
-      }
-    ]
+        title: "Property Investment Firms",
+        img: "",
+        desc: "HJ Sysweb offers advanced digital marketing solutions for property investment firms to attract investors and generate high-value leads. Our services include SEO, performance marketing, content marketing, and targeted advertising campaigns. We focus on promoting investment opportunities, building trust, and improving online visibility. With data-driven strategies and strong branding, we help firms connect with potential investors, increase engagement, and grow their real estate investment portfolio effectively.",
+        points: [
+          "Digital Marketing Service for Property Investment Firms",
+          "Social Media Marketing Service for Property Investment Firms",
+          "SEO Service for Property Investment Firms",
+          "Website Development Service for Property Investment Firms",
+          "E-commerce Web Development Service for Property Investment Firms",
+          "Branding Service for Property Investment Firms",
+        ],
+      },
+    ],
   },
   {
-    "id": "e-commerce-marketing",
-    "title": "E-commerce Marketing",
-    "desc": "Achieve unprecedented growth in your E-commerce Marketing sector. We integrate seamlessly with your existing processes to drive efficiency. Do qui nulla irure in dolore in nisi voluptate minim magna qui proident sit non est pariatur ad voluptate incididunt. Our team of experts works tirelessly to optimize every touchpoint. In commodo in reprehenderit sed culpa aliqua Lorem fugiat id id reprehenderit voluptate nulla proident. Reach out today to start your journey toward market leadership.",
-    "img": "/Industry/startup.webp",
-    "subIndustries": [
+    id: "e-commerce-marketing",
+    title: "E-commerce",
+    innerDesc:
+      "Performance marketing solutions for e-commerce businesses to increase sales, traffic, and customer retention.",
+
+    desc: "We help e-commerce brands grow with conversion-focused SEO, paid ads, and product marketing strategies that drive traffic, increase sales, and improve customer retention effectively.",
+    img: "/Industry/E-commerce.png",
+    subIndustries: [
       {
-        "title": "Online Marketplaces",
-        "img": "",
-        "desc": "Discover the true potential of Online Marketplaces with our help. From strategic planning to flawless execution, we handle it all. Mollit commodo Ut dolor mollit ad aute proident exercitation deserunt Ut exercitation pariatur ullamco ad laborum amet et ipsum ut. From strategic planning to flawless execution, we handle it all. Duis qui ut aliqua officia do et ex fugiat anim deserunt deserunt nisi non labore. Unlock new revenue streams and build lasting customer relationships."
+        title: "Online Marketplaces",
+        img: "",
+        desc: "HJ Sysweb, we provide result-driven digital marketing solutions for online marketplaces to increase traffic, boost product visibility, and maximize conversions. Our strategies include e-commerce SEO, marketplace optimization, paid advertising, and performance marketing tailored for multi-vendor platforms. We focus on improving search rankings, enhancing user experience, and driving targeted traffic. With data-driven campaigns and scalable strategies, we help online marketplaces grow consistently and achieve higher sales performance.",
+        points: [
+          "Digital Marketing Service for Online Businesses",
+          "Social Media Marketing Service for Online Businesses",
+          "SEO Service for Online Businesses",
+          "Website Development Service for Online Businesses",
+          "E-commerce Web Development Service for Online Businesses",
+          "Branding Service for Online Businesses",
+        ],
       },
       {
-        "title": "Third-Party Seller Platforms",
-        "img": "",
-        "desc": "Achieve unprecedented growth in your Third-Party Seller Platforms sector. Stay ahead of the competition with innovative approaches tailored for you. Labore culpa magna cillum occaecat ad cillum deserunt Lorem adipiscing voluptate laboris anim aliqua adipiscing fugiat fugiat eiusmod ex ad. From strategic planning to flawless execution, we handle it all. Minim incididunt consectetur anim enim est consequat ex proident sit est eu magna est velit. Your success is our priority, and our track record proves it."
-      }
-    ]
+        title: "Third-Party Seller Platforms",
+        img: "",
+        desc: "We help third-party seller platforms grow with powerful digital marketing strategies designed to increase seller visibility and drive consistent sales. Our services include SEO optimization, product listing enhancement, paid campaigns, and conversion rate optimization. We focus on helping sellers rank higher on platforms like Amazon and Flipkart, attract the right audience, and improve product performance. With targeted strategies and continuous optimization, we ensure sustainable growth and higher return on investment.",
+        points: [
+          "Digital Marketing Service for Third-Party Seller Platforms",
+          "Social Media Marketing Service for Third-Party Seller Platforms",
+          "SEO Service for Third-Party Seller Platforms",
+          "Website Development Service for Third-Party Seller Platforms",
+          "E-commerce Web Development Service for Third-Party Seller Platforms",
+          "Branding Service for Third-Party Seller Platforms",
+        ],
+      },
+    ],
   },
   {
-    "id": "education-marketing",
-    "title": "Education Marketing",
-    "desc": "We provide unparalleled expertise when it comes to Education Marketing. We focus on delivering measurable results that scale. Anim in ipsum in magna pariatur aute eiusmod irure labore in cupidatat qui non deserunt commodo nostrud id labore ea. Our team of experts works tirelessly to optimize every touchpoint. Ut eiusmod ea ut ad Excepteur id exercitation quis aute dolor Lorem enim adipiscing nulla. Join hundreds of satisfied clients who have transformed their business.",
-    "img": "/Industry/startup.webp",
-    "subIndustries": [
+    id: "education-marketing",
+    title: "Education",
+    innerDesc:
+      "Marketing solutions for schools, colleges, and educational institutions to increase admissions and brand awareness.",
+
+    desc: "Our education marketing strategies help institutions attract more students through SEO, social media, and targeted campaigns that increase inquiries, admissions, and online visibility.",
+    img: "/Industry/education.webp",
+    subIndustries: [
       {
-        "title": "Schools",
-        "img": "",
-        "desc": "Our specialized solutions for Schools are designed to maximize ROI. We integrate seamlessly with your existing processes to drive efficiency. Fugiat irure sit amet eiusmod cupidatat Duis ullamco nulla do occaecat est do magna veniam Duis ut officia do amet. Our team of experts works tirelessly to optimize every touchpoint. Nostrud est esse Ut aliqua quis minim ipsum Excepteur est et adipiscing enim ut eiusmod. Experience the difference of a truly dedicated partnership."
+        title: "Schools",
+        img: "",
+        desc: "We help schools grow their digital presence and increase student admissions through result-driven marketing strategies. Our services include education SEO, website optimization, social media marketing, and local search optimization. We focus on improving visibility in “school near me” searches, building trust among parents, and showcasing academic excellence. With targeted campaigns and engaging content, we help schools attract more inquiries, enhance brand reputation, and achieve consistent admission growth.",
+        points: [
+          "Digital Marketing Service for Schools",
+          "Social Media Marketing Service for Schools",
+          "SEO Service for Schools",
+          "Website Development Service for Schools",
+          "Branding Service for Schools",
+        ],
       },
       {
-        "title": "Colleges & Universities",
-        "img": "",
-        "desc": "Elevate your Colleges & Universities presence through targeted campaigns. From strategic planning to flawless execution, we handle it all. Nulla nostrud id aute consequat eu ex aute Duis aute aliqua reprehenderit proident Excepteur Duis minim enim occaecat id quis. By leveraging data-driven insights, we uncover hidden opportunities. Do aliqua aute ex consequat exercitation amet commodo cupidatat cupidatat ad occaecat proident cupidatat incididunt. Experience the difference of a truly dedicated partnership."
+        title: "Colleges & Universities",
+        img: "",
+        desc: "HJ Sysweb delivers powerful digital marketing solutions for colleges and universities to boost admissions and strengthen their brand authority. Our strategies include SEO, content marketing, paid campaigns, and social media engagement tailored for higher education. We help institutions rank higher for course-related searches, attract potential students, and improve inquiry rates. With a focus on branding and visibility, we support colleges in expanding their reach and building a strong digital presence.",
+        points: [
+          "Digital Marketing Service for Colleges & Universities",
+          "Social Media Marketing Service for Colleges & Universities",
+          "SEO Service for Colleges & Universities",
+          "Website Development Service for Colleges & Universities",
+          "Branding Service for Colleges & Universities",
+        ],
       },
       {
-        "title": "Coaching Institutes",
-        "img": "",
-        "desc": "Elevate your Coaching Institutes presence through targeted campaigns. From strategic planning to flawless execution, we handle it all. Excepteur tempor anim aliqua in culpa sunt do exercitation deserunt voluptate sunt elit proident incididunt et voluptate esse et est. Our team of experts works tirelessly to optimize every touchpoint. Labore sint dolor incididunt in cupidatat mollit fugiat qui consectetur proident cillum cillum laborum ex. Join hundreds of satisfied clients who have transformed their business."
+        title: "Coaching Institutes",
+        img: "",
+        desc: "Our digital marketing services for coaching institutes are designed to increase student enrollments and improve local visibility. We offer SEO, Google Ads, social media marketing, and lead generation campaigns tailored for coaching businesses. We help institutes rank for competitive exam keywords, attract targeted students, and build trust through strong online branding. With performance-driven strategies, we ensure consistent inquiries, higher conversions, and long-term growth for coaching institutes.",
+        points: [
+          "Digital Marketing Service for Coaching Institutes",
+          "Social Media Marketing Service for Coaching Institutes",
+          "SEO Service for Coaching Institutes",
+          "Website Development Service for Coaching Institutes",
+          "Branding Service for Coaching Institutes",
+        ],
       },
       {
-        "title": "Online Course Platforms",
-        "img": "",
-        "desc": "Boost your Online Course Platforms with our cutting-edge strategies. Our team of experts works tirelessly to optimize every touchpoint. Quis commodo mollit ad sint elit elit exercitation cupidatat ipsum nisi anim nostrud Duis in consequat sunt ad dolore quis. We integrate seamlessly with your existing processes to drive efficiency. Eiusmod in aliquip quis fugiat aute minim ut aliquip magna veniam occaecat in velit aute. Experience the difference of a truly dedicated partnership."
-      }
-    ]
+        title: "Online Course Platforms",
+        img: "",
+        desc: "We provide advanced digital marketing solutions for online course platforms to increase enrollments and maximize reach. Our strategies include SEO, performance marketing, content marketing, and funnel optimization for digital courses. We focus on targeting the right audience, improving course visibility, and increasing conversion rates. With data-driven campaigns and continuous optimization, we help online platforms scale faster, attract global learners, and generate consistent revenue growth.",
+        points: [
+          "Digital Marketing Service for Online Course Platforms",
+          "Social Media Marketing Service for Online Course Platforms",
+          "SEO Service for Online Course Platforms",
+          "Website Development Service for Online Course Platforms",
+          "E-commerce Web Development Service for Online Course Platforms",
+          "Branding Service for Online Course Platforms",
+        ],
+      },
+    ],
   },
   {
-    "id": "manufacturing-industrial-marketing",
-    "title": "Manufacturing & Industrial Marketing",
-    "desc": "Achieve unprecedented growth in your Manufacturing & Industrial Marketing sector. Our team of experts works tirelessly to optimize every touchpoint. Ex laborum cillum sed est sed nulla Duis eu non cillum sint Ut reprehenderit consectetur quis labore veniam in consequat. From strategic planning to flawless execution, we handle it all. Ex aliquip laboris ullamco sit esse occaecat magna est aliquip aute consequat nulla aliqua consectetur. Join hundreds of satisfied clients who have transformed their business.",
-    "img": "/Industry/startup.webp",
-    "subIndustries": [
+    id: "manufacturing-industrial-marketing",
+    title: "Manufacturing & Industrial",
+    innerDesc:
+      "Specialized marketing for manufacturing businesses to generate B2B leads and strengthen industry presence.",
+
+    desc: "We help manufacturing companies generate B2B leads through SEO, industrial marketing strategies, and targeted campaigns that improve visibility and connect businesses with potential clients.",
+    img: "/Industry/Manufacturing & Industrial.png",
+    subIndustries: [
       {
-        "title": "Machinery Manufacturers",
-        "img": "",
-        "desc": "Boost your Machinery Manufacturers with our cutting-edge strategies. From strategic planning to flawless execution, we handle it all. Et sit ullamco aliquip amet laboris tempor ullamco anim Excepteur sed elit qui officia sunt exercitation ad qui quis anim. Our team of experts works tirelessly to optimize every touchpoint. Dolor consectetur ut tempor fugiat ut in Excepteur est voluptate nisi dolore cillum sit aute. Experience the difference of a truly dedicated partnership."
+        title: "Machinery Manufacturers",
+        img: "",
+        desc: "We help machinery manufacturers grow their business with powerful digital marketing strategies focused on B2B lead generation and global visibility. Our services include industrial SEO, website optimization, product catalog marketing, and performance advertising. We focus on ranking your machinery products for high-intent search queries, attracting distributors and buyers. With targeted campaigns and technical content strategies, we help manufacturers generate quality inquiries, improve conversions, and expand their market reach effectively.",
+        points: [
+          "Digital Marketing Service for Machinery Manufacturers",
+          "Social Media Marketing Service for Machinery Manufacturers",
+          "SEO Service for Machinery Manufacturers",
+          "Website Development Service for Machinery Manufacturers",
+          "E-commerce Web Development Service for Machinery Manufacturers",
+          "Branding Service for Machinery Manufacturers",
+        ],
       },
       {
-        "title": "Automotive Parts Manufacturers",
-        "img": "",
-        "desc": "Achieve unprecedented growth in your Automotive Parts Manufacturers sector. From strategic planning to flawless execution, we handle it all. Non quis elit Ut dolor est Excepteur elit laboris dolore commodo veniam mollit sit eu ex laborum deserunt commodo in. We integrate seamlessly with your existing processes to drive efficiency. Lorem laborum fugiat deserunt quis Duis nisi dolore anim enim Duis consectetur aliquip tempor adipiscing. Let us help you dominate your market and achieve sustainable success."
+        title: "Automotive Parts Manufacturers",
+        img: "",
+        desc: "Our digital marketing solutions for automotive parts manufacturers are designed to increase product visibility and generate B2B leads. We offer SEO, marketplace optimization, paid advertising, and export-focused marketing strategies. We help businesses rank for auto parts keywords, attract wholesalers and dealers, and improve online engagement. With result-driven campaigns and industry-focused strategies, we support automotive manufacturers in growing their brand presence and achieving consistent business growth.",
+        points: [
+          "Digital Marketing Service for Automotive Parts Manufacturers",
+          "Social Media Marketing Service for Automotive Parts Manufacturers",
+          "SEO Service for Automotive Parts Manufacturers",
+          "Website Development Service for Automotive Parts Manufacturers",
+          "E-commerce Web Development Service for Automotive Parts Manufacturers",
+          "Branding Service for Automotive Parts Manufacturers",
+        ],
       },
       {
-        "title": "Textile Manufacturers",
-        "img": "",
-        "desc": "Our specialized solutions for Textile Manufacturers are designed to maximize ROI. Our team of experts works tirelessly to optimize every touchpoint. Consectetur fugiat nisi fugiat consectetur velit tempor Ut dolor amet id aute do fugiat aute velit culpa in aliqua culpa. From strategic planning to flawless execution, we handle it all. Ullamco ex non magna dolor aute incididunt est ut commodo ad veniam amet nisi esse. Let us help you dominate your market and achieve sustainable success."
+        title: "Textile Manufacturers",
+        img: "",
+        desc: "HJ Sysweb provides tailored digital marketing services for textile manufacturers to expand their reach and attract bulk buyers. Our strategies include SEO, product showcase websites, social media marketing, and export marketing campaigns. We focus on promoting fabrics, garments, and textile products to the right audience. By improving online visibility and branding, we help textile businesses generate inquiries, connect with global buyers, and grow their manufacturing business successfully.",
+        points: [
+          "Digital Marketing Service for Textile Manufacturers",
+          "Social Media Marketing Service for Textile Manufacturers",
+          "SEO Service for Textile Manufacturers",
+          "Website Development Service for Textile Manufacturers",
+          "E-commerce Web Development Service for Textile Manufacturers",
+          "Branding Service for Textile Manufacturers",
+        ],
       },
       {
-        "title": "Chemical Manufacturers",
-        "img": "",
-        "desc": "Our specialized solutions for Chemical Manufacturers are designed to maximize ROI. We focus on delivering measurable results that scale. Nostrud voluptate officia in et anim ullamco Ut reprehenderit consectetur amet esse anim esse est irure eu anim deserunt reprehenderit. We focus on delivering measurable results that scale. Adipiscing tempor in Lorem ullamco incididunt nisi Excepteur in reprehenderit aliqua amet dolore nisi et. Reach out today to start your journey toward market leadership."
+        title: "Chemical Manufacturers",
+        img: "",
+        desc: "We deliver specialized digital marketing solutions for chemical manufacturers to increase visibility and generate industrial leads. Our services include SEO, technical content marketing, website optimization, and B2B lead generation campaigns. We help businesses rank for chemical products, attract distributors, and improve trust through professional branding. With a focus on compliance-friendly marketing and targeted strategies, we support chemical manufacturers in expanding their market reach and driving consistent growth.",
+        points: [
+          "Digital Marketing Service for Chemical Manufacturers",
+          "Social Media Marketing Service for Chemical Manufacturers",
+          "SEO Service for Chemical Manufacturers",
+          "Website Development Service for Chemical Manufacturers",
+          "E-commerce Web Development Service for Chemical Manufacturers",
+          "Branding Service for Chemical Manufacturers",
+        ],
       },
       {
-        "title": "Packaging Manufacturers",
-        "img": "",
-        "desc": "Boost your Packaging Manufacturers with our cutting-edge strategies. Our team of experts works tirelessly to optimize every touchpoint. Adipiscing in fugiat in dolor reprehenderit laboris quis exercitation Lorem do in veniam in sint reprehenderit mollit anim deserunt nulla. From strategic planning to flawless execution, we handle it all. Id nulla irure ut in adipiscing ut dolor nulla sunt magna aute ad et in. Reach out today to start your journey toward market leadership."
+        title: "Packaging Manufacturers",
+        img: "",
+        desc: "Our digital marketing strategies for packaging manufacturers are designed to generate high-quality leads and promote product innovation. We provide SEO, branding, website development, and B2B marketing campaigns tailored for packaging industries. We help businesses showcase their packaging solutions, attract manufacturers and suppliers, and improve visibility in competitive markets. With performance-driven strategies, we ensure consistent inquiries, better engagement, and long-term growth for packaging businesses.",
+        points: [
+          "Digital Marketing Service for Packaging Manufacturers",
+          "Social Media Marketing Service for Packaging Manufacturers",
+          "SEO Service for Packaging Manufacturers",
+          "Website Development Service for Packaging Manufacturers",
+          "E-commerce Web Development Service for Packaging Manufacturers",
+          "Branding Service for Packaging Manufacturers",
+        ],
       },
       {
-        "title": "Electronics Manufacturers",
-        "img": "",
-        "desc": "Achieve unprecedented growth in your Electronics Manufacturers sector. We integrate seamlessly with your existing processes to drive efficiency. Eu veniam officia eu aliqua in anim elit eu enim nostrud anim dolor quis officia consequat in mollit exercitation consectetur. We integrate seamlessly with your existing processes to drive efficiency. Fugiat eu reprehenderit dolor laboris Lorem exercitation deserunt ea sunt tempor cillum esse cupidatat nisi. Your success is our priority, and our track record proves it."
+        title: "Electronics Manufacturers",
+        img: "",
+        desc: "HJ Sysweb offers advanced digital marketing solutions for electronics manufacturers to increase product visibility and generate global leads. Our services include SEO, e-commerce optimization, product marketing, and paid advertising campaigns. We focus on promoting electronic products to the right audience, improving search rankings, and boosting conversions. With data-driven strategies and continuous optimization, we help electronics manufacturers scale their business and achieve sustainable growth.",
+        points: [
+          "Digital Marketing Service for Electronics Manufacturers",
+          "Social Media Marketing Service for Electronics Manufacturers",
+          "SEO Service for Electronics Manufacturers",
+          "Website Development Service for Electronics Manufacturers",
+          "E-commerce Web Development Service for Electronics Manufacturers",
+          "Branding Service for Electronics Manufacturers",
+        ],
       },
       {
-        "title": "Industrial Equipment Suppliers",
-        "img": "",
-        "desc": "We provide unparalleled expertise when it comes to Industrial Equipment Suppliers. Stay ahead of the competition with innovative approaches tailored for you. Laborum culpa proident elit magna ut amet ad cillum id culpa do cupidatat tempor do culpa id ut deserunt anim. Our team of experts works tirelessly to optimize every touchpoint. Anim dolor dolor consequat Lorem elit eu veniam adipiscing officia tempor laboris ut ea qui. Your success is our priority, and our track record proves it."
-      }
-    ]
+        title: "Industrial Equipment Suppliers",
+        img: "",
+        desc: "We help industrial equipment suppliers generate high-quality B2B leads and improve product visibility through result-driven digital marketing strategies. Our services include industrial SEO, website optimization, product catalog marketing, and performance campaigns. We focus on ranking your equipment for high-intent search queries, attracting distributors and buyers. With targeted campaigns and technical content strategies, we help suppliers increase inquiries, improve conversions, and expand their presence in competitive industrial markets.",
+        points: [
+          "Digital Marketing Service for Industrial Equipment Suppliers",
+          "Social Media Marketing Service for Industrial Equipment Suppliers",
+          "SEO Service for Industrial Equipment Suppliers",
+          "Website Development Service for Industrial Equipment Suppliers",
+          "Branding Service for Industrial Equipment Suppliers",
+        ],
+      },
+    ],
   },
   {
-    "id": "hospitality-marketing",
-    "title": "Hospitality Marketing",
-    "desc": "Achieve unprecedented growth in your Hospitality Marketing sector. We focus on delivering measurable results that scale. Et Excepteur qui quis ea cupidatat sed esse pariatur anim Excepteur pariatur ea qui eiusmod est ut incididunt deserunt ad. Our team of experts works tirelessly to optimize every touchpoint. In aliqua incididunt fugiat exercitation dolor id nostrud qui in Excepteur veniam ipsum fugiat dolor. Join hundreds of satisfied clients who have transformed their business.",
-    "img": "/Industry/startup.webp",
-    "subIndustries": [
+    id: "hospitality-marketing",
+    title: "Hospitality",
+    innerDesc:
+      "Digital marketing services for hotels, resorts, and travel businesses to increase bookings and brand engagement.",
+
+    desc: "Our hospitality marketing solutions focus on increasing bookings through SEO, social media, and online reputation management, helping businesses attract more guests and improve brand visibility.",
+    img: "/Industry/hospitality.webp",
+    subIndustries: [
       {
-        "title": "Hotels",
-        "img": "",
-        "desc": "Elevate your Hotels presence through targeted campaigns. We focus on delivering measurable results that scale. Adipiscing tempor commodo occaecat culpa in anim voluptate non voluptate voluptate velit ut culpa incididunt reprehenderit aute ex occaecat elit. From strategic planning to flawless execution, we handle it all. Sit minim eu minim velit dolor qui laborum fugiat Excepteur proident anim adipiscing commodo pariatur. Experience the difference of a truly dedicated partnership."
+        title: "Hotels",
+        img: "",
+        desc: "We help hotels increase direct bookings and online visibility through result-driven digital marketing strategies. Our services include hotel SEO, Google Hotel Ads, website optimization, and social media marketing. We focus on improving rankings for “hotel near me” searches, enhancing user experience, and reducing dependency on third-party platforms. With targeted campaigns and strong branding, we help hotels attract more guests, boost occupancy rates, and maximize revenue consistently.",
+        points: [
+          "Digital Marketing Service for Hotels",
+          "Social Media Marketing Service for Hotels",
+          "SEO Service for Hotels",
+          "Website Development Service for Hotels",
+          "E-commerce Web Development Service for Hotels",
+          "Branding Service for Hotels",
+        ],
       },
       {
-        "title": "Resorts",
-        "img": "",
-        "desc": "Achieve unprecedented growth in your Resorts sector. We integrate seamlessly with your existing processes to drive efficiency. Do Duis Duis aute do et qui minim exercitation commodo deserunt sed ipsum velit sint esse sed nostrud voluptate in. Our team of experts works tirelessly to optimize every touchpoint. Magna esse minim tempor irure dolor ut commodo veniam ad consectetur adipiscing Lorem labore nostrud. Join hundreds of satisfied clients who have transformed their business."
+        title: "Resorts",
+        img: "",
+        desc: "Our digital marketing solutions for resorts are designed to attract premium travelers and increase booking conversions. We offer SEO, visual content marketing, social media campaigns, and paid advertising tailored for luxury and destination resorts. We focus on showcasing experiences, amenities, and unique offerings to engage potential customers. With performance-driven strategies, we help resorts build strong brand identity, increase visibility, and drive more direct bookings effectively.",
+        points: [
+          "Digital Marketing Service for Resorts",
+          "Social Media Marketing Service for Resorts",
+          "SEO Service for Resorts",
+          "Website Development Service for Resorts",
+          "E-commerce Web Development Service for Resorts",
+          "Branding Service for Resorts",
+        ],
       },
       {
-        "title": "Holiday Package Providers",
-        "img": "",
-        "desc": "Achieve unprecedented growth in your Holiday Package Providers sector. We integrate seamlessly with your existing processes to drive efficiency. Sit cupidatat velit deserunt ea sit est quis minim incididunt fugiat incididunt anim laboris magna ad sint dolor Ut Ut. Stay ahead of the competition with innovative approaches tailored for you. Dolor Duis Excepteur dolor irure dolore occaecat Duis incididunt mollit eu voluptate aliquip anim tempor. Your success is our priority, and our track record proves it."
+        title: "Holiday Package Providers",
+        img: "",
+        desc: "HJ Sysweb provides powerful digital marketing services for holiday package providers to increase inquiries and bookings. Our strategies include SEO, landing page optimization, paid campaigns, and travel-focused content marketing. We help businesses promote customized travel packages, attract the right audience, and improve conversion rates. By targeting high-intent travel keywords and optimizing user journeys, we ensure consistent lead generation and business growth.",
+        points: [
+          "Digital Marketing Service for Holiday Package Providers",
+          "Social Media Marketing Service for Holiday Package Providers",
+          "SEO Service for Holiday Package Providers",
+          "Website Development Service for Holiday Package Providers",
+          "E-commerce Web Development Service for Holiday Package Providers",
+          "Branding Service for Holiday Package Providers",
+        ],
       },
       {
-        "title": "Event Venues",
-        "img": "",
-        "desc": "Achieve unprecedented growth in your Event Venues sector. Our team of experts works tirelessly to optimize every touchpoint. Qui ut voluptate aliquip mollit dolor voluptate minim in sit velit veniam cillum magna officia anim nostrud sint dolor aute. We focus on delivering measurable results that scale. Minim in ad eu Excepteur esse in dolor laborum ut commodo non aliquip in Duis. Your success is our priority, and our track record proves it."
+        title: "Event Venues",
+        img: "",
+        desc: "We help event venues generate more bookings by improving online visibility and showcasing their spaces effectively. Our services include SEO, social media marketing, website optimization, and paid advertising campaigns. We focus on promoting weddings, corporate events, and special occasions to targeted audiences. With creative campaigns and strategic marketing, we help event venues attract more inquiries, increase bookings, and build a strong and memorable brand presence.",
+        points: [
+          "Digital Marketing Service for Event Venues",
+          "Social Media Marketing Service for Event Venues",
+          "SEO Service for Event Venues",
+          "Website Development Service for Event Venues",
+          "E-commerce Web Development Service for Event Venues",
+          "Branding Service for Event Venues",
+        ],
       },
       {
-        "title": "Travel Agencies",
-        "img": "",
-        "desc": "Our specialized solutions for Travel Agencies are designed to maximize ROI. By leveraging data-driven insights, we uncover hidden opportunities. Sed mollit in ullamco officia aute minim velit consequat fugiat adipiscing cupidatat dolor aute dolor irure ullamco dolor do dolor. By leveraging data-driven insights, we uncover hidden opportunities. Deserunt nostrud quis do occaecat dolore nisi nostrud irure dolor aliquip sunt Duis occaecat nostrud. Experience the difference of a truly dedicated partnership."
-      }
-    ]
+        title: "Travel Agencies",
+        img: "",
+        desc: "Our digital marketing solutions for travel agencies are designed to increase leads, bookings, and brand visibility. We offer SEO, paid advertising, social media marketing, and content strategies tailored for travel businesses. We help agencies rank for travel-related searches, attract potential travelers, and promote tour packages effectively. With data-driven campaigns and continuous optimization, we ensure higher engagement, more bookings, and long-term business growth.",
+        points: [
+          "Digital Marketing Service for Travel Agencies",
+          "Social Media Marketing Service for Travel Agencies",
+          "SEO Service for Travel Agencies",
+          "Website Development Service for Travel Agencies",
+          "E-commerce Web Development Service for Travel Agencies",
+          "Branding Service for Travel Agencies",
+        ],
+      },
+    ],
   },
   {
-    "id": "beauty-fashion-marketing",
-    "title": "Beauty & Fashion Marketing",
-    "desc": "Our specialized solutions for Beauty & Fashion Marketing are designed to maximize ROI. We integrate seamlessly with your existing processes to drive efficiency. Est Lorem proident minim ut Excepteur ex est nisi aliqua in est mollit incididunt enim occaecat deserunt cillum Ut dolor. Stay ahead of the competition with innovative approaches tailored for you. Irure officia cillum nisi sed nostrud in ea ut magna cillum ad ex quis consectetur. Unlock new revenue streams and build lasting customer relationships.",
-    "img": "/Industry/startup.webp",
-    "subIndustries": [
+    id: "beauty-fashion-marketing",
+    title: "Beauty & Fashion",
+    innerDesc:
+      "Creative marketing solutions for beauty brands and fashion businesses to build brand identity and drive sales.",
+
+    desc: "We help beauty and fashion brands grow with influencer marketing, social media campaigns, and SEO strategies that boost engagement, increase sales, and build a strong brand identity.",
+    img: "/Industry/fashion.webp",
+    subIndustries: [
       {
-        "title": "Beauty Salons",
-        "img": "",
-        "desc": "Our specialized solutions for Beauty Salons are designed to maximize ROI. By leveraging data-driven insights, we uncover hidden opportunities. Cupidatat sint nulla do eu Excepteur non culpa mollit minim veniam ipsum dolore eiusmod ea nisi culpa elit sunt cupidatat. From strategic planning to flawless execution, we handle it all. Incididunt incididunt anim sint mollit pariatur adipiscing ad dolore enim Excepteur in consectetur ex mollit. Reach out today to start your journey toward market leadership."
+        title: "Beauty Salons",
+        img: "",
+        desc: "We help beauty salons grow their client base and increase bookings through powerful digital marketing strategies. Our services include local SEO, Google My Business optimization, social media marketing, and paid advertising campaigns. We focus on improving visibility in “salon near me” searches, showcasing services, and attracting local customers. With targeted campaigns and strong branding, we help salons boost appointments, enhance customer engagement, and build a trusted beauty brand.",
+        points: [
+          "Digital Marketing Service for Beauty Salons",
+          "Social Media Marketing Service for Beauty Salons",
+          "SEO Service for Beauty Salons",
+          "Website Development Service for Beauty Salons",
+          "E-commerce Web Development Service for Beauty Salons",
+          "Branding Service for Beauty Salons",
+        ],
       },
       {
-        "title": "Fashion Designers",
-        "img": "",
-        "desc": "Transform the way you approach Fashion Designers today. By leveraging data-driven insights, we uncover hidden opportunities. Nulla Duis Lorem nulla consequat anim aliquip pariatur anim ad do sit reprehenderit deserunt consectetur do nisi sit cupidatat proident. We integrate seamlessly with your existing processes to drive efficiency. Dolore officia in esse incididunt ea cillum in ullamco dolore ea eu sit enim consectetur. Your success is our priority, and our track record proves it."
+        title: "Fashion Designers",
+        img: "",
+        desc: "HJ Sysweb delivers creative digital marketing solutions for fashion designers to build brand identity and attract premium clients. Our strategies include branding, SEO, social media marketing, and portfolio website development. We help designers showcase collections, increase online visibility, and connect with the right audience. With visually engaging campaigns and targeted promotions, we support fashion designers in growing their brand presence and achieving consistent business growth.",
+        points: [
+          "Digital Marketing Service for Fashion Designers",
+          "Social Media Marketing Service for Fashion Designers",
+          "SEO Service for Fashion Designers",
+          "Website Development Service for Fashion Designers",
+          "Branding Service for Fashion Designers",
+        ],
       },
       {
-        "title": "Clothing Brands",
-        "img": "",
-        "desc": "Elevate your Clothing Brands presence through targeted campaigns. Our team of experts works tirelessly to optimize every touchpoint. Dolor irure elit do sunt voluptate qui nisi sunt Duis ut quis voluptate laboris aliqua in dolore Duis aliquip nostrud. We integrate seamlessly with your existing processes to drive efficiency. Et sit pariatur sint labore magna velit tempor voluptate elit aute ea cillum laborum eiusmod. Your success is our priority, and our track record proves it."
+        title: "Clothing Brands",
+        img: "",
+        desc: "Our digital marketing services for clothing brands are designed to increase product visibility and drive sales. We offer e-commerce SEO, social media marketing, paid ads, and brand positioning strategies. We focus on promoting collections, targeting the right audience, and improving conversion rates. With data-driven campaigns and strong branding, we help clothing brands build recognition, boost online sales, and establish a competitive presence in the fashion market.",
+        points: [
+          "Digital Marketing Service for Clothing Brands",
+          "Social Media Marketing Service for Clothing Brands",
+          "SEO Service for Clothing Brands",
+          "Website Development Service for Clothing Brands",
+          "E-commerce Web Development Service for Clothing Brands",
+          "Branding Service for Clothing Brands",
+        ],
       },
       {
-        "title": "Online Fashion Stores",
-        "img": "",
-        "desc": "Transform the way you approach Online Fashion Stores today. By leveraging data-driven insights, we uncover hidden opportunities. Eu cupidatat id in ullamco Ut consequat do sunt enim sit in in veniam mollit sit ea enim ut ex. We focus on delivering measurable results that scale. Velit dolor labore consectetur enim consectetur irure sed do aliqua adipiscing minim id esse ullamco. Your success is our priority, and our track record proves it."
+        title: "Online Fashion Stores",
+        img: "",
+        desc: "We provide advanced digital marketing solutions for online fashion stores to increase traffic and maximize conversions. Our strategies include SEO, performance marketing, product listing optimization, and conversion rate optimization. We focus on improving search rankings, enhancing user experience, and driving targeted traffic. With continuous optimization and campaign management, we help online stores increase sales, retain customers, and achieve sustainable e-commerce growth.",
+        points: [
+          "Digital Marketing Service for Online Fashion Stores",
+          "Social Media Marketing Service for Online Fashion Stores",
+          "SEO Service for Online Fashion Stores",
+          "Website Development Service for Online Fashion Stores",
+          "E-commerce Web Development Service for Online Fashion Stores",
+          "Branding Service for Online Fashion Stores",
+        ],
       },
       {
-        "title": "Makeup Artists & Nail Studios",
-        "img": "",
-        "desc": "Our specialized solutions for Makeup Artists & Nail Studios are designed to maximize ROI. From strategic planning to flawless execution, we handle it all. Laboris tempor minim occaecat in nostrud non laboris occaecat proident consectetur irure cupidatat dolore irure id incididunt ut mollit minim. Our team of experts works tirelessly to optimize every touchpoint. Dolore dolor labore laboris do nostrud ex reprehenderit officia magna ex deserunt Ut fugiat amet. Experience the difference of a truly dedicated partnership."
+        title: "Makeup Artists & Nail Studios",
+        img: "",
+        desc: "Our digital marketing strategies for makeup artists and nail studios focus on increasing bookings and enhancing local visibility. We offer local SEO, Instagram marketing, portfolio promotion, and targeted advertising campaigns. We help professionals showcase their work, attract clients, and build a strong personal brand. With creative content and engagement-driven campaigns, we ensure higher inquiries, better customer retention, and consistent growth for beauty professionals.",
+        points: [
+          "Digital Marketing Service for Makeup Artists & Nail Studios",
+          "Social Media Marketing Service for Makeup Artists & Nail Studios",
+          "SEO Service for Makeup Artists & Nail Studios",
+          "Website Development Service for Makeup Artists & Nail Studios",
+          "E-commerce Web Development Service for Makeup Artists & Nail Studios",
+          "Branding Service for Makeup Artists & Nail Studios",
+        ],
       },
       {
-        "title": "Spa & Wellness Centers",
-        "img": "",
-        "desc": "Elevate your Spa & Wellness Centers presence through targeted campaigns. From strategic planning to flawless execution, we handle it all. Voluptate voluptate veniam quis enim eu quis sit minim Duis occaecat deserunt dolore enim in sit sit enim ea in. We integrate seamlessly with your existing processes to drive efficiency. Veniam et mollit tempor Ut ea aliqua incididunt sint cupidatat pariatur in aliqua pariatur aute. Reach out today to start your journey toward market leadership."
-      }
-    ]
+        title: "Spa & Wellness Centers",
+        img: "",
+        desc: "HJ Sysweb provides result-driven digital marketing solutions for spa and wellness centers to attract clients and increase bookings. Our services include SEO, social media marketing, paid campaigns, and reputation management. We focus on promoting relaxation services, improving online visibility, and targeting the right audience. With strategic campaigns and strong branding, we help wellness centers boost engagement, increase appointments, and create a premium customer experience.",
+        points: [
+          "Digital Marketing Service for Spa",
+          "Social Media Marketing Service for Spa",
+          "SEO Service for Spa",
+          "Website Development Service for Spa",
+          "Branding Service for Spa",
+        ],
+      },
+    ],
   },
   {
-    "id": "it-technology-marketing",
-    "title": "IT & Technology Marketing",
-    "desc": "Our specialized solutions for IT & Technology Marketing are designed to maximize ROI. We focus on delivering measurable results that scale. Ut quis ut commodo ex ut nulla cillum aliqua non in irure aute ad Duis id nulla et nisi ipsum. We focus on delivering measurable results that scale. Veniam ad elit occaecat Ut aliqua do amet officia aliqua Duis dolor incididunt aliquip esse. Unlock new revenue streams and build lasting customer relationships.",
-    "img": "/Industry/startup.webp",
-    "subIndustries": [
+    id: "it-technology-marketing",
+    title: "IT & Technology",
+    innerDesc:
+      "Growth-driven marketing for IT companies and tech startups to generate leads and build authority.",
+
+    desc: "Our IT marketing strategies focus on lead generation, SEO, and content marketing to help technology companies increase visibility, build authority, and attract high-quality clients.",
+    img: "/Industry/IT & Technology.png",
+    subIndustries: [
       {
-        "title": "IT Consulting Firms",
-        "img": "",
-        "desc": "Discover the true potential of IT Consulting Firms with our help. Stay ahead of the competition with innovative approaches tailored for you. Duis sunt fugiat ad sint aliquip in velit velit veniam commodo ut commodo laborum ipsum ullamco cupidatat dolor veniam aliqua. Stay ahead of the competition with innovative approaches tailored for you. Esse pariatur deserunt exercitation adipiscing sint culpa consequat sed elit reprehenderit ullamco nostrud consectetur labore. Let us help you dominate your market and achieve sustainable success."
+        title: "IT Consulting Firms",
+        img: "",
+        desc: "We help IT consulting firms generate high-quality leads and establish strong digital authority through result-driven marketing strategies. Our services include SEO for IT services, content marketing, LinkedIn marketing, and website optimization. We focus on positioning your firm as an industry expert, improving search visibility, and attracting business clients. With targeted campaigns and data-driven strategies, we help IT consulting firms increase inquiries, build trust, and achieve consistent business growth.",
+        points: [
+          "Digital Marketing Service for IT Consulting Firms",
+          "Social Media Marketing Service for IT Consulting Firms",
+          "SEO Service for IT Consulting Firms",
+          "Website Development Service for IT Consulting Firms",
+          "Branding Service for IT Consulting Firms",
+        ],
       },
       {
-        "title": "Cybersecurity Companies",
-        "img": "",
-        "desc": "Achieve unprecedented growth in your Cybersecurity Companies sector. Stay ahead of the competition with innovative approaches tailored for you. Enim reprehenderit incididunt ea pariatur Lorem sit reprehenderit irure esse incididunt quis eu veniam quis tempor anim consequat sint incididunt. By leveraging data-driven insights, we uncover hidden opportunities. Esse aliqua in incididunt minim elit mollit ullamco aute reprehenderit laboris irure nulla fugiat laboris. Your success is our priority, and our track record proves it."
+        title: "Cybersecurity Companies",
+        img: "",
+        desc: "HJ Sysweb provides specialized digital marketing solutions for cybersecurity companies to build credibility and attract enterprise clients. Our strategies include SEO, technical content marketing, branding, and performance marketing tailored for security services. We focus on improving visibility for cybersecurity keywords, educating audiences, and building trust. With strong digital positioning and targeted campaigns, we help cybersecurity firms generate qualified leads, increase engagement, and grow their client base effectively.",
+        points: [
+          "Digital Marketing Service for Cybersecurity Companies",
+          "Social Media Marketing Service for Cybersecurity Companies",
+          "SEO Service for Cybersecurity Companies",
+          "Website Development Service for Cybersecurity Companies",
+          "Branding Service for Cybersecurity Companies",
+        ],
       },
       {
-        "title": "Software Development Firms",
-        "img": "",
-        "desc": "Elevate your Software Development Firms presence through targeted campaigns. Our team of experts works tirelessly to optimize every touchpoint. Ex commodo labore nulla in laborum elit eiusmod reprehenderit dolore magna magna ipsum dolor in reprehenderit dolore nulla fugiat minim. We focus on delivering measurable results that scale. Nulla non non anim adipiscing ipsum magna deserunt velit aliquip incididunt fugiat magna ad in. Let us help you dominate your market and achieve sustainable success."
+        title: "Software Development Firms",
+        img: "",
+        desc: "Our digital marketing services for software development firms are designed to increase visibility and generate B2B leads. We offer SEO, content marketing, PPC campaigns, and portfolio-focused website optimization. We help companies rank for software development services, attract global clients, and showcase technical expertise. With conversion-driven strategies and continuous optimization, we support software firms in scaling their business, improving brand authority, and achieving long-term growth.",
+        points: [
+          "Digital Marketing Service for Software Development Firms",
+          "Social Media Marketing Service for Software Development Firms",
+          "SEO Service for Software Development Firms",
+          "Website Development Service for Software Development Firms",
+          "Branding Service for Software Development Firms",
+        ],
       },
       {
-        "title": "Tech Product Companies",
-        "img": "",
-        "desc": "Achieve unprecedented growth in your Tech Product Companies sector. Stay ahead of the competition with innovative approaches tailored for you. Commodo aliqua laboris dolore sed Excepteur eiusmod adipiscing adipiscing Ut velit quis voluptate ex eu esse mollit culpa aliquip adipiscing. From strategic planning to flawless execution, we handle it all. In consectetur ut sunt qui incididunt quis Lorem ad reprehenderit dolore commodo sit aliquip reprehenderit. Reach out today to start your journey toward market leadership."
-      }
-    ]
+        title: "Tech Product Companies",
+        img: "",
+        desc: "We help tech product companies grow with performance-driven digital marketing strategies that increase product visibility and drive conversions. Our services include SEO, product marketing, paid advertising, and landing page optimization. We focus on targeting the right audience, improving user experience, and boosting product adoption. With data-driven campaigns and scalable strategies, we help tech companies increase sales, enhance brand recognition, and achieve sustainable market growth.",
+        points: [
+          "Digital Marketing Service for Tech Product Companies",
+          "Social Media Marketing Service for Tech Product Companies",
+          "SEO Service for Tech Product Companies",
+          "Website Development Service for Tech Product Companies",
+          "E-commerce Web Development Service for Tech Product Companies",
+          "Branding Service for Tech Product Companies",
+        ],
+      },
+    ],
   },
   {
-    "id": "construction-marketing",
-    "title": "Construction Marketing",
-    "desc": "We provide unparalleled expertise when it comes to Construction Marketing. Stay ahead of the competition with innovative approaches tailored for you. Aliqua dolore velit ut exercitation ut sint officia sunt reprehenderit dolore sit dolor id incididunt magna aliquip esse ipsum amet. By leveraging data-driven insights, we uncover hidden opportunities. Excepteur dolore sed minim laborum non in laborum sint commodo quis incididunt occaecat mollit amet. Let us help you dominate your market and achieve sustainable success.",
-    "img": "/Industry/startup.webp",
-    "subIndustries": [
+    id: "construction-marketing",
+    title: "Construction",
+    innerDesc:
+      "Marketing solutions for construction companies to generate projects, leads, and strong brand presence.",
+
+    desc: "We help construction businesses grow through SEO, project showcasing, and lead generation strategies that increase visibility and attract potential clients for long-term business growth.",
+    img: "/Industry/Construction.png",
+    subIndustries: [
       {
-        "title": "Construction Companies",
-        "img": "",
-        "desc": "Achieve unprecedented growth in your Construction Companies sector. By leveraging data-driven insights, we uncover hidden opportunities. Do incididunt sit voluptate in tempor aliqua est cupidatat sit in fugiat cupidatat ea ipsum fugiat tempor id irure qui. By leveraging data-driven insights, we uncover hidden opportunities. Elit culpa Ut ipsum anim esse minim laboris et tempor et velit ipsum ipsum amet. Experience the difference of a truly dedicated partnership."
+        title: "Construction Companies",
+        img: "",
+        desc: "We help construction companies generate high-quality project leads and improve their online visibility through result-driven digital marketing strategies. Our services include SEO for construction companies, website development, project portfolio showcasing, and lead generation campaigns. We focus on ranking your business for construction-related searches, attracting potential clients, and building credibility. With targeted campaigns and strong branding, we help construction businesses secure more projects and achieve long-term growth.",
+        points: [
+          "Digital Marketing Service for Construction Companies",
+          "Social Media Marketing Service for Construction Companies",
+          "SEO Service for Construction Companies",
+          "Website Development Service for Construction Companies",
+          "Branding Service for Construction Companies",
+        ],
       },
       {
-        "title": "Interior Designer & Architect",
-        "img": "",
-        "desc": "Boost your Interior Designer & Architect with our cutting-edge strategies. By leveraging data-driven insights, we uncover hidden opportunities. Adipiscing aute Excepteur dolor id adipiscing nostrud deserunt nostrud adipiscing ipsum ut adipiscing anim ipsum Lorem nulla nisi Duis cupidatat. Stay ahead of the competition with innovative approaches tailored for you. Tempor occaecat in ea non aute et do ad et exercitation ullamco do dolore laborum. Join hundreds of satisfied clients who have transformed their business."
+        title: "Interior Designer & Architect",
+        img: "",
+        desc: "HJ Sysweb delivers creative digital marketing solutions for interior designers and architects to showcase their work and attract premium clients. Our strategies include portfolio website optimization, SEO, social media marketing, and branding campaigns. We help professionals highlight their designs, increase visibility, and connect with the right audience. With visually engaging content and targeted campaigns, we support designers and architects in building strong brand identity and growing their business consistently.",
+        points: [
+          "Digital Marketing Service for Interior Designer & Architect",
+          "Social Media Marketing Service for Interior Designer & Architect",
+          "SEO Service for Interior Designer & Architect",
+          "Website Development Service for Interior Designer & Architect",
+          "Branding Service for Interior Designer & Architect",
+        ],
       },
       {
-        "title": "Infrastructure Developers",
-        "img": "",
-        "desc": "Boost your Infrastructure Developers with our cutting-edge strategies. Our team of experts works tirelessly to optimize every touchpoint. Exercitation in officia deserunt proident do ut sed velit magna nostrud velit sit officia aute sunt laboris incididunt aliqua Duis. Stay ahead of the competition with innovative approaches tailored for you. Laboris reprehenderit laboris Duis quis dolor veniam irure magna commodo qui ad ex nostrud laboris. Unlock new revenue streams and build lasting customer relationships."
-      }
-    ]
+        title: "Infrastructure Developers",
+        img: "",
+        desc: "Our digital marketing services for infrastructure developers are designed to promote large-scale projects and attract investors and stakeholders. We offer SEO, project-based marketing, paid advertising, and branding strategies tailored for infrastructure businesses. We focus on showcasing developments, improving visibility, and generating quality leads. With data-driven campaigns and strategic positioning, we help infrastructure developers build trust, increase engagement, and drive consistent business growth.",
+        points: [
+          "Digital Marketing Service for Infrastructure Developers",
+          "Social Media Marketing Service for Infrastructure Developers",
+          "SEO Service for Infrastructure Developers",
+          "Website Development Service for Infrastructure Developers",
+          "Branding Service for Infrastructure Developers",
+        ],
+      },
+    ],
   },
   {
-    "id": "automotive-marketing",
-    "title": "Automotive Marketing",
-    "desc": "Boost your Automotive Marketing with our cutting-edge strategies. Stay ahead of the competition with innovative approaches tailored for you. Ut voluptate ut ex ex officia ea reprehenderit exercitation ipsum est anim sunt occaecat anim deserunt minim nulla do aute. Stay ahead of the competition with innovative approaches tailored for you. Minim incididunt mollit tempor aute anim sint deserunt adipiscing Duis eu laborum consectetur ut veniam. Unlock new revenue streams and build lasting customer relationships.",
-    "img": "/Industry/startup.webp",
-    "subIndustries": [
+    id: "automotive-marketing",
+    title: "Automotive",
+    innerDesc:
+      "Digital marketing services for automotive businesses to increase inquiries, showroom visits, and brand awareness.",
+
+    desc: "Our automotive marketing solutions help increase leads, showroom visits, and online visibility through SEO, paid ads, and targeted campaigns designed for maximum customer engagement.",
+    img: "/Industry/Automotive.png",
+    subIndustries: [
       {
-        "title": "Car Dealerships",
-        "img": "",
-        "desc": "Achieve unprecedented growth in your Car Dealerships sector. We focus on delivering measurable results that scale. Dolor cillum in id elit tempor dolor occaecat in eiusmod labore Ut dolore amet occaecat aliquip culpa magna in nostrud. Stay ahead of the competition with innovative approaches tailored for you. Exercitation minim laborum deserunt sunt cillum aliqua anim cillum occaecat eiusmod esse exercitation ut consectetur. Reach out today to start your journey toward market leadership."
+        title: "Car Dealerships",
+        img: "",
+        desc: "We help car dealerships increase showroom visits and generate high-quality leads through result-driven digital marketing strategies. Our services include automotive SEO, Google Ads, social media marketing, and website optimization. We focus on ranking your dealership for “car dealers near me” searches, showcasing inventory, and attracting potential buyers. With targeted campaigns and strong branding, we help dealerships boost inquiries, improve conversions, and achieve consistent sales growth.",
+        points: [
+          "Digital Marketing Service for Car Dealerships",
+          "Social Media Marketing Service for Car Dealerships",
+          "SEO Service for Car Dealerships",
+          "Website Development Service for Car Dealerships",
+          "E-commerce Web Development Service for Car Dealerships",
+          "Branding Service for Car Dealerships",
+        ],
       },
       {
-        "title": "Auto Repair Shops",
-        "img": "",
-        "desc": "Elevate your Auto Repair Shops presence through targeted campaigns. By leveraging data-driven insights, we uncover hidden opportunities. Ea dolore aliqua sit adipiscing eu esse Excepteur sed esse dolor magna in ex sunt id amet culpa eiusmod esse. Our team of experts works tirelessly to optimize every touchpoint. Laboris qui amet ipsum in deserunt do consectetur ullamco ut officia proident exercitation anim aliqua. Join hundreds of satisfied clients who have transformed their business."
+        title: "Auto Repair Shops",
+        img: "",
+        desc: "HJ Sysweb provides powerful digital marketing solutions for auto repair shops to increase local visibility and customer bookings. Our strategies include local SEO, Google My Business optimization, paid advertising, and review management. We help repair shops rank higher for service-related searches, attract nearby customers, and build trust through online reputation. With consistent optimization and targeted campaigns, we ensure more service inquiries, higher engagement, and long-term business growth.",
+        points: [
+          "Digital Marketing Service for Auto Repair Shops",
+          "Social Media Marketing Service for Auto Repair Shops",
+          "SEO Service for Auto Repair Shops",
+          "Website Development Service for Auto Repair Shops",
+          "Branding Service for Auto Repair Shops",
+        ],
       },
       {
-        "title": "Car Rental Services",
-        "img": "",
-        "desc": "Boost your Car Rental Services with our cutting-edge strategies. From strategic planning to flawless execution, we handle it all. Dolore dolore dolore magna officia amet eiusmod dolor sunt laborum sunt deserunt est culpa in dolore in sed nostrud cupidatat. Stay ahead of the competition with innovative approaches tailored for you. Est elit ut nostrud anim do aute voluptate Excepteur ut nostrud fugiat nisi sint ex. Unlock new revenue streams and build lasting customer relationships."
+        title: "Car Rental Services",
+        img: "",
+        desc: "Our digital marketing services for car rental businesses are designed to increase bookings and improve online visibility. We offer SEO, performance marketing, landing page optimization, and targeted advertising campaigns. We focus on ranking your services for rental-related searches, attracting travelers and local users, and improving conversion rates. With data-driven strategies and continuous optimization, we help car rental companies increase bookings and maximize revenue.",
+        points: [
+          "Digital Marketing Service for Car Rental Services",
+          "Social Media Marketing Service for Car Rental Services",
+          "SEO Service for Car Rental Services",
+          "Website Development Service for Car Rental Services",
+          "Branding Service for Car Rental Services",
+        ],
       },
       {
-        "title": "Auto Parts Stores",
-        "img": "",
-        "desc": "Elevate your Auto Parts Stores presence through targeted campaigns. We integrate seamlessly with your existing processes to drive efficiency. Deserunt aute aliquip laboris id non mollit ut exercitation in nisi ad eiusmod nisi laboris cillum nulla dolor amet dolore. Stay ahead of the competition with innovative approaches tailored for you. Dolor mollit qui dolore in ut fugiat ea reprehenderit dolor magna ex dolore non nulla. Reach out today to start your journey toward market leadership."
-      }
-    ]
+        title: "Auto Parts Stores",
+        img: "",
+        desc: "We help auto parts stores grow their business by increasing product visibility and driving online and offline sales. Our services include e-commerce SEO, product listing optimization, paid ads, and marketplace marketing. We focus on ranking your products for relevant search queries, attracting the right customers, and improving conversions. With performance-driven campaigns and strategic optimization, we help auto parts businesses expand reach, increase sales, and build a strong market presence.",
+        points: [
+          "Digital Marketing Service for Auto Parts Stores",
+          "Social Media Marketing Service for Auto Parts Stores",
+          "SEO Service for Auto Parts Stores",
+          "Website Development Service for Auto Parts Stores",
+          "E-commerce Web Development Service for Auto Parts Stores",
+          "Branding Service for Auto Parts Stores",
+        ],
+      },
+    ],
   },
   {
-    "id": "agriculture-farming-marketing",
-    "title": "Agriculture & Farming Marketing",
-    "desc": "Elevate your Agriculture & Farming Marketing presence through targeted campaigns. From strategic planning to flawless execution, we handle it all. Velit aliqua sint sit ex incididunt in aute ad elit veniam non ad occaecat consequat anim labore anim in id. From strategic planning to flawless execution, we handle it all. Amet aliquip ut dolore aliquip ut Lorem deserunt ullamco laborum amet aliquip officia anim fugiat. Let us help you dominate your market and achieve sustainable success.",
-    "img": "/Industry/startup.webp",
-    "subIndustries": [
+    id: "agriculture-farming-marketing",
+    title: "Agriculture & Farming",
+    innerDesc:
+      "Marketing strategies for agriculture and farming businesses to promote products and reach wider markets.",
+
+    desc: "We help agriculture businesses grow by promoting products through SEO, digital campaigns, and branding strategies that increase reach, visibility, and customer engagement across markets.",
+    img: "/Industry/Agriculture & Farming.png",
+    subIndustries: [
       {
-        "title": "Hydroponic Farms",
-        "img": "",
-        "desc": "Achieve unprecedented growth in your Hydroponic Farms sector. We focus on delivering measurable results that scale. Pariatur non non sit Excepteur consequat consequat incididunt in tempor est exercitation do cillum occaecat et amet dolore laborum dolore. Our team of experts works tirelessly to optimize every touchpoint. Ex ea id laboris qui esse aute aliqua ut amet ad consequat exercitation dolor quis. Join hundreds of satisfied clients who have transformed their business."
+        title: "Hydroponic Farms",
+        img: "",
+        desc: "We help hydroponic farms increase product visibility and generate high-quality leads through result-driven digital marketing strategies. Our services include agriculture SEO, website development, branding, and performance marketing tailored for modern farming businesses. We focus on promoting fresh produce, improving online visibility, and targeting health-conscious consumers and B2B buyers. With data-driven campaigns and strategic positioning, we help hydroponic farms expand their reach, boost sales, and achieve sustainable growth.",
+        points: [
+          "Digital Marketing Service for Hydroponic Farms",
+          "Social Media Marketing Service for Hydroponic Farms",
+          "SEO Service for Hydroponic Farms",
+          "Website Development Service for Hydroponic Farms",
+          "E-commerce Web Development Service for Hydroponic Farms",
+          "Branding Service for Hydroponic Farms",
+        ],
       },
       {
-        "title": "exotic food suppliers",
-        "img": "",
-        "desc": "Transform the way you approach exotic food suppliers today. Our team of experts works tirelessly to optimize every touchpoint. Ullamco aliqua nisi sed fugiat commodo Ut minim velit sed dolor ut fugiat eiusmod minim aliquip anim pariatur eiusmod incididunt. Stay ahead of the competition with innovative approaches tailored for you. Ut sit dolor ut incididunt est cillum laborum in culpa ad tempor ut mollit labore. Let us help you dominate your market and achieve sustainable success."
+        title: "exotic food suppliers",
+        img: "",
+        desc: "HJ Sysweb provides specialized digital marketing solutions for exotic food suppliers to promote premium products and reach the right audience. Our strategies include SEO, e-commerce marketing, social media campaigns, and product branding. We focus on showcasing unique offerings, improving search rankings, and attracting restaurants, retailers, and health-conscious customers. With targeted campaigns and strong digital presence, we help exotic food businesses increase demand, drive sales, and build a premium brand identity.",
+        points: [
+          "Digital Marketing Service for Exotic Food Suppliers",
+          "Social Media Marketing Service for Exotic Food Suppliers",
+          "SEO Service for Exotic Food Suppliers",
+          "Website Development Service for Exotic Food Suppliers",
+          "E-commerce Web Development Service for Exotic Food Suppliers",
+          "Branding Service for Exotic Food Suppliers",
+        ],
       },
       {
-        "title": "Dairy Farms",
-        "img": "",
-        "desc": "Our specialized solutions for Dairy Farms are designed to maximize ROI. Stay ahead of the competition with innovative approaches tailored for you. Voluptate consequat dolor enim minim sunt est minim ea fugiat in minim proident minim Duis laboris dolor proident aliqua mollit. We focus on delivering measurable results that scale. Nulla ipsum ullamco mollit in Lorem in adipiscing veniam dolore mollit deserunt eu incididunt ut. Unlock new revenue streams and build lasting customer relationships."
-      }
-    ]
+        title: "Dairy Farms",
+        img: "",
+        desc: "Our digital marketing services for dairy farms are designed to increase brand awareness and boost product sales. We offer SEO, local marketing, branding, and distribution-focused campaigns tailored for dairy businesses. We help farms promote fresh milk and dairy products, attract retailers and customers, and improve online visibility. With strategic marketing and trust-driven branding, we support dairy farms in expanding their customer base and achieving consistent business growth.",
+        points: [
+          "Digital Marketing Service for Dairy Farms",
+          "Social Media Marketing Service for Dairy Farms",
+          "SEO Service for Dairy Farms",
+          "Website Development Service for Dairy Farms",
+          "E-commerce Web Development Service for Dairy Farms",
+          "Branding Service for Dairy Farms",
+        ],
+      },
+    ],
   },
   {
-    "id": "jewelry-luxury-brands-marketing",
-    "title": "Jewelry & Luxury Brands Marketing",
-    "desc": "Boost your Jewelry & Luxury Brands Marketing with our cutting-edge strategies. Our team of experts works tirelessly to optimize every touchpoint. Ullamco amet sit dolor sed consequat non aliqua Duis pariatur do aliqua ut officia in proident aliqua et magna laboris. Our team of experts works tirelessly to optimize every touchpoint. Eu in nulla tempor sunt et dolor esse qui quis non elit eu amet sed. Unlock new revenue streams and build lasting customer relationships.",
-    "img": "/Industry/startup.webp",
-    "subIndustries": [
+    id: "jewelry-luxury-brands-marketing",
+    title: "Jewelry & Luxury Brands",
+    innerDesc:
+      "Premium marketing solutions for jewelry and luxury brands to enhance brand value and attract high-end customers.",
+
+    desc: "Our luxury marketing strategies focus on branding, SEO, and visual storytelling to attract premium customers, increase engagement, and build a strong high-end brand presence online.",
+    img: "/Industry/Jewelry & Luxury Brands.png",
+    subIndustries: [
       {
-        "title": "Jewelry Stores",
-        "img": "",
-        "desc": "Our specialized solutions for Jewelry Stores are designed to maximize ROI. By leveraging data-driven insights, we uncover hidden opportunities. Sit cupidatat occaecat irure magna aute dolor consequat aute sint voluptate irure occaecat veniam dolore adipiscing dolore est occaecat Duis. Our team of experts works tirelessly to optimize every touchpoint. Ut ex culpa eiusmod ex aute et in reprehenderit in sint aliquip voluptate ipsum ea. Your success is our priority, and our track record proves it."
+        title: "Jewelry Stores",
+        img: "",
+        desc: "We help jewelry stores enhance brand visibility and attract high-value customers through result-driven digital marketing strategies. Our services include SEO for jewelry businesses, social media marketing, e-commerce optimization, and paid advertising campaigns. We focus on showcasing collections, improving online presence, and targeting premium buyers. With visually appealing campaigns and strong branding, we help jewelry stores increase footfall, boost online sales, and build a trusted luxury brand.",
+        points: [
+          "Digital Marketing Service for Jewelry Stores",
+          "Social Media Marketing Service for Jewelry Stores",
+          "SEO Service for Jewelry Stores",
+          "Website Development Service for Jewelry Stores",
+          "E-commerce Web Development Service for Jewelry Stores",
+          "Branding Service for Jewelry Stores",
+        ],
       },
       {
-        "title": "Diamond Traders",
-        "img": "",
-        "desc": "Our specialized solutions for Diamond Traders are designed to maximize ROI. By leveraging data-driven insights, we uncover hidden opportunities. Minim voluptate irure ullamco eu magna officia fugiat ullamco cupidatat dolor ipsum sunt esse in proident dolore commodo velit Ut. Our team of experts works tirelessly to optimize every touchpoint. Nisi mollit qui culpa occaecat amet sint aliquip velit aute dolor ipsum quis Lorem commodo. Let us help you dominate your market and achieve sustainable success."
+        title: "Diamond Traders",
+        img: "",
+        desc: "HJ Sysweb provides specialized digital marketing solutions for diamond traders to build credibility and attract global clients. Our strategies include SEO, branding, website optimization, and B2B lead generation campaigns. We focus on promoting authenticity, improving search rankings, and connecting traders with wholesalers and retailers. With trust-driven marketing and targeted campaigns, we help diamond traders increase inquiries, expand their network, and establish a strong presence in the competitive diamond industry.",
+        points: [
+          "Digital Marketing Service for Diamond Traders",
+          "Social Media Marketing Service for Diamond Traders",
+          "SEO Service for Diamond Traders",
+          "Website Development Service for Diamond Traders",
+          "Branding Service for Diamond Traders",
+        ],
       },
       {
-        "title": "Gold & Silver Retailers",
-        "img": "",
-        "desc": "We provide unparalleled expertise when it comes to Gold & Silver Retailers. Stay ahead of the competition with innovative approaches tailored for you. Aliqua in sed eiusmod sit consequat id laborum proident irure aliqua ut amet magna mollit ut in dolore proident do. We focus on delivering measurable results that scale. Incididunt voluptate ut consequat sint dolor aliquip minim et qui pariatur ipsum dolore sint amet. Experience the difference of a truly dedicated partnership."
+        title: "Gold & Silver Retailers",
+        img: "",
+        desc: "Our digital marketing services for gold and silver retailers are designed to increase store visits and drive product sales. We offer local SEO, social media marketing, Google Ads, and branding strategies tailored for precious metal businesses. We help retailers rank for gold and silver-related searches, attract local buyers, and build trust. With performance-driven campaigns and consistent optimization, we ensure higher engagement, increased sales, and long-term business growth.",
+        points: [
+          "Digital Marketing Service for Gold & Silver Retailers",
+          "Social Media Marketing Service for Gold & Silver Retailers",
+          "SEO Service for Gold & Silver Retailers",
+          "Website Development Service for Gold & Silver Retailers",
+          "Branding Service for Gold & Silver Retailers",
+        ],
       },
       {
-        "title": "Premium Gift Stores",
-        "img": "",
-        "desc": "Transform the way you approach Premium Gift Stores today. From strategic planning to flawless execution, we handle it all. Laborum proident do dolore nulla ipsum amet mollit Excepteur ipsum do veniam ipsum officia laborum cillum elit nostrud cupidatat irure. We integrate seamlessly with your existing processes to drive efficiency. Commodo minim tempor esse ipsum Duis anim mollit veniam ipsum culpa ad sit officia sunt. Experience the difference of a truly dedicated partnership."
-      }
-    ]
+        title: "Premium Gift Stores",
+        img: "",
+        desc: "We help premium gift stores grow their brand and increase sales through creative and targeted digital marketing strategies. Our services include SEO, social media campaigns, e-commerce marketing, and paid advertising. We focus on showcasing luxury gifting products, improving visibility, and attracting the right audience. With visually engaging campaigns and conversion-focused strategies, we help gift stores boost online sales, enhance customer experience, and build a premium brand identity.",
+        points: [
+          "Digital Marketing Service for Premium Gift Stores",
+          "Social Media Marketing Service for Premium Gift Stores",
+          "SEO Service for Premium Gift Stores",
+          "Website Development Service for Premium Gift Stores",
+          "E-commerce Web Development Service for Premium Gift Stores",
+          "Branding Service for Premium Gift Stores",
+        ],
+      },
+    ],
   },
   {
-    "id": "electronics-gadgets-marketing",
-    "title": "Electronics & Gadgets Marketing",
-    "desc": "Boost your Electronics & Gadgets Marketing with our cutting-edge strategies. We integrate seamlessly with your existing processes to drive efficiency. Irure dolore irure est dolore ad Ut dolor adipiscing Duis qui do cupidatat ut dolor esse et sunt non incididunt. We integrate seamlessly with your existing processes to drive efficiency. Proident in ea nulla officia eu Duis aliqua velit occaecat ad proident labore pariatur labore. Experience the difference of a truly dedicated partnership.",
-    "img": "/Industry/startup.webp",
-    "subIndustries": [
+    id: "electronics-gadgets-marketing",
+    title: "Electronics & Gadgets",
+    innerDesc:
+      "Performance marketing for electronics brands to boost product visibility and drive online sales.",
+
+    desc: "We help electronics brands increase product visibility and sales through SEO, paid ads, and digital campaigns that target the right audience and improve conversion rates.",
+    img: "/Industry/Electronics & Gadgets.png",
+    subIndustries: [
       {
-        "title": "consumer electronics store",
-        "img": "",
-        "desc": "Elevate your consumer electronics store presence through targeted campaigns. By leveraging data-driven insights, we uncover hidden opportunities. Nisi est eiusmod dolor anim dolore est ea irure irure voluptate veniam dolor sed aute pariatur cupidatat tempor laborum esse. We integrate seamlessly with your existing processes to drive efficiency. Cupidatat voluptate veniam cupidatat reprehenderit id exercitation velit minim voluptate est id sit voluptate amet. Reach out today to start your journey toward market leadership."
+        title: "consumer electronics store",
+        img: "",
+        desc: "We help consumer electronics stores increase footfall and product sales through result-driven digital marketing strategies. Our services include retail SEO, Google Ads, local SEO, and social media marketing. We focus on ranking your store for “electronics store near me” searches, showcasing top products, and attracting local customers. With targeted campaigns and strong branding, we help electronics retailers boost visibility, improve customer engagement, and drive consistent sales growth.",
+        points: [
+          "Digital Marketing Service for Consumer Electronics Store",
+          "Social Media Marketing Service for Consumer Electronics Store",
+          "SEO Service for Consumer Electronics Store",
+          "Website Development Service for Consumer Electronics Store",
+          "E-commerce Web Development Service for Consumer Electronics Store",
+          "Branding Service for Consumer Electronics Store",
+        ],
       },
       {
-        "title": "Online Electronics Stores",
-        "img": "",
-        "desc": "Transform the way you approach Online Electronics Stores today. From strategic planning to flawless execution, we handle it all. Sed aute occaecat id quis in ea consectetur ad elit consectetur adipiscing Duis minim velit Ut magna consequat dolore Lorem. Stay ahead of the competition with innovative approaches tailored for you. Exercitation elit proident mollit ullamco dolore enim tempor sint Lorem sit consequat in commodo nisi. Your success is our priority, and our track record proves it."
+        title: "Online Electronics Stores",
+        img: "",
+        desc: "HJ Sysweb provides advanced digital marketing solutions for online electronics stores to increase traffic and maximize conversions. Our strategies include e-commerce SEO, product listing optimization, performance marketing, and paid advertising campaigns. We focus on improving search rankings, enhancing user experience, and targeting high-intent buyers. With data-driven campaigns and continuous optimization, we help online stores increase sales, improve conversion rates, and achieve sustainable e-commerce growth.",
+        points: [
+          "Digital Marketing Service for Online Electronics Stores",
+          "Social Media Marketing Service for Online Electronics Stores",
+          "SEO Service for Online Electronics Stores",
+          "Website Development Service for Online Electronics Stores",
+          "E-commerce Web Development Service for Online Electronics Stores",
+          "Branding Service for Online Electronics Stores",
+        ],
       },
       {
-        "title": "Gadget E-commerce Stores",
-        "img": "",
-        "desc": "We provide unparalleled expertise when it comes to Gadget E-commerce Stores. We integrate seamlessly with your existing processes to drive efficiency. Ut id Excepteur sit cillum anim eu dolor tempor Duis irure do tempor esse proident in laborum consectetur mollit sed. We focus on delivering measurable results that scale. Lorem dolore dolor ea dolore ea deserunt velit laboris nisi reprehenderit laboris magna laborum dolor. Reach out today to start your journey toward market leadership."
+        title: "Gadget E-commerce Stores",
+        img: "",
+        desc: "Our digital marketing services for gadget e-commerce stores are designed to boost product visibility and drive online sales. We offer SEO, social media marketing, influencer campaigns, and paid ads tailored for gadget brands. We focus on promoting trending gadgets, targeting the right audience, and increasing conversions. With performance-driven strategies and engaging campaigns, we help gadget stores build brand recognition, attract customers, and scale their business effectively.",
+        points: [
+          "Digital Marketing Service for Gadget E-commerce Stores",
+          "Social Media Marketing Service for Gadget E-commerce Stores",
+          "SEO Service for Gadget E-commerce Stores",
+          "Website Development Service for Gadget E-commerce Stores",
+          "E-commerce Web Development Service for Gadget E-commerce Stores",
+          "Branding Service for Gadget E-commerce Stores",
+        ],
       },
       {
-        "title": "Wholesale Electronics Suppliers",
-        "img": "",
-        "desc": "Achieve unprecedented growth in your Wholesale Electronics Suppliers sector. By leveraging data-driven insights, we uncover hidden opportunities. Non Ut cillum ut cillum Lorem pariatur do labore reprehenderit consectetur ea consectetur veniam nulla adipiscing consectetur laborum aliqua exercitation. We focus on delivering measurable results that scale. Occaecat qui deserunt amet irure velit ipsum aliqua cupidatat occaecat enim dolore irure laboris sunt. Experience the difference of a truly dedicated partnership."
-      }
-    ]
+        title: "Wholesale Electronics Suppliers",
+        img: "",
+        desc: "We help wholesale electronics suppliers generate B2B leads and expand their market reach through powerful digital marketing strategies. Our services include SEO, B2B marketing, lead generation campaigns, and website optimization. We focus on connecting suppliers with retailers, distributors, and bulk buyers. With targeted campaigns and strong online positioning, we help wholesale businesses increase inquiries, improve conversions, and grow their distribution network successfully.",
+        points: [
+          "Digital Marketing Service for Wholesale Electronics Suppliers",
+          "Social Media Marketing Service for Wholesale Electronics Suppliers",
+          "SEO Service for Wholesale Electronics Suppliers",
+          "Website Development Service for Wholesale Electronics Suppliers",
+          "E-commerce Web Development Service for Wholesale Electronics Suppliers",
+          "Branding Service for Wholesale Electronics Suppliers",
+        ],
+      },
+    ],
   },
   {
-    "id": "import-export-marketing",
-    "title": "Import & Export Marketing",
-    "desc": "Our specialized solutions for Import & Export Marketing are designed to maximize ROI. We integrate seamlessly with your existing processes to drive efficiency. Sint mollit quis in reprehenderit esse in non Lorem fugiat officia adipiscing ut culpa dolore id sit mollit in in. We focus on delivering measurable results that scale. Exercitation Ut ea officia Lorem anim deserunt deserunt aliqua culpa cupidatat ipsum esse mollit quis. Join hundreds of satisfied clients who have transformed their business.",
-    "img": "/Industry/startup.webp",
-    "subIndustries": [
+    id: "import-export-marketing",
+    title: "Import & Export",
+    innerDesc:
+      "Global marketing strategies for import-export businesses to expand reach and generate international leads.",
+
+    desc: "Our import-export marketing services help businesses expand globally through SEO, digital campaigns, and lead generation strategies that connect them with international buyers and partners.",
+    img: "/Industry/Import & Export.png",
+    subIndustries: [
       {
-        "title": "Import Companies",
-        "img": "",
-        "desc": "Discover the true potential of Import Companies with our help. We integrate seamlessly with your existing processes to drive efficiency. Ex aute ut Excepteur ut adipiscing in Ut minim in quis sed sed culpa velit ipsum nostrud Excepteur sit consectetur. Our team of experts works tirelessly to optimize every touchpoint. Dolore Lorem ea ad ut culpa eu sit non consectetur esse Duis anim adipiscing incididunt. Unlock new revenue streams and build lasting customer relationships."
+        title: "Import Companies",
+        img: "",
+        desc: "We help import companies expand their global reach and generate high-quality business leads through result-driven digital marketing strategies. Our services include SEO for import businesses, website optimization, B2B lead generation, and performance marketing. We focus on improving search visibility, connecting businesses with international suppliers, and building credibility. With targeted campaigns and strategic positioning, we help import companies increase inquiries, strengthen partnerships, and grow their business globally.",
+        points: [
+          "Digital Marketing Service for Import Companies",
+          "Social Media Marketing Service for Import Companies",
+          "SEO Service for Import Companies",
+          "Website Development Service for Import Companies",
+          "Branding Service for Import Companies",
+        ],
       },
       {
-        "title": "Trading Companies",
-        "img": "",
-        "desc": "Achieve unprecedented growth in your Trading Companies sector. Stay ahead of the competition with innovative approaches tailored for you. Ut ea nostrud commodo sunt incididunt eiusmod dolore non voluptate eiusmod amet sunt ipsum irure consectetur veniam dolore in consectetur. Stay ahead of the competition with innovative approaches tailored for you. Incididunt pariatur elit in ea officia sint commodo esse elit cillum officia id ex laborum. Unlock new revenue streams and build lasting customer relationships."
+        title: "Trading Companies",
+        img: "",
+        desc: "HJ Sysweb provides powerful digital marketing solutions for trading companies to boost visibility and attract global buyers and suppliers. Our strategies include SEO, marketplace marketing, content marketing, and paid advertising campaigns. We focus on promoting products, improving search rankings, and targeting the right audience across international markets. With data-driven campaigns and continuous optimization, we help trading companies generate leads, increase conversions, and build strong global business networks.",
+        points: [
+          "Digital Marketing Service for Trading Companies",
+          "Social Media Marketing Service for Trading Companies",
+          "SEO Service for Trading Companies",
+          "Website Development Service for Trading Companies",
+          "Branding Service for Trading Companies",
+        ],
       },
       {
-        "title": "Logistics Export Firms",
-        "img": "",
-        "desc": "Discover the true potential of Logistics Export Firms with our help. We focus on delivering measurable results that scale. Consectetur ut in aliqua Lorem culpa id officia laboris eiusmod consectetur adipiscing commodo sint consequat et exercitation velit ad ut. From strategic planning to flawless execution, we handle it all. Culpa proident sed adipiscing nostrud dolore ullamco veniam ullamco sint culpa in magna in sint. Reach out today to start your journey toward market leadership."
+        title: "Logistics Export Firms",
+        img: "",
+        desc: "Our digital marketing services for logistics export firms are designed to increase visibility and generate B2B inquiries. We offer SEO, website optimization, content marketing, and lead generation campaigns tailored for logistics services. We help firms rank for export and shipping-related searches, attract business clients, and improve trust. With performance-driven strategies and targeted campaigns, we support logistics companies in expanding their reach and achieving consistent growth.",
+        points: [
+          "Digital Marketing Service for Logistics Export Firms",
+          "Social Media Marketing Service for Logistics Export Firms",
+          "SEO Service for Logistics Export Firms",
+          "Website Development Service for Logistics Export Firms",
+          "Branding Service for Logistics Export Firms",
+        ],
       },
       {
-        "title": "International Wholesalers",
-        "img": "",
-        "desc": "Boost your International Wholesalers with our cutting-edge strategies. We integrate seamlessly with your existing processes to drive efficiency. Consequat in nisi reprehenderit fugiat in Ut aute incididunt officia do quis id occaecat aliquip tempor exercitation consectetur deserunt incididunt. Our team of experts works tirelessly to optimize every touchpoint. Consequat et sunt laborum Ut consectetur est cupidatat dolore elit cillum consequat ex nisi minim. Reach out today to start your journey toward market leadership."
+        title: "International Wholesalers",
+        img: "",
+        desc: "We help international wholesalers grow their business by connecting them with global buyers through advanced digital marketing strategies. Our services include SEO, B2B marketing, product promotion, and performance advertising. We focus on improving visibility for bulk product searches, attracting distributors, and increasing inquiries. With targeted campaigns and strong online positioning, we help wholesalers expand their network, boost sales, and achieve long-term business growth.",
+        points: [
+          "Digital Marketing Service for International Wholesalers",
+          "Social Media Marketing Service for International Wholesalers",
+          "SEO Service for International Wholesalers",
+          "Website Development Service for International Wholesalers",
+          "Branding Service for International Wholesalers",
+        ],
       },
       {
-        "title": "courier service",
-        "img": "",
-        "desc": "Boost your courier service with our cutting-edge strategies. Our team of experts works tirelessly to optimize every touchpoint. Ut ullamco voluptate consequat sed elit nisi nostrud Excepteur ullamco veniam voluptate enim ipsum ad dolor Lorem qui non mollit. By leveraging data-driven insights, we uncover hidden opportunities. Nulla eiusmod cupidatat dolore adipiscing veniam aliqua velit sit Lorem laborum id sunt Duis nulla. Your success is our priority, and our track record proves it."
-      }
-    ]
+        title: "courier service",
+        img: "",
+        desc: "Our digital marketing solutions for courier services are designed to increase bookings and improve local and global visibility. We offer local SEO, paid advertising, website optimization, and service-based marketing strategies. We help courier businesses rank for delivery-related searches, attract customers, and improve conversions. With targeted campaigns and strong branding, we support courier services in increasing inquiries, building trust, and growing their delivery network efficiently.",
+        points: [
+          "Digital Marketing Service for Courier Service",
+          "Social Media Marketing Service for Courier Service",
+          "SEO Service for Courier Service",
+          "Website Development Service for Courier Service",
+          "E-commerce Web Development Service for Courier Service",
+          "Branding Service for Courier Service",
+        ],
+      },
+    ],
   },
   {
-    "id": "sports-recreation-marketing",
-    "title": "Sports & Recreation Marketing",
-    "desc": "We provide unparalleled expertise when it comes to Sports & Recreation Marketing. From strategic planning to flawless execution, we handle it all. Aliqua sed adipiscing ipsum Lorem qui amet sit commodo minim laborum nisi sit in ad deserunt nisi Excepteur enim incididunt. Our team of experts works tirelessly to optimize every touchpoint. Irure deserunt dolore laborum ut aliquip nulla laborum ex reprehenderit Lorem consectetur sint ipsum veniam. Experience the difference of a truly dedicated partnership.",
-    "img": "/Industry/startup.webp",
-    "subIndustries": [
+    id: "sports-recreation-marketing",
+    title: "Sports & Recreation",
+    innerDesc:
+      "Marketing solutions for sports businesses, gyms, and recreational brands to increase engagement and memberships.",
+
+    desc: "We help sports and recreation businesses grow through social media marketing, SEO, and branding strategies that increase memberships, engagement, and overall business visibility.",
+    img: "/Industry/Sports & Recreation.png",
+    subIndustries: [
       {
-        "title": "Gyms & Fitness Centers",
-        "img": "",
-        "desc": "We provide unparalleled expertise when it comes to Gyms & Fitness Centers. By leveraging data-driven insights, we uncover hidden opportunities. Deserunt incididunt quis magna in aliquip id nulla commodo aliquip et ullamco quis tempor qui dolore ullamco dolor sit quis. We focus on delivering measurable results that scale. Ea non irure qui amet eu tempor Duis qui adipiscing esse elit dolore velit mollit. Reach out today to start your journey toward market leadership."
+        title: "Gyms & Fitness Centers",
+        img: "",
+        desc: "We help gyms and fitness centers increase memberships and improve local visibility through result-driven digital marketing strategies. Our services include fitness SEO, Google My Business optimization, social media marketing, and paid advertising campaigns. We focus on ranking your gym for “fitness center near me” searches, attracting local audiences, and boosting engagement. With targeted campaigns and strong branding, we help gyms grow their member base, increase retention, and achieve consistent business growth.",
+        points: [
+          "Digital Marketing Service for Gyms & Fitness Centers",
+          "Social Media Marketing Service for Gyms & Fitness Centers",
+          "SEO Service for Gyms & Fitness Centers",
+          "Website Development Service for Gyms & Fitness Centers",
+          "E-commerce Web Development Service for Gyms & Fitness Centers",
+          "Branding Service for Gyms & Fitness Centers",
+        ],
       },
       {
-        "title": "Personal Trainers",
-        "img": "",
-        "desc": "Transform the way you approach Personal Trainers today. From strategic planning to flawless execution, we handle it all. Excepteur irure reprehenderit Duis ex ad sit eiusmod aute officia mollit eu incididunt enim ut esse incididunt sunt velit elit. We focus on delivering measurable results that scale. Nisi dolor Ut mollit fugiat laborum ut dolor ullamco ad consequat in sunt minim et. Unlock new revenue streams and build lasting customer relationships."
+        title: "Personal Trainers",
+        img: "",
+        desc: "HJ Sysweb provides powerful digital marketing solutions for personal trainers to build a strong personal brand and attract clients. Our strategies include local SEO, social media marketing, content marketing, and lead generation campaigns. We help trainers showcase expertise, rank for fitness-related searches, and connect with the right audience. With performance-driven campaigns and branding strategies, we support personal trainers in increasing bookings, building credibility, and growing their fitness business.",
+        points: [
+          "Digital Marketing Service for Personal Trainers",
+          "Social Media Marketing Service for Personal Trainers",
+          "SEO Service for Personal Trainers",
+          "Website Development Service for Personal Trainers",
+          "E-commerce Web Development Service for Personal Trainers",
+          "Branding Service for Personal Trainers",
+        ],
       },
       {
-        "title": "Adventure Sports Companies",
-        "img": "",
-        "desc": "Transform the way you approach Adventure Sports Companies today. We focus on delivering measurable results that scale. Adipiscing non amet minim nisi dolor elit nostrud cupidatat dolore Excepteur est proident ut exercitation labore proident Lorem culpa in. Our team of experts works tirelessly to optimize every touchpoint. Aliqua esse velit eu quis in non in officia dolor occaecat nulla anim Ut ullamco. Let us help you dominate your market and achieve sustainable success."
+        title: "Adventure Sports Companies",
+        img: "",
+        desc: "Our digital marketing services for adventure sports companies are designed to increase bookings and boost brand visibility. We offer SEO, social media campaigns, video marketing, and paid advertising tailored for adventure experiences. We focus on promoting activities, attracting thrill-seekers, and improving online engagement. With visually engaging campaigns and targeted strategies, we help adventure companies increase inquiries, drive bookings, and build a strong brand presence.",
+        points: [
+          "Digital Marketing Service for Adventure Sports Companies",
+          "Social Media Marketing Service for Adventure Sports Companies",
+          "SEO Service for Adventure Sports Companies",
+          "Website Development Service for Adventure Sports Companies",
+          "E-commerce Web Development Service for Adventure Sports Companies",
+          "Branding Service for Adventure Sports Companies",
+        ],
       },
       {
-        "title": "Sports Equipment Brands",
-        "img": "",
-        "desc": "Boost your Sports Equipment Brands with our cutting-edge strategies. We focus on delivering measurable results that scale. Dolore qui ut nisi adipiscing in occaecat Ut minim quis dolor laborum aliquip veniam in Excepteur et quis sed quis. From strategic planning to flawless execution, we handle it all. Ex nulla ullamco cillum incididunt nisi dolore Excepteur in in pariatur fugiat culpa officia nostrud. Unlock new revenue streams and build lasting customer relationships."
-      }
-    ]
+        title: "Sports Equipment Brands",
+        img: "",
+        desc: "We help sports equipment brands increase product visibility and drive sales through performance-driven digital marketing strategies. Our services include e-commerce SEO, product marketing, paid ads, and branding campaigns. We focus on promoting equipment, targeting the right audience, and improving conversion rates. With data-driven campaigns and continuous optimization, we help brands build recognition, increase online sales, and expand their market presence effectively.",
+        points: [
+          "Digital Marketing Service for Sports Equipment Brands",
+          "Social Media Marketing Service for Sports Equipment Brands",
+          "SEO Service for Sports Equipment Brands",
+          "Website Development Service for Sports Equipment Brands",
+          "E-commerce Web Development Service for Sports Equipment Brands",
+          "Branding Service for Sports Equipment Brands",
+        ],
+      },
+    ],
   },
   {
-    "id": "franchise-marketing",
-    "title": "Franchise Marketing",
-    "desc": "Achieve unprecedented growth in your Franchise Marketing sector. We integrate seamlessly with your existing processes to drive efficiency. Laborum do sed reprehenderit quis laboris culpa laboris adipiscing velit irure labore esse do esse laborum ex mollit fugiat dolore. We integrate seamlessly with your existing processes to drive efficiency. Exercitation velit eu ipsum pariatur ut enim ad ex nostrud culpa dolore velit incididunt ipsum. Experience the difference of a truly dedicated partnership.",
-    "img": "/Industry/startup.webp",
-    "subIndustries": [
+    id: "franchise-marketing",
+    title: "Franchise",
+    innerDesc:
+      "Scalable marketing strategies for franchise businesses to generate leads and expand brand presence.",
+
+    desc: "Our franchise marketing solutions focus on lead generation, brand consistency, and digital growth strategies that help businesses expand locations and attract franchise opportunities.",
+    img: "/Industry/startup.webp",
+    subIndustries: [
       {
-        "title": "Food Franchise Businesses",
-        "img": "",
-        "desc": "Boost your Food Franchise Businesses with our cutting-edge strategies. By leveraging data-driven insights, we uncover hidden opportunities. Cillum ut dolor nulla exercitation qui occaecat Duis ut in dolore Excepteur sint Duis Ut dolor quis qui Duis dolore. Stay ahead of the competition with innovative approaches tailored for you. Aliquip tempor ut pariatur ullamco nisi laborum consectetur ipsum occaecat consequat ad minim irure dolor. Your success is our priority, and our track record proves it."
+        title: "Food Franchise Businesses",
+        img: "",
+        desc: "We help food franchise businesses expand their reach and increase outlet-level sales through result-driven digital marketing strategies. Our services include local SEO, social media marketing, paid advertising, and multi-location campaign management. We focus on promoting each outlet individually while maintaining brand consistency across locations. With targeted campaigns and strong branding, we help food franchises attract more customers, boost footfall, and achieve scalable business growth.",
+        points: [
+          "Digital Marketing Service for Food Franchise Businesses",
+          "Social Media Marketing Service for Food Franchise Businesses",
+          "SEO Service for Food Franchise Businesses",
+          "Website Development Service for Food Franchise Businesses",
+          "Branding Service for Food Franchise Businesses",
+        ],
       },
       {
-        "title": "Retail Franchise Chains",
-        "img": "",
-        "desc": "Our specialized solutions for Retail Franchise Chains are designed to maximize ROI. Our team of experts works tirelessly to optimize every touchpoint. Dolore ad ullamco enim ad eiusmod ipsum eiusmod ut dolor qui eiusmod labore Lorem magna adipiscing veniam voluptate tempor deserunt. From strategic planning to flawless execution, we handle it all. Officia ut quis dolore deserunt aliquip irure anim esse dolor do exercitation laboris cillum in. Let us help you dominate your market and achieve sustainable success."
+        title: "Retail Franchise Chains",
+        img: "",
+        desc: "HJ Sysweb provides powerful digital marketing solutions for retail franchise chains to increase store visits and improve brand visibility across multiple locations. Our strategies include SEO, local marketing, paid campaigns, and brand consistency management. We focus on driving traffic to individual outlets while strengthening overall brand identity. With performance-driven campaigns and centralized marketing strategies, we help retail franchises generate leads, increase conversions, and grow their network efficiently.",
+        points: [
+          "Digital Marketing Service for Retail Franchise Chains",
+          "Social Media Marketing Service for Retail Franchise Chains",
+          "SEO Service for Retail Franchise Chains",
+          "E-commerce Web Development Service for Retail Franchise Chains",
+          "Online Ordering Systems",
+        ],
       },
       {
-        "title": "Gym Franchise Brands",
-        "img": "",
-        "desc": "We provide unparalleled expertise when it comes to Gym Franchise Brands. From strategic planning to flawless execution, we handle it all. Ullamco adipiscing id Ut ea labore ipsum incididunt ea qui commodo aute veniam esse commodo adipiscing reprehenderit occaecat ut in. We focus on delivering measurable results that scale. Reprehenderit eu in sunt Duis velit sunt deserunt dolore elit veniam ex Lorem dolor ex. Join hundreds of satisfied clients who have transformed their business."
+        title: "Gym Franchise Brands",
+        img: "",
+        desc: "Our digital marketing services for gym franchise brands are designed to increase memberships and improve local visibility across all branches. We offer fitness SEO, social media marketing, lead generation campaigns, and location-based advertising. We focus on attracting local audiences for each outlet while maintaining a strong brand presence. With targeted campaigns and data-driven strategies, we help gym franchises boost sign-ups, increase engagement, and achieve consistent growth.",
+        points: [
+          "Digital Marketing Service for Gym Franchise Brands",
+          "Social Media Marketing Service for Gym Franchise Brands",
+          "SEO Service for Gym Franchise Brands",
+          "Website Development Service for Gym Franchise Brands",
+          "Branding Service for Gym Franchise Brands",
+        ],
       },
       {
-        "title": "Education Franchise Models",
-        "img": "",
-        "desc": "Boost your Education Franchise Models with our cutting-edge strategies. Our team of experts works tirelessly to optimize every touchpoint. Sed proident ex exercitation culpa veniam irure sint deserunt esse magna aliquip commodo nulla sit exercitation dolor pariatur labore ut. We focus on delivering measurable results that scale. Consectetur ad veniam Ut nostrud dolor cupidatat minim est laboris laborum id tempor consequat in. Experience the difference of a truly dedicated partnership."
+        title: "Education Franchise Models",
+        img: "",
+        desc: "We help education franchise models grow by increasing student enrollments and strengthening brand presence across multiple locations. Our services include SEO, paid advertising, social media marketing, and lead generation campaigns tailored for education businesses. We focus on promoting courses, targeting the right audience, and improving inquiry rates. With structured campaigns and scalable strategies, we help education franchises expand their reach, generate consistent leads, and grow successfully.",
+        points: [
+          "Digital Marketing Service for Education Franchise",
+          "Social Media Marketing Service for Education Franchise",
+          "SEO Service for Education Franchise",
+          "Website Development Service for Education Franchise",
+          "Branding Service for Education Franchise",
+        ],
       },
       {
-        "title": "Salon Franchise Brands",
-        "img": "",
-        "desc": "Achieve unprecedented growth in your Salon Franchise Brands sector. We integrate seamlessly with your existing processes to drive efficiency. Deserunt esse elit voluptate elit ad dolor velit ullamco cupidatat aliquip ipsum anim mollit exercitation occaecat fugiat nisi incididunt ullamco. We integrate seamlessly with your existing processes to drive efficiency. Est dolor proident occaecat in dolore cillum ut exercitation adipiscing est sunt voluptate proident nisi. Experience the difference of a truly dedicated partnership."
+        title: "Salon Franchise Brands",
+        img: "",
+        desc: "HJ Sysweb delivers creative digital marketing solutions for salon franchise brands to increase bookings and enhance local visibility across branches. Our strategies include local SEO, social media marketing, influencer campaigns, and paid advertising. We focus on promoting services, attracting local customers, and maintaining brand consistency. With targeted campaigns and strong branding, we help salon franchises boost appointments, improve customer engagement, and scale their business effectively.",
+        points: [
+          "Digital Marketing Service for Salon Franchise Brands",
+          "Social Media Marketing Service for Salon Franchise Brands",
+          "SEO Service for Salon Franchise Brands",
+          "Website Development Service for Salon Franchise Brands",
+          "Branding Service for Salon Franchise Brands",
+        ],
       },
       {
-        "title": "Multi-location Businesses",
-        "img": "",
-        "desc": "Boost your Multi-location Businesses with our cutting-edge strategies. We focus on delivering measurable results that scale. In minim ut aliqua qui culpa Excepteur sunt magna ad esse adipiscing anim eu fugiat minim consectetur ut et non. We integrate seamlessly with your existing processes to drive efficiency. Nisi eu veniam nulla cupidatat exercitation qui sed id adipiscing nisi voluptate ea culpa in. Unlock new revenue streams and build lasting customer relationships."
+        title: "Multi-location Businesses",
+        img: "",
+        desc: "We provide advanced digital marketing solutions for multi-location businesses to manage and grow their presence across different regions. Our services include multi-location SEO, centralized campaign management, local listing optimization, and performance marketing. We focus on improving visibility for each location while maintaining a unified brand identity. With data-driven strategies and scalable campaigns, we help businesses increase leads, improve conversions, and achieve consistent growth across all locations.",
+        points: [
+          "Digital Marketing Service for Multi-location Businesses",
+          "Social Media Marketing Service for Multi-location Businesses",
+          "SEO Service for Multi-location Businesses",
+          "Website Development Service for Multi-location Businesses",
+          "E-commerce Web Development Service for Multi-location Businesses",
+          "Branding Service for Multi-location Businesses",
+        ],
       },
       {
-        "title": "International Franchise Brands",
-        "img": "",
-        "desc": "Discover the true potential of International Franchise Brands with our help. Stay ahead of the competition with innovative approaches tailored for you. Dolore proident proident esse reprehenderit tempor sunt eiusmod magna Ut veniam reprehenderit ex nisi exercitation dolor elit exercitation nisi labore. We integrate seamlessly with your existing processes to drive efficiency. Excepteur ut commodo dolor consequat laborum eiusmod aliquip et aliqua ullamco dolore tempor officia est. Unlock new revenue streams and build lasting customer relationships."
+        title: "International Franchise Brands",
+        img: "",
+        desc: "We help international franchise brands expand their global presence and strengthen their digital visibility through result-driven marketing strategies. Our services include multi-location SEO, global campaign management, branding, and performance marketing. We focus on maintaining brand consistency across regions while driving local engagement and lead generation. With targeted campaigns and scalable strategies, we help international franchises attract new partners, increase customer reach, and achieve sustainable global business growth.",
+        points: [
+          "Digital Marketing Service for International Franchise Brands",
+          "Social Media Marketing Service for International Franchise Brands",
+          "SEO Service for International Franchise Brands",
+          "Website Development Service for International Franchise Brands",
+          "Branding Service for International Franchise Brands",
+        ],
       },
       {
-        "title": "Other Franchise",
-        "img": "",
-        "desc": "Elevate your Other Franchise presence through targeted campaigns. We integrate seamlessly with your existing processes to drive efficiency. Amet laborum commodo dolor sunt non ea pariatur Lorem minim nostrud in sunt irure incididunt laboris aute dolor Excepteur sit. We integrate seamlessly with your existing processes to drive efficiency. Quis pariatur aliquip consectetur in enim eiusmod eu est qui commodo anim exercitation dolor incididunt. Let us help you dominate your market and achieve sustainable success."
-      }
-    ]
+        title: "Other Franchise",
+        img: "",
+        desc: "HJ Sysweb provides powerful digital marketing solutions for various franchise businesses to increase visibility and generate consistent leads. Our strategies include SEO, local marketing, paid advertising, and centralized campaign management. We focus on promoting each outlet effectively while maintaining a unified brand identity. With data-driven campaigns and continuous optimization, we help franchise businesses attract customers, improve conversions, and scale operations efficiently across multiple locations.",
+        points: [
+          "Digital Marketing Service for Other Franchise",
+          "Social Media Marketing Service for Other Franchise",
+          "SEO Service for Other Franchise",
+          "Website Development Service for Other Franchise",
+          "Branding Service for Other Franchise",
+        ],
+      },
+    ],
   },
   {
-    "id": "b2b-industrial-marketing",
-    "title": "B2B Industrial Marketing",
-    "desc": "We provide unparalleled expertise when it comes to B2B Industrial Marketing. Our team of experts works tirelessly to optimize every touchpoint. Ipsum occaecat occaecat et cupidatat commodo sit irure minim sint quis tempor Duis cupidatat id labore dolore labore pariatur Duis. We integrate seamlessly with your existing processes to drive efficiency. Nulla laborum ut proident irure tempor nisi fugiat laboris laboris esse pariatur cillum ad dolore. Experience the difference of a truly dedicated partnership.",
-    "img": "/Industry/startup.webp",
-    "subIndustries": [
+    id: "b2b-industrial-marketing",
+    title: "B2B Industrial",
+    innerDesc:
+      "Advanced marketing strategies for B2B industrial businesses to generate leads and build long-term partnerships.",
+
+    desc: "We help B2B industrial companies grow with SEO, lead generation, and targeted campaigns that connect businesses with decision-makers and build long-term professional relationships.",
+    img: "/Industry/B2B Industrial.png",
+    subIndustries: [
       {
-        "title": "Industrial Equipment Suppliers",
-        "img": "",
-        "desc": "We provide unparalleled expertise when it comes to Industrial Equipment Suppliers. Stay ahead of the competition with innovative approaches tailored for you. Ut proident voluptate Duis occaecat velit non ullamco magna enim eu laborum ullamco fugiat Lorem exercitation consequat tempor Duis mollit. From strategic planning to flawless execution, we handle it all. Anim eu sunt et ut ad in anim dolor Duis nisi nostrud in in anim. Experience the difference of a truly dedicated partnership."
+        title: "Industrial Equipment Suppliers",
+        img: "",
+        desc: "We help industrial equipment suppliers generate high-quality B2B leads and improve product visibility through result-driven digital marketing strategies. Our services include industrial SEO, website optimization, product catalog marketing, and performance campaigns. We focus on ranking your equipment for high-intent search queries, attracting distributors and buyers. With targeted campaigns and technical content strategies, we help suppliers increase inquiries, improve conversions, and expand their presence in competitive industrial markets.",
+        points: [
+          "Digital Marketing Service for Industrial Equipment Suppliers",
+          "Social Media Marketing Service for Industrial Equipment Suppliers",
+          "SEO Service for Industrial Equipment Suppliers",
+          "Website Development Service for Industrial Equipment Suppliers",
+          "Branding Service for Industrial Equipment Suppliers",
+        ],
       },
       {
-        "title": "Wholesale Distributors",
-        "img": "",
-        "desc": "Elevate your Wholesale Distributors presence through targeted campaigns. Our team of experts works tirelessly to optimize every touchpoint. Lorem quis amet est Duis cupidatat ut consequat incididunt et culpa in Excepteur anim voluptate esse dolore officia esse commodo. From strategic planning to flawless execution, we handle it all. Ullamco do eiusmod fugiat aute dolore sed mollit aute dolor aliqua proident occaecat magna non. Experience the difference of a truly dedicated partnership."
+        title: "Wholesale Distributors",
+        img: "",
+        desc: "HJ Sysweb provides powerful digital marketing solutions for wholesale distributors to connect with retailers and bulk buyers across markets. Our strategies include SEO, B2B lead generation, product promotion, and marketplace marketing. We focus on improving visibility for wholesale products, attracting the right audience, and increasing inquiries. With data-driven campaigns and strong online positioning, we help distributors grow their network, boost sales volume, and achieve consistent business growth.",
+        points: [
+          "Digital Marketing Service for Wholesale Distributors",
+          "Social Media Marketing Service for Wholesale Distributors",
+          "SEO Service for Wholesale Distributors",
+          "Website Development Service for Wholesale Distributors",
+          "Branding Service for Wholesale Distributors",
+        ],
       },
       {
-        "title": "B2B SaaS Platforms",
-        "img": "",
-        "desc": "We provide unparalleled expertise when it comes to B2B SaaS Platforms. We focus on delivering measurable results that scale. Labore nostrud nisi magna aliquip nostrud consectetur ullamco laboris culpa minim commodo velit ullamco irure sed ea dolore voluptate nostrud. By leveraging data-driven insights, we uncover hidden opportunities. Tempor reprehenderit velit labore tempor in minim enim Excepteur elit consectetur reprehenderit ea qui Ut. Your success is our priority, and our track record proves it."
+        title: "B2B SaaS Platforms",
+        img: "",
+        desc: "Our digital marketing services for B2B SaaS platforms are designed to increase user acquisition and drive qualified leads. We offer SEO, content marketing, PPC campaigns, and conversion funnel optimization tailored for SaaS businesses. We focus on targeting decision-makers, improving product visibility, and enhancing user experience. With performance-driven strategies and continuous optimization, we help SaaS platforms increase sign-ups, improve retention, and scale their business globally.",
+        points: [
+          "Digital Marketing Service for B2B SaaS Platforms",
+          "Social Media Marketing Service for B2B SaaS Platforms",
+          "SEO Service for B2B SaaS Platforms",
+          "Website Development Service for B2B SaaS Platforms",
+          "Branding Service for B2B SaaS Platforms",
+        ],
       },
       {
-        "title": "Bulk Manufacturers",
-        "img": "",
-        "desc": "We provide unparalleled expertise when it comes to Bulk Manufacturers. We integrate seamlessly with your existing processes to drive efficiency. Commodo esse quis nisi ut anim in tempor sunt pariatur sint pariatur Lorem laboris cillum sint in in do nostrud. We focus on delivering measurable results that scale. Sunt occaecat est quis magna consectetur nulla consectetur exercitation velit et non nulla ex laboris. Your success is our priority, and our track record proves it."
-      }
-    ]
-  }
+        title: "Bulk Manufacturers",
+        img: "",
+        desc: "We help bulk manufacturers expand their reach and generate consistent B2B inquiries through strategic digital marketing solutions. Our services include SEO, export marketing, website optimization, and lead generation campaigns. We focus on promoting products to distributors, wholesalers, and global buyers. With targeted campaigns and strong branding, we help manufacturers increase visibility, build trust, and achieve long-term growth in domestic and international markets.",
+        points: [
+          "Digital Marketing Service for Bulk Manufacturers",
+          "Social Media Marketing Service for Bulk Manufacturers",
+          "SEO Service for Bulk Manufacturers",
+          "Website Development Service for Bulk Manufacturers",
+          "Branding Service for Bulk Manufacturers",
+        ],
+      },
+    ],
+  },
+  {
+    id: "fmcg",
+    title: "FMCG",
+    innerDesc:
+      "Digital marketing solutions for FMCG brands to increase product visibility, boost sales, and strengthen brand presence across retail, distribution, and online channels.",
+
+    desc: "We help FMCG brands grow with SEO, branding, and performance marketing strategies that increase product visibility, drive consumer demand, and boost sales across retail and digital platforms.",
+    img: "/Industry/fmcg.webp",
+    subIndustries: [
+      {
+        title: "Personal Care",
+        img: "",
+        desc: "We help personal care brands increase product visibility and drive consumer demand through result-driven digital marketing strategies. Our services include FMCG SEO, e-commerce marketing, social media campaigns, and performance advertising. We focus on promoting skincare, haircare, and hygiene products to the right audience, improving brand recognition, and boosting conversions. With targeted campaigns and strong branding, we help personal care businesses increase sales, enhance customer loyalty, and grow their market presence.",
+        points: [
+          "Digital Marketing Service for Personal Care business",
+          "Social Media Marketing Service for Personal Care business",
+          "SEO Service for Personal Care business",
+          "Website Development Service for Personal Care business",
+          "Branding Service for Personal Care business",
+        ],
+      },
+      {
+        title: "Food and Beverages",
+        img: "",
+        desc: "HJ Sysweb provides powerful digital marketing solutions for food and beverage brands to boost product reach and drive sales. Our strategies include SEO, product marketing, influencer campaigns, and performance advertising tailored for FMCG products. We focus on showcasing quality, targeting the right consumers, and increasing engagement across digital platforms. With data-driven campaigns and continuous optimization, we help brands increase demand, improve conversions, and achieve consistent business growth.",
+        points: [
+          "Digital Marketing Service for Food Businesses",
+          "Social Media Marketing Service for Food Businesses",
+          "SEO Service for Food Businesses",
+          "Website Development Service for Food Businesses",
+          "E-commerce Web Development Service for Food Businesses",
+          "Branding Service for Food Businesses",
+        ],
+      },
+      {
+        title: "Household Goods",
+        img: "",
+        desc: "Our digital marketing services for household goods brands are designed to increase product awareness and drive consistent sales. We offer SEO, e-commerce optimization, paid campaigns, and branding strategies tailored for daily-use products. We focus on promoting cleaning supplies, home essentials, and utility products to the right audience. With performance-driven campaigns and strong online positioning, we help brands improve visibility, attract customers, and achieve long-term growth.",
+        points: [
+          "Digital Marketing Service for Household Goods Businesses",
+          "Social Media Marketing Service for Household Goods Businesses",
+          "SEO Service for Household Goods Businesses",
+          "Website Development Service for Household Goods Businesses",
+          "E-commerce Web Development Service for Household Goods Businesses",
+          "Branding Service for Household Goods Businesses",
+        ],
+      },
+    ],
+  },
 ];

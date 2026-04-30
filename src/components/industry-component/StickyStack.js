@@ -42,12 +42,6 @@ export default function StickyStack({ items = industriesData, isInner = false })
             }
           };
 
-          const truncateWords = (text, maxWords) => {
-            if (!text) return "";
-            const words = text.split(" ");
-            if (words.length <= maxWords) return text;
-            return words.slice(0, maxWords).join(" ") + "...";
-          };
 
           const innerContent = (
             <>
@@ -62,7 +56,7 @@ export default function StickyStack({ items = industriesData, isInner = false })
               <div className={styles.content}>
                 <h3 className={styles.title}>{card.title}</h3>
                 <p className={styles.desc}>
-                  {!isInner ? truncateWords(card.desc, 30) : card.desc}
+                  {card.desc}
                 </p>
               </div>
             </>
@@ -71,7 +65,7 @@ export default function StickyStack({ items = industriesData, isInner = false })
           const innerStyle = isInner ? {
             position: 'relative',
             top: 'auto',
-            marginTop: i === 0 ? '0px' : '40px',
+            marginTop: i === 0 ? '0px' : '60px',
             perspective: '1500px',
             "--tint": tint,
             "--idx": i

@@ -135,3 +135,43 @@
   background: #fff;
   transform: translateY(-2px);
 }
+
+/* New Points Grid */
+.pointsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 30px;
+  margin-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 25px;
+}
+
+.pointItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: #eee;
+  line-height: 1.4;
+}
+
+.pointIcon {
+  color: #fac21f;
+  font-weight: bold;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .pointsGrid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .title {
+    font-size: 1.2rem;
+  }
+}

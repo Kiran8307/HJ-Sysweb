@@ -58,7 +58,7 @@ export default function IndustriesInner() {
       />
 
       <HangingBoard
-        text={data.desc}
+        text={data.innerDesc || data.desc}
         typingSpeed={25}
       />
 
