@@ -55,6 +55,7 @@ export default function ContactServices() {
             className={`cs-pill ${active === s.id ? "is-active" : ""}`}
             style={{ "--clr": s.color }}
             onMouseEnter={() => setActive(s.id)}
+            onClick={() => setActive(s.id)}
           >
                 <div className="cs-pill-icon"><Badge3Mini /></div>
             <div className="cs-pill-inner">

@@ -572,16 +572,9 @@ li.cs-pill.is-active .cs-pill-inner .cs-pill-label {
     left: 8px;
     transform: scale(.75);
   }
-   li.cs-pill.is-active .cs-pill-inner .cs-pill-label {
-    display: block;
+  .cs-pill-label {
+    font-size: 14px;
   }
-.cs-expanded{
-  position: relative;
-    top: -40%;
-}
-h3.cs-card-title {
-    display: none;
-}
 }
 
 
