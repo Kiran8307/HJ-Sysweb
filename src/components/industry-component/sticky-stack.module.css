@@ -17,8 +17,9 @@
 .card {
   --radius: 20px;
   --top: 100px;
+  --stack-gap: 30px;
   position: sticky;
-  top: var(--top);
+  top: calc(var(--top) + (var(--idx) * var(--stack-gap, 0px)));
   margin-top: 60px;
   border-radius: var(--radius);
   overflow: hidden;
@@ -118,10 +119,11 @@
 /* RESPONSIVE */
 @media (max-width: 1100px) {
   .card {
-    position: relative !important; /* Disable sticky on mobile/tablet */
-    top: auto !important;
+    position: sticky;
+    top: 80px; /* Offset for header on smaller screens */
     height: auto;
-    margin-top: 30px; /* Reduced margin for mobile */
+    min-height: 400px;
+    margin-top: 40px;
   }
   .inner {
     grid-template-columns: 1fr;
@@ -134,10 +136,14 @@
 
 @media (max-width: 640px) {
   .card {
-    --top: 0;
-    --peek: 24px;
+    --top: 70px;
+    --stack-gap: 20px;
+    --peek: 20px;
     border-radius: 16px;
-    margin-top: 20px;
+    margin-top: 30px;
+    min-height: auto;
+    /* This helps prevent the "jumping" effect on some mobile browsers */
+    will-change: transform; 
   }
   .media {
     border-radius: 14px;
