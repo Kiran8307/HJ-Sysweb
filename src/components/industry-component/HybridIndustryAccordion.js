@@ -13,6 +13,9 @@ export default function HybridIndustryAccordion({ items, parentImg }) {
       <div className={styles.container}>
         {items.map((item, idx) => {
           const isOpen = activeIndex === idx;
+          const bgImg = item.img || parentImg || "/Industry/fashion.webp";
+          const safeBgImg = bgImg.replace(/ /g, "%20").replace(/&/g, "%26");
+
           return (
             <motion.div
               key={idx}
@@ -26,7 +29,7 @@ export default function HybridIndustryAccordion({ items, parentImg }) {
             >
               <div
                 className={styles.bgImage}
-                style={{ backgroundImage: `url("${item.img || parentImg || '/Industry/fashion.webp'}")` }}
+                style={{ backgroundImage: `url("${safeBgImg}")` }}
               ></div>
               <div className={styles.overlay}></div>
 
