@@ -32,6 +32,7 @@
   inset: 0;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   transition: transform 0.8s ease, opacity 0.5s ease;
   opacity: 0.8; /* Higher visibility */
 }
