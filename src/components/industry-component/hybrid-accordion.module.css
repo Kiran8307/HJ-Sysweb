@@ -32,19 +32,18 @@
   inset: 0;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   transition: transform 0.8s ease, opacity 0.5s ease;
-  opacity: 0.35;
+  opacity: 0.6; /* Increased opacity */
 }
 
 .row.open .bgImage {
-  opacity: 0; /* Remove image when open */
+  opacity: 0.1; /* Keep it subtle when open instead of total black */
 }
 
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 40%, rgba(0,0,0,0.2) 100%);
+  background: linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.1) 100%);
   transition: opacity 0.4s ease, background 0.4s ease;
 }
 

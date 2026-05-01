@@ -26,7 +26,7 @@ export default function HybridIndustryAccordion({ items, parentImg }) {
             >
               <div
                 className={styles.bgImage}
-                style={{ backgroundImage: `url(${item.img || parentImg || '/Industry/fashion.webp'})` }}
+                style={{ backgroundImage: `url("${item.img || parentImg || '/Industry/fashion.webp'}")` }}
               ></div>
               <div className={styles.overlay}></div>
 
