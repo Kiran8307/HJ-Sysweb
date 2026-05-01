@@ -136,27 +136,38 @@
 
 @media (max-width: 640px) {
   .card {
-    --top: 70px;
-    --stack-gap: 20px;
+    --top: 60px;
+    --stack-gap: 40px; /* Increased gap to see more of the previous card */
     --peek: 20px;
     border-radius: 16px;
-    margin-top: 30px;
+    margin-top: 20px;
+    height: 480px; /* Back to fixed height for stability on mobile */
     min-height: auto;
-    /* This helps prevent the "jumping" effect on some mobile browsers */
-    will-change: transform; 
+  }
+  .inner {
+    padding: 20px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .media {
     border-radius: 14px;
+    width: 100%;
+    height: 200px;
+    min-height: auto !important;
   }
   .title {
-    font-size: 22px;
+    font-size: 20px;
+    margin-bottom: 5px;
   }                     
   .desc {
-    font-size: 14px;
-    line-height: 1.7;
-  }
-  .inner {
-    grid-template-columns: 1fr !important;
+    font-size: 13px;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
 
