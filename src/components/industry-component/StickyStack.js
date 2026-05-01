@@ -101,6 +101,8 @@ export default function StickyStack({ items = industriesData, isInner = false })
               {!isInner && card.id ? (
                 <Link 
                   to={`/industries-we-serve/${card.id}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`${styles.inner} stack-inner`}
                   style={{ textDecoration: 'none', color: 'inherit' }}
                 >

@@ -8,6 +8,7 @@ export const industriesData = [
     img: "/Industry/healthcare.webp",
     subIndustries: [
       {
+        id: "hospitals",
         title: "Hospitals",
         img: "",
         desc: "At HJ Sysweb, we provide advanced digital marketing solutions for hospitals to enhance online visibility, build patient trust, and increase appointment bookings. Our strategies include healthcare SEO, Google My Business optimization, website development, and performance marketing tailored for hospitals. We focus on improving search rankings for medical services, promoting specialties, and driving targeted traffic. With result-driven campaigns, we help hospitals attract more patients, strengthen brand authority, and grow consistently in competitive healthcare markets.",
@@ -20,6 +21,7 @@ export const industriesData = [
         ],
       },
       {
+        id: "clinics",
         title: "Clinics",
         img: "",
         desc: "HJ Sysweb delivers powerful digital marketing services for clinics to generate quality leads and boost patient engagement. Our clinic-focused strategies include local SEO, social media marketing, website optimization, and paid advertising campaigns. We ensure your clinic ranks higher in local searches, making it easier for patients to find and trust your services. By creating targeted campaigns and optimizing online presence, we help clinics increase patient inquiries, improve retention, and establish a strong and reliable healthcare brand.",
@@ -32,6 +34,7 @@ export const industriesData = [
         ],
       },
       {
+        id: "pharmacy",
         title: "Pharmacy",
         img: "",
         desc: "We offer specialized digital marketing solutions for pharmacies to increase product visibility, drive local traffic, and boost online sales. At HJ Sysweb, our strategies include SEO optimization, local listing management, e-commerce marketing, and targeted advertising campaigns. We help pharmacies rank for relevant medicine and healthcare searches, ensuring better reach and engagement. With a focus on customer trust and convenience, we support pharmacies in growing both their offline and online presence effectively.",
@@ -55,6 +58,7 @@ export const industriesData = [
     img: "/Industry/finance.png",
     subIndustries: [
       {
+        id: "financial-advisors",
         title: "Financial Advisors",
         img: "",
         desc: "We help financial advisors build strong digital authority and attract high-value clients through result-driven marketing strategies. Our services include SEO for financial advisors, content marketing, social media management, and lead generation campaigns. We focus on improving online visibility, building trust, and positioning advisors as industry experts. With targeted digital marketing, we help financial advisors connect with potential clients, increase consultations, and grow their advisory business consistently.",
@@ -67,6 +71,7 @@ export const industriesData = [
         ],
       },
       {
+        id: "accounting-firms",
         title: "Accounting Firms",
         img: "",
         desc: "HJ Sysweb provides specialized digital marketing solutions for accounting firms to generate qualified leads and strengthen their online presence. Our strategies include local SEO, website optimization, PPC campaigns, and content marketing tailored for accounting services. We help firms rank higher on search engines, attract business clients, and improve conversion rates. By focusing on trust-building and professional branding, we ensure accounting firms grow their client base and achieve long-term success in competitive markets.",
@@ -79,6 +84,7 @@ export const industriesData = [
         ],
       },
       {
+        id: "wealth-management-firms",
         title: "Wealth Management Firms",
         img: "",
         desc: "We offer premium digital marketing services for wealth management firms to attract high-net-worth clients and build a strong brand identity. At HJ Sysweb, our strategies include SEO, branding, targeted campaigns, and reputation management. We focus on positioning your firm as a trusted authority in wealth management services. By enhancing digital visibility and delivering personalized marketing solutions, we help firms increase client engagement, generate quality leads, and establish long-term financial relationships.",
@@ -91,6 +97,7 @@ export const industriesData = [
         ],
       },
       {
+        id: "mortgage-brokers",
         title: "Mortgage Brokers",
         img: "",
         desc: "HJ Sysweb helps mortgage brokers generate consistent leads and increase loan inquiries through performance-driven digital marketing strategies. Our services include SEO, Google Ads, landing page optimization, and local marketing campaigns. We ensure your business ranks for high-intent keywords, making it easier for clients to find mortgage solutions. With targeted campaigns and conversion-focused strategies, we help mortgage brokers grow their client base, increase applications, and boost overall business performance.",
@@ -103,6 +110,7 @@ export const industriesData = [
         ],
       },
       {
+        id: "ca",
         title: "CA",
         img: "",
         desc: "We deliver tailored digital marketing solutions for Chartered Accountants to increase visibility and attract business clients. Our strategies include SEO, local search optimization, website development, and content marketing designed for CA services. We help professionals rank higher for tax, audit, and compliance-related searches. By building a strong online presence and trust-driven branding, we support CAs in generating consistent leads and expanding their professional practice.",
@@ -126,6 +134,7 @@ export const industriesData = [
     img: "/Industry/Restaurant.png",
     subIndustries: [
       {
+        id: "restaurants-cafes",
         title: "Restaurants & Cafes",
         img: "",
         desc: "We provide result-driven digital marketing solutions for restaurants and cafes to increase footfall, online orders, and brand visibility. Our strategies include local SEO, Google My Business optimization, social media marketing, and online ordering integration. We help your restaurant rank higher in “near me” searches, attract local customers, and boost engagement. With targeted campaigns and strong branding, we ensure your restaurant grows consistently and stands out in a competitive food industry.",
@@ -139,6 +148,7 @@ export const industriesData = [
         ],
       },
       {
+        id: "catering-businesses",
         title: "Catering Businesses",
         img: "",
         desc: "HJ Sysweb delivers powerful digital marketing services for catering businesses to generate high-quality leads and increase event bookings. Our approach includes SEO optimization, website development, social media promotions, and targeted advertising campaigns. We focus on showcasing your catering services, menus, and past events to build trust and attract potential clients. By improving online visibility and engagement, we help catering businesses secure more bookings and expand their customer base effectively.",
@@ -151,6 +161,7 @@ export const industriesData = [
         ],
       },
       {
+        id: "bars-pubs",
         title: "Bars & Pubs",
         img: "",
         desc: "We help bars and pubs grow their customer base with creative and performance-driven digital marketing strategies. Our services include social media marketing, local SEO, event promotions, and paid advertising campaigns. We focus on increasing visibility for nightlife searches, promoting special events, and engaging local audiences. With strong branding and targeted campaigns, we help bars and pubs attract more visitors, boost foot traffic, and create a memorable brand presence.",
@@ -173,6 +184,7 @@ export const industriesData = [
     img: "/Industry/real-estate.webp",
     subIndustries: [
       {
+        id: "real-estate-agencies",
         title: "Real Estate Agencies",
         img: "",
         desc: "We help real estate agencies generate high-quality leads and increase property inquiries through result-driven digital marketing strategies. Our services include real estate SEO, Google Ads, social media marketing, and website optimization tailored for property listings. We ensure your agency ranks higher in local searches, attracts serious buyers, and improves conversion rates. With targeted campaigns and strong branding, we help real estate agencies grow consistently in competitive markets.",
@@ -185,6 +197,7 @@ export const industriesData = [
         ],
       },
       {
+        id: "real-estate-developers",
         title: "Real Estate Developers",
         img: "",
         desc: "HJ Sysweb delivers powerful marketing solutions for real estate developers to promote projects, generate leads, and build a strong brand presence. Our strategies include project-based SEO, landing page optimization, paid advertising, and social media campaigns. We focus on showcasing your developments with high-impact visuals and targeted promotions. By improving online visibility and lead generation, we help developers attract investors, buyers, and achieve faster project sales.",
@@ -197,6 +210,7 @@ export const industriesData = [
         ],
       },
       {
+        id: "real-estate-brokers",
         title: "Real Estate Brokers",
         img: "",
         desc: "We provide customized digital marketing services for real estate brokers to increase client inquiries and close more deals. Our approach includes local SEO, personal branding, social media marketing, and lead generation campaigns. We help brokers rank for high-intent property searches, making it easier for buyers and sellers to connect. With strategic marketing efforts, we support brokers in building trust, expanding networks, and growing their real estate business.",
@@ -209,6 +223,7 @@ export const industriesData = [
         ],
       },
       {
+        id: "property-investment-firms",
         title: "Property Investment Firms",
         img: "",
         desc: "HJ Sysweb offers advanced digital marketing solutions for property investment firms to attract investors and generate high-value leads. Our services include SEO, performance marketing, content marketing, and targeted advertising campaigns. We focus on promoting investment opportunities, building trust, and improving online visibility. With data-driven strategies and strong branding, we help firms connect with potential investors, increase engagement, and grow their real estate investment portfolio effectively.",
